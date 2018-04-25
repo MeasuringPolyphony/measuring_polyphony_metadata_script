@@ -23,9 +23,10 @@ public class UpdateMei {
 	public static void main(String[] args) throws IOException { //FIX,MAKE ALL FIELDS WORK
 		  parseData();
 		  takeInputs();
+		  System.out.println("File update completed. Find updated files in the newfiles folder.");
 	}
 	public static void parseData() throws FileNotFoundException {
-		File file = new File("data2.tsv");
+		File file = new File("data.tsv");
 		Scanner input = new Scanner(file);
 		int counter=0;
 		while(input.hasNext()) {
@@ -48,9 +49,9 @@ public class UpdateMei {
 	     //System.out.print("Folder?:"); 
 	    // Scanner four = new Scanner(System.in);
 	     //String folder = four.next();
-		mainLoop("newmei/Fauv/"); 
-		mainLoop("newmei/IvTrem/");
-	     mainLoop("newmei/Montpellier/");
+		mainLoop("oldfiles/Fauv/"); 
+		mainLoop("oldfiles/IvTrem/");
+	     mainLoop("oldfiles/Montpellier/");
 	}
 	
 	public static void mainLoop(String folder) throws IOException {
@@ -122,9 +123,11 @@ public class UpdateMei {
 		}
 
 		// ... and finally ...
-
-		File realName = new File(file.getPath());
-		realName.delete(); // remove the old file
+		String path =file.getPath();
+		String newpath = "newfiles/" + path.substring(9, path.length());
+		
+		File realName = new File(newpath);
+		realName.delete();
 		new File("temp.mei").renameTo(realName); // Rename temp file*/
 		}
 	}
