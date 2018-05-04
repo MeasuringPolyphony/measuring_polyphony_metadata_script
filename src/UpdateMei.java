@@ -74,6 +74,7 @@ public class UpdateMei {
 		// Open a temporary file to write to.
 		PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter("temp.mei")));
 		BufferedReader br = null;
+		int BUFFER_SIZE = 0;
 		FileReader reader = null;
 		boolean alreadyFound=false; //only inserts it in first one
 		int  j= findFile(file);
@@ -85,6 +86,7 @@ public class UpdateMei {
 		    br = new BufferedReader(reader);
 		    String line;
 		    while ((line = br.readLine()) != null) {
+		    	
 				    	if (line.contains("<meiHead")){ //insert the data in meihead
 				    		writer.println(line);
 				    		String temp="";
@@ -109,8 +111,34 @@ public class UpdateMei {
 							if (line.contains("<staffDef xml") && !line.contains("notationtype") && file.getPath().contains("MENSURAL.mei")) {
 								line =  line.substring(0, 30) + " notationtype=\"mensural.black\"" + line.substring(30, line.length());
 							}
-				            writer.println(line);
+							if (line.contains("&amp;apos;")) {
+								line =  line.replace("&amp;apos;", "'");
+							}
+							if (line.contains("&amp;amp;apos;")) {
+								line =  line.replace("&amp;amp;apos;", "'");
+							}
+							if (line.contains("barLine")) {
+								line =  line.replace("barLine", "barLine form=\"dashed\"");
+							}
+							
+
+	
+							String nextline = "";
+							BUFFER_SIZE = 1000;
+					    	br.mark(BUFFER_SIZE);
+							if ((nextline = br.readLine()) != null && BUFFER_SIZE !=0) {
+								
+								br.reset();     
+								
+							}
+							if (nextline != null && nextline.contains("</layer>")) {
+								if (line.contains("barLine form=\"dashed\"")) {
+									line =  line.replace("barLine form=\"dashed\"", "barLine form=\"dbl\"");
+								}
+							}
+							writer.println(line);
 						}
+				    	
 		    		}
 		
 		    writer.close();
@@ -239,8 +267,9 @@ public class UpdateMei {
 				+ "<name xml:id=\"m-21\" type=\"operating-system\">Mac OS X Mountain Lion</name>"
 				+ "</application>\n<application xml:id=\"sibmei\" type=\"plugin\" version=\"2.0.0b3\">\n<name xml:id=\"m-23\">Sibelius to MEI Exporter (2.0.0b3)</name>\n"
 				+ "</application> \n<application xml:id=\"meiMENS\" isodate=\"2016-4-29\">\n<name xml:id=\"m-23\">CMN-MEI to MensuralMEI Translator</name>\n"
-				+ "</application>\n</appInfo>\n<editorialDecl>\n<p>\n" + alldata[j][23] 
-				+ "</p>\n<p></p>\n</editorialDecl>\n<projectDesc>\n<p>Short Project Description</p>\n</projectDesc>\n</encodingDesc>\n<workDesc xml:id=\"m-5\">\n<work xml:id=\"m-6\">\n<identifier>"
+				+ "</application>\n</appInfo>\n<editorialDecl>\n<p>\n" + alldata[j][23] + alldata[j][24] + "</p>\n"
+				+ "<annot title=\"variants\">" + alldata[j][25] + "</annot>"
+				+ "\n</editorialDecl>\n<projectDesc>\n<p>Short Project Description</p>\n</projectDesc>\n</encodingDesc>\n<workDesc xml:id=\"m-5\">\n<work xml:id=\"m-6\">\n<identifier>"
 				+ "\n<identifier>"+alldata[j][9]+"</identifier>\n</identifier>\n<titleStmt xml:id=\"m-7\">\n<title xml:id=\"m-8\">" + alldata[j][0]+"</title>\n<respStmt xml:id=\"m-9\">\n"
 				+ "<persName xml:id=\"m-12\" role=\"composer\">" + alldata[j][1] + "</persName>\n</respStmt>\n</titleStmt>\n"
 				+ makeParts(j)
@@ -263,6 +292,8 @@ public class UpdateMei {
 				output = output + "<persName role=\""+role+"\" date=\"" + dateFormat(date) + "\">Sadie Menicanin</persName> \n";
 			} else if (splitInput[i].equals("DS")) {
 				output = output + "<persName role=\""+role+"\" date=\"" + dateFormat(date) + "\">Daniel Shapiro</persName> \n";
+			} else if (splitInput[i].equals("SMK")) {
+				output = output + "<persName role=\""+role+"\" date=\"" + dateFormat(date) + "\">Shawn Mikkelson</persName> \n";
 			} else {
 				output = output + "<persName role=\""+role+"\" date=\"" + dateFormat(date) + "\">" + splitInput[i] + "</persName> \n";
 			}
