@@ -106,7 +106,7 @@ public class UpdateMei {
 							alreadyFound=false;
 						} else if (!alreadyFound) {
 							if (line.contains("<scoreDef xml") && !line.contains("midi.bpm")) {
-								line =  line.substring(0, 28) + " midi.bpm=\"800\"" + line.substring(28, line.length());
+								line =  line.substring(0, 28) + " midi.bpm=\"" + alldata[j][31] + "\"" + line.substring(28, line.length());
 							}
 							if (line.contains("<staffDef xml") && !line.contains("notationtype") && file.getPath().contains("MENSURAL.mei")) {
 								line =  line.substring(0, 30) + " notationtype=\"mensural.black\"" + line.substring(30, line.length());
@@ -257,7 +257,7 @@ public class UpdateMei {
 				+ "</title>\n<pubStmt>\n<unpub/>\n</pubStmt>\n<notesStmt>\n"
 				+ "<annot>Scan checked and corrected against this manuscript</annot>\n<itemList>\n" 
 				+ "<item title=\"IIIF\" target=\""+alldata[j][15]+"\" folio=\""+alldata[j][4]+"\"></item>\n" 
-				+ "<item title=\"other/images\" target=\""+alldata[j][28]+"\" folio=\"" + alldata[j][4]+ "\"></item>\n" 
+				+ "<item title=\"other/images\" target=\"" + replaceAmp(alldata[j][18]) + "\" motetus=\""+alldata[j][28]+"\" folio=\"" + alldata[j][4]+ "\"></item>\n" 
 				+ "<item title=\"DIAMM_composition\" target=\""+alldata[j][16]+"\"></item>\n" 
 				+ "<item title=\"DIAMM_source\" target=\""+alldata[j][17]+"\"></item>\n" 
 				+ "</itemList>\n</notesStmt>\n</titleStmt>\n</source>\n<source>\n"
@@ -267,7 +267,7 @@ public class UpdateMei {
 				+ "<name xml:id=\"m-21\" type=\"operating-system\">Mac OS X Mountain Lion</name>"
 				+ "</application>\n<application xml:id=\"sibmei\" type=\"plugin\" version=\"2.0.0b3\">\n<name xml:id=\"m-23\">Sibelius to MEI Exporter (2.0.0b3)</name>\n"
 				+ "</application> \n<application xml:id=\"meiMENS\" isodate=\"2016-4-29\">\n<name xml:id=\"m-23\">CMN-MEI to MensuralMEI Translator</name>\n"
-				+ "</application>\n</appInfo>\n<editorialDecl>\n<p>\n" + alldata[j][23] + alldata[j][24] + "</p>\n"
+				+ "</application>\n</appInfo>\n<editorialDecl>\n<p>\n" + alldata[j][23] + " " + alldata[j][24] + "</p>\n"
 				+ "<annot title=\"variants\">" + alldata[j][25] + "</annot>"
 				+ "\n</editorialDecl>\n<projectDesc>\n<p>Short Project Description</p>\n</projectDesc>\n</encodingDesc>\n<workDesc xml:id=\"m-5\">\n<work xml:id=\"m-6\">\n<identifier>"
 				+ "\n<identifier>"+alldata[j][9]+"</identifier>\n</identifier>\n<titleStmt xml:id=\"m-7\">\n<title xml:id=\"m-8\">" + alldata[j][0]+"</title>\n<respStmt xml:id=\"m-9\">\n"
@@ -277,7 +277,9 @@ public class UpdateMei {
 				+ alldata[j][25] + "\n</extMeta>\n</meiHead>";
 	}
 	
-	
+	public static String replaceAmp(String link) {
+		return link.replace("&", "&amp;");
+	}
 	public static String initialsToNames(String date, String input, String role) {
 		String[] splitInput = input.split(", ");
 		String output="";

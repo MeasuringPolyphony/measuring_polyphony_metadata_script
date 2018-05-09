@@ -230,7 +230,7 @@
 									</note>
 									<tuplet xml:id="m-141" endid="#m-143" num="3" num.format="count" numbase="2" startid="#m-139">
 										<note xml:id="m-139" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="2" stem.dir="up">
-											<accid xml:id="m-140" accid="s" />
+											<accid xml:id="m-140" accid="s" func="edit" />
 											<verse xml:id="m-146" n="1">
 												<syl xml:id="m-147" wordpos="i">soit</syl>
 											</verse>
@@ -266,7 +266,7 @@
 										</verse>
 									</note>
 									<note xml:id="m-163" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="f" pnum="66" staff="2" stem.dir="up">
-										<accid xml:id="m-164" accid="s" />
+										<accid xml:id="m-164" accid="s" func="edit" />
 										<verse xml:id="m-167" n="1">
 											<syl xml:id="m-168" wordpos="i">ce</syl>
 										</verse>
@@ -537,7 +537,7 @@
 										</verse>
 									</note>
 									<note xml:id="m-326" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="1" stem.dir="up">
-										<accid xml:id="m-327" accid="s" />
+										<accid xml:id="m-327" accid="s" func="edit" />
 									</note>
 									<note xml:id="m-328" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up" />
 									<note xml:id="m-329" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="a" pnum="69" staff="1" stem.dir="up">
@@ -596,19 +596,19 @@
 							<staff xml:id="m-363" n="1">
 								<layer xml:id="m-364" n="1">
 									<note xml:id="m-365" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="1" stem.dir="up">
-										<accid xml:id="m-366" accid="s" />
+										<accid xml:id="m-366" accid="s" func="edit" />
 										<verse xml:id="m-372" n="1">
 											<syl xml:id="m-373" wordpos="i">franque</syl>
 										</verse>
 									</note>
 									<note xml:id="m-367" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="1" stem.dir="up">
-										<accid xml:id="m-368" accid="s" />
+										<accid xml:id="m-368" accid="s" func="edit" />
 										<verse xml:id="m-374" n="1">
 											<syl xml:id="m-375" wordpos="i">et</syl>
 										</verse>
 									</note>
 									<note xml:id="m-369" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="f" pnum="66" staff="1" stem.dir="up">
-										<accid xml:id="m-370" accid="s" />
+										<accid xml:id="m-370" accid="s" func="edit" />
 										<verse xml:id="m-376" n="1">
 											<syl xml:id="m-377" wordpos="i">hu</syl>
 										</verse>
@@ -664,7 +664,7 @@
 										</verse>
 									</note>
 									<note xml:id="m-396" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="1" stem.dir="up">
-										<accid xml:id="m-397" accid="s" />
+										<accid xml:id="m-397" accid="s" func="edit" />
 										<verse xml:id="m-406" n="1">
 											<syl xml:id="m-407" wordpos="t">tre</syl>
 										</verse>
@@ -728,7 +728,7 @@
 										</verse>
 									</note>
 									<note xml:id="m-439" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="f" pnum="66" staff="2" stem.dir="up">
-										<accid xml:id="m-440" accid="s" />
+										<accid xml:id="m-440" accid="s" func="edit" />
 										<verse xml:id="m-462" n="1">
 											<syl xml:id="m-463" wordpos="i">loi</syl>
 										</verse>
@@ -856,7 +856,7 @@
 									</note>
 									<tuplet xml:id="m-520" endid="#m-522" num="3" num.format="count" numbase="2" startid="#m-518">
 										<note xml:id="m-518" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="2" stem.dir="up">
-											<accid xml:id="m-519" accid="s" />
+											<accid xml:id="m-519" accid="s" func="edit" />
 											<verse xml:id="m-542" n="1">
 												<syl xml:id="m-543" wordpos="i">com</syl>
 											</verse>
@@ -924,7 +924,7 @@
 										</verse>
 									</note>
 									<note xml:id="m-556" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="f" pnum="66" staff="1" stem.dir="up">
-										<accid xml:id="m-557" accid="s" />
+										<accid xml:id="m-557" accid="s" func="edit" />
 										<verse xml:id="m-569" n="1">
 											<syl xml:id="m-570" wordpos="i">bons</syl>
 										</verse>
@@ -934,16 +934,17 @@
 											<verse xml:id="m-571" n="1">
 												<syl xml:id="m-572" wordpos="i">dont</syl>
 											</verse>
+										</note>
+										<note xml:id="m-561" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="1" stem.dir="up">
 											<verse xml:id="m-573" n="1">
 												<syl xml:id="m-574" wordpos="i">ie</syl>
 											</verse>
 										</note>
-										<note xml:id="m-561" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="1" stem.dir="up">
+										<note xml:id="m-562" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="1" stem.dir="up">
 											<verse xml:id="m-575" n="1">
 												<syl xml:id="m-576" wordpos="i">ne</syl>
 											</verse>
 										</note>
-										<note xml:id="m-562" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="1" stem.dir="up" />
 									</tuplet>
 								</layer>
 							</staff>
@@ -1170,7 +1171,7 @@
 											</verse>
 										</note>
 										<note xml:id="m-705" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="1" stem.dir="up">
-											<accid xml:id="m-706" accid="s" />
+											<accid xml:id="m-706" accid="s" func="edit" />
 										</note>
 										<note xml:id="m-707" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="1" stem.dir="up" />
 									</tuplet>
@@ -1244,7 +1245,7 @@
 										</verse>
 									</note>
 									<note xml:id="m-751" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="f" pnum="66" staff="1" stem.dir="up">
-										<accid xml:id="m-752" accid="s" />
+										<accid xml:id="m-752" accid="s" func="edit" />
 										<verse xml:id="m-780" n="1">
 											<syl xml:id="m-781" wordpos="i">a</syl>
 										</verse>
@@ -1285,7 +1286,6 @@
 									</note>
 									<tuplet xml:id="m-777" endid="#m-779" num="3" num.format="count" numbase="2" startid="#m-775">
 										<note xml:id="m-775" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="65" staff="1" stem.dir="up">
-											<accid xml:id="m-776" accid="n" />
 											<verse xml:id="m-784" n="1">
 												<syl xml:id="m-785" wordpos="i">trop</syl>
 											</verse>
@@ -1403,7 +1403,7 @@
 										</verse>
 									</note>
 									<note xml:id="m-844" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="f" pnum="66" staff="1" stem.dir="up">
-										<accid xml:id="m-845" accid="s" />
+										<accid xml:id="m-845" accid="s" func="edit" />
 										<verse xml:id="m-853" n="1">
 											<syl xml:id="m-854" wordpos="i">en</syl>
 										</verse>
@@ -1534,7 +1534,7 @@
 										</verse>
 									</note>
 									<note xml:id="m-920" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="f" pnum="66" staff="1" stem.dir="up">
-										<accid xml:id="m-921" accid="s" />
+										<accid xml:id="m-921" accid="s" func="edit" />
 										<verse xml:id="m-951" n="1">
 											<syl xml:id="m-952" wordpos="i">pa</syl>
 										</verse>
@@ -1551,7 +1551,7 @@
 									</note>
 									<tuplet xml:id="m-932" endid="#m-934" num="3" num.format="count" numbase="2" startid="#m-930">
 										<note xml:id="m-930" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="2" stem.dir="up">
-											<accid xml:id="m-931" accid="s" />
+											<accid xml:id="m-931" accid="s" func="edit" />
 											<verse xml:id="m-941" n="1">
 												<syl xml:id="m-942" con="u" wordpos="t">tes</syl>
 											</verse>
@@ -1608,7 +1608,7 @@
 									</note>
 									<note xml:id="m-969" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up" />
 									<note xml:id="m-970" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="f" pnum="66" staff="1" stem.dir="up">
-										<accid xml:id="m-971" accid="s" />
+										<accid xml:id="m-971" accid="s" func="edit" />
 									</note>
 									<tuplet xml:id="m-973" endid="#m-975" num="3" num.format="count" numbase="2" startid="#m-972">
 										<note xml:id="m-972" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="1" stem.dir="up">
@@ -1631,7 +1631,7 @@
 									<note xml:id="m-984" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="2" stem.dir="up" />
 									<note xml:id="m-985" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="e" pnum="64" staff="2" stem.dir="up" />
 									<note xml:id="m-986" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="f" pnum="66" staff="2" stem.dir="up">
-										<accid xml:id="m-987" accid="s" />
+										<accid xml:id="m-987" accid="s" func="edit" />
 										<verse xml:id="m-1013" n="1">
 											<syl xml:id="m-1014" wordpos="i">tra</syl>
 										</verse>
@@ -1655,7 +1655,7 @@
 										</verse>
 									</note>
 									<note xml:id="m-1000" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="1" stem.dir="up">
-										<accid xml:id="m-1001" accid="s" />
+										<accid xml:id="m-1001" accid="s" func="edit" />
 										<verse xml:id="m-1006" n="1">
 											<syl xml:id="m-1007" con="u" wordpos="t">gne</syl>
 										</verse>
@@ -1716,7 +1716,7 @@
 											</verse>
 										</note>
 										<note xml:id="m-1036" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="2" stem.dir="up">
-											<accid xml:id="m-1037" accid="s" />
+											<accid xml:id="m-1037" accid="s" func="edit" />
 										</note>
 										<note xml:id="m-1038" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="2" stem.dir="up" />
 									</tuplet>
@@ -1751,11 +1751,12 @@
 									<note xml:id="m-1062" dur="long" dur.ges="4096p" layer="1" oct="4" pname="f" pnum="65" staff="2" stem.dir="up">
 										<verse xml:id="m-1068" n="1">
 											<syl xml:id="m-1069" wordpos="i">moi</syl>
+											<accid xml:id="m-6e53cfb2-dc2e-4d72-8942-41ecea6ea4e5" accid="s" />
 										</verse>
 									</note>
 									<tuplet xml:id="m-1065" endid="#m-1067" num="3" num.format="count" numbase="2" startid="#m-1063">
 										<note xml:id="m-1063" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="2" stem.dir="up">
-											<accid xml:id="m-1064" accid="s" />
+											<accid xml:id="m-1064" accid="s" func="edit" />
 											<verse xml:id="m-1092" n="1">
 												<syl xml:id="m-1093" wordpos="i">nai</syl>
 											</verse>
@@ -1821,7 +1822,7 @@
 										</verse>
 									</note>
 									<note xml:id="m-1103" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="1" stem.dir="up">
-										<accid xml:id="m-1104" accid="s" />
+										<accid xml:id="m-1104" accid="s" func="edit" />
 										<verse xml:id="m-1113" n="1">
 											<syl xml:id="m-1114" wordpos="t">ne</syl>
 										</verse>
@@ -1834,7 +1835,7 @@
 									<note xml:id="m-1107" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="1" stem.dir="up" />
 									<note xml:id="m-1108" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="1" stem.dir="up" />
 									<note xml:id="m-1109" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="1" stem.dir="up">
-										<accid xml:id="m-1110" accid="s" />
+										<accid xml:id="m-1110" accid="s" func="edit" />
 									</note>
 								</layer>
 							</staff>
