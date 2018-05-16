@@ -4,5 +4,3 @@ Follow these steps to insert metadata into MEI files:
 2) Replace the 'data.tsv' in this program with the new one you just exported. If any file names were changed, make those changes to the files in the "oldfiles" folder.
 3) Run UpdateMei.java (in src>(defaultpackage))
 4) All the files in the newfiles folder should be updated with the new metadata. Check to see if everything went in correctly.
-
-Test
