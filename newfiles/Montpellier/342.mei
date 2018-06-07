@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mei xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.music-encoding.org/ns/mei" meiversion="3.0.0">
+<mei xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
 	<meiHead xml:id="m-2">
 		<fileDesc>
 			<titleStmt>
@@ -9,18 +9,21 @@
 					<corpName>Social Sciences and Humanities Research Council, Canada (SSHRC) </corpName>
 				</funder>
 				<funder>
-					<corpName> Schulich School of Music, McGill University </corpName> 
+					<corpName> Schulich School of Music, McGill University</corpName> 
 				</funder> 
 				 <funder>
 					<corpName>Brandeis University</corpName>
 				</funder>
+				 <funder>
+					<corpName>National Endowment for Humanities (NEH)</corpName> 
+				</funder> 
 				 <respStmt> 
-					<persName role="project director">Karen Desmond</persName>
-					<persName role="encoder" date="3-24-2015">Sadie Menicanin</persName> 
-					<persName role="proofreader" date="10-14-17">Emily Hopkins</persName> 
-					<persName role="proofreader" date="10-14-17">Sam Howes</persName> 
-					<persName role="proofreader" date="10-14-17">Karen Desmond</persName> 
-					<persName role="proofreader" date="10-14-17">Daniel Shapiro</persName> 
+					<persName role="project director" auth="VIAF" auth.uri="http://viaf.org/viaf/" codedval="316001213">Karen Desmond</persName>
+					<persName role="encoder" isodate="2015-3-24" xml:id="SM">Sadie Menicanin</persName> 
+					<persName role="proofreader" isodate="2017-10-14" xml:id="EH">Emily Hopkins</persName> 
+					<persName role="proofreader" isodate="2017-10-14" xml:id="SH">Sam Howes</persName> 
+					<persName role="proofreader" isodate="2017-10-14" xml:id="KD">Karen Desmond</persName> 
+					<persName role="proofreader" isodate="2017-10-14" xml:id="DS">Daniel Shapiro</persName> 
 				</respStmt>
 			</titleStmt>
 			<pubStmt>
@@ -38,94 +41,94 @@
 				<editor> 
 					<persName>Karen Desmond</persName> 
 				</editor>
-			</seriesStmt>
-		</fileDesc>
-		<sourceDesc>
-			<source>
-				<notesStmt>
-					<annot>Scanned from Rokseth</annot>
-				</notesStmt>
-			</source>
-			<source>
-				<titleStmt>
-					<title>[Primary source for this encoding]
-						<identifier>Mo</identifier>
-					</title>
-					<pubStmt>
-						<unpub/>
-						</pubStmt>
-						<notesStmt>
-							<annot>Scan checked and corrected against this manuscript</annot>
-							<itemList>
-								<item title="IIIF" target="" folio="394v, 395r"></item>
-								<item title="other/images" target="http://bvmm.irht.cnrs.fr/consult/consult.php?reproductionId=8028&amp;VUE_ID=1261878" motetus="Tant me plaist Amour servir" folio="394v, 395r"></item>
-								<item title="DIAMM_composition" target="https://www.diamm.ac.uk/compositions/3540/"></item>
-								<item title="DIAMM_source" target="https://www.diamm.ac.uk/sources/888/"></item>
-							</itemList>
-						</notesStmt>
-					</titleStmt>
-				</source>
-				<source>
-					<titleStmt>
-						<title>[Other concordant sources]</title>
-						<pubStmt>
-							<unpub/>
-							</pubStmt>
+				<identifier>
+					<ref targettype="home_page" target="http://www.measuringpolyphony.org"/>
+					</identifier>
+				</seriesStmt>
+				<sourceDesc>
+					<source>
+						<titleStmt>
+							<title>
+								<identifier>Mo</identifier>
+							</title>
+							<notesStmt>
+								<annot>Primary manuscript source for this encoding.</annot>
+								<annot label="original_clefs">Original clefs for this source: c3 c2 c4</annot>
+								<annot label="commentary">Tr 23.1-2 possible plica long / Mot 41 possible dot of division</annot>
+								<itemList>
+									<item targettype="IIIF" target="" codeval="394v, 395r"></item>
+									<item targettype="other/images" target="http://bvmm.irht.cnrs.fr/consult/consult.php?reproductionId=8028&amp;VUE_ID=1261878" motetus="Tant me plaist Amour servir" folio="394v, 395r"></item>
+									<item targettype="DIAMM_source_record" target="https://www.diamm.ac.uk/sources/888/"></item>
+									<item targettype="DIAMM_composition_record" target="https://www.diamm.ac.uk/compositions/3540/"></item>
+								</itemList>
+							</notesStmt>
+						</titleStmt>
+					</source>
+					<source>
+						<titleStmt>
+							<title>[Other concordant sources]</title>
 							<notesStmt>
 								<annot></annot>
 							</notesStmt>
 						</titleStmt>
 					</source>
 				</sourceDesc>
-				<encodingDesc> 
-					<appInfo>
-						<application xml:id="sibelius" isodate="2016-4-29T09:24:36Z" version="7510"><name type="operating-system">Mac OS X Mountain Lion</name></application>
-					<application xml:id="sibmei" type="plugin" version="2.0.0b3">
-						<name>Sibelius to MEI Exporter (2.0.0b3)</name>
-					</application> 
-					<application xml:id="meiMENS" isodate="2016-4-29">
-						<name>CMN-MEI to MensuralMEI Translator</name>
-					</application>
-				</appInfo>
-				<editorialDecl>
-					<p>
-						Scanned file corrected from Rokseth. Rhythmic durations augmented following our project’s transcription conventions. Pitches, rhythms and mensural notation features checked and corrected against manuscript source. Text follows Mo.</p>
-						<annot title="variants">Tr 23.1-2 possible plica long / Mot 41 possible dot of division</annot>
-					</editorialDecl>
-					<projectDesc>
-						<p>Short Project Description</p>
-					</projectDesc>
-				</encodingDesc>
-				<workDesc>
-					<work>
-						<identifier>
-							<identifier>Mo 8,342</identifier>
-						</identifier>
-						<titleStmt>
-							<title>Tant me plaist</title>
-							<respStmt>
-								<persName role="composer">Anonymous</persName>
-							</respStmt>
-						</titleStmt>
-						<incip>
-							<incipText title="triplum">Qui d’amours n'a riens gousté</incipText>
-						</incip>
-						<incip>
-							<incipText title="motetus">Tant me plaist Amour servir</incipText>
-						</incip>
-						<incip>
-							<incipText title="tenor">VIRGA YESSE</incipText>
-						</incip>
-						<otherChar>Original clefs c3 c2 c4</otherChar>
-						<classification>
-							<term>Motet</term>
-						</classification>
-					</work>
-				</workDesc>
-				<extMeta>
-					Tr 23.1-2 possible plica long / Mot 41 possible dot of division
-					</extMeta>
-					</meiHead>
+			</fileDesc>
+			<encodingDesc> 
+				<appInfo>
+					<application xml:id="sibelius" isodate="2016-4-29T09:24:36Z" version="7510"><name type="operating-system">Mac OS X Mountain Lion</name></application>
+				<application xml:id="sibmei" type="plugin" version="2.0.0b3">
+					<name>Sibelius to MEI Exporter (2.0.0b3)</name>
+				</application> 
+				<application xml:id="meiMENS" isodate="2016-4-29">
+					<name>CMN-MEI to MensuralMEI Translator</name>
+				</application>
+			</appInfo>
+			<editorialDecl>
+				<p>
+					Scanned file corrected from Rokseth. Rhythmic durations augmented following our project’s transcription conventions. Pitches, rhythms and mensural notation features checked and corrected against manuscript source. Text follows Mo.</p>
+				</editorialDecl>
+				<projectDesc>
+					<p>"Measuring Polyphony" presents digitised versions of polyphonic compositions written during the thirteenth and fourteenth centuries, offering new possibilities for mediating the scholarly and public experience of this richly evocative music within its original manuscript context. The project began at the Schulich School of Music at McGill University, and now continues at Brandeis University. It leverages the potential of the rich digital image repositories of music manuscripts and the community-based standards for encoding music notation of the Music Encoding Initiative (MEI).</p>
+				</projectDesc>
+			</encodingDesc>
+			<workDesc>
+				<work>
+					<identifier>
+						<identifier type="catalogue_number">Mo 8,342</identifier>
+					</identifier>
+					<title>Tant me plaist</title>
+					<composer>Anonymous</composer>
+					<incip>
+						<incipText label="triplum" corresp="#triplum">
+							<lg><l>Qui d’amours n'a riens gousté</l></lg>
+					</incipText>
+					<incipText label="motetus" corresp="#motetus">
+						<lg><l>Tant me plaist Amour servir</l></lg>
+				</incipText>
+				<incipText label="tenor" corresp="#tenor">
+					<lg><l>VIRGA YESSE</l></lg>
+			</incipText>
+		</incip>
+		<otherChar>Original clefs c3 c2 c4</otherChar>
+		<classification>
+			<termList>
+				<term>Motet</term>
+				<termList>
+				</classification>
+			</work>
+		</workDesc>
+		<revisionDesc>
+			<change resp="#KD" isodate="2018-05-31">
+				<changeDesc>
+					<p></p>
+				</changeDesc>
+			</change>
+		</revisionDesc>
+		<extMeta>
+			Tr 23.1-2 possible plica long / Mot 41 possible dot of division
+			</extMeta>
+			</meiHead>
 	<music xml:id="m-24">
 		<body xml:id="m-25">
 			<mdiv xml:id="m-26">
@@ -133,17 +136,14 @@
 					<scoreDef xml:id="m-28" midi.bpm="800" lyric.name="Opus Text Std" meter.count="6" meter.unit="1" music.name="Opus Std" page.botmar="15mm" page.height="279.4mm" page.leftmar="15mm" page.rightmar="15mm" page.topmar="15mm" page.width="215.9mm" ppq="256" text.name="Plantin MT Std">
 						<staffGrp xml:id="m-29">
 							<staffGrp xml:id="m-39" n="1" symbol="bracket">
-								<staffDef xml:id="m-30" clef.dis="8" clef.dis.place="below" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" label="triplum" lines="5" n="1">
-									<!-- voice.male.tenor.ah -->
-									<instrDef xml:id="m-32" midi.channel="1" midi.pan="26" midi.volume="100" />
+								<staffDef xml:id="triplum" clef.dis="8" clef.dis.place="below" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" lines="5" n="1">
+									<label>triplum</label>
 								</staffDef>
-								<staffDef xml:id="m-33" clef.dis="8" clef.dis.place="below" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" label="motetus" lines="5" n="2">
-									<!-- voice.male.tenor.ah -->
-									<instrDef xml:id="m-35" midi.channel="1" midi.pan="26" midi.volume="100" />
+								<staffDef xml:id="motetus" clef.dis="8" clef.dis.place="below" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" lines="5" n="2">
+									<label>motetus</label>
 								</staffDef>
-								<staffDef xml:id="m-36" clef.dis="8" clef.dis.place="below" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" label="tenor" lines="5" n="3">
-									<!-- voice.male.tenor.ah -->
-									<instrDef xml:id="m-38" midi.channel="1" midi.pan="46" midi.volume="100" />
+								<staffDef xml:id="tenor" clef.dis="8" clef.dis.place="below" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" lines="5" n="3">
+									<label>tenor</label>
 								</staffDef>
 							</staffGrp>
 						</staffGrp>
@@ -243,9 +243,7 @@
 									</note>
 								</layer>
 							</staff>
-							<fermata xml:id="m-66" form="norm" layer="1" shape="angular" staff="1" startid="#m-65" />
 							<line xml:id="m-82" dur.ges="2761p" layer="1" staff="2" tstamp="1" tstamp2="3.6963" type="bracket" vo="6.3438mm" />
-							<fermata xml:id="m-86" form="norm" layer="1" shape="angular" staff="2" startid="#m-85" />
 						</measure>
 						<measure xml:id="m-96" n="3">
 							<staff xml:id="m-97" n="1">
@@ -290,7 +288,6 @@
 									<note xml:id="m-124" dots="1" dur="long" dur.ges="6144p" layer="1" oct="3" oct.ges="2" pname="g" pnum="43" staff="3" stem.dir="up" />
 								</layer>
 							</staff>
-							<fermata xml:id="m-102" form="norm" layer="1" shape="angular" staff="1" startid="#m-101" />
 						</measure>
 						<measure xml:id="m-125" n="4">
 							<staff xml:id="m-126" n="1">
@@ -419,9 +416,7 @@
 									<note xml:id="m-206" dots="1" dur="long" dur.ges="6144p" layer="1" oct="3" oct.ges="2" pname="a" pnum="45" staff="3" stem.dir="up" />
 								</layer>
 							</staff>
-							<fermata xml:id="m-177" form="norm" layer="1" shape="angular" staff="1" startid="#m-176" />
 							<line xml:id="m-191" dur.ges="2896p" layer="1" staff="2" tstamp="1" tstamp2="3.8281" type="bracket" vo="9.6797mm" />
-							<fermata xml:id="m-195" form="norm" layer="1" shape="angular" staff="2" startid="#m-194" />
 						</measure>
 						<measure xml:id="m-207" n="7">
 							<staff xml:id="m-208" n="1">
@@ -498,7 +493,6 @@
 									<note xml:id="m-250" dots="1" dur="long" dur.ges="6144p" layer="1" oct="3" oct.ges="2" pname="a" pnum="45" staff="3" stem.dir="up" />
 								</layer>
 							</staff>
-							<fermata xml:id="m-236" form="norm" layer="1" shape="angular" staff="1" startid="#m-235" />
 						</measure>
 						<measure xml:id="m-251" n="9">
 							<staff xml:id="m-252" n="1">
@@ -565,7 +559,6 @@
 									<rest xml:id="m-291" dots="1" dur="long" dur.ges="6144p" />
 								</layer>
 							</staff>
-							<fermata xml:id="m-292" form="norm" layer="1" shape="curved" staff="3" startid="#m-291" />
 						</measure>
 						<measure xml:id="m-293" n="11">
 							<staff xml:id="m-294" n="1">
@@ -601,7 +594,6 @@
 									<note xml:id="m-316" dots="1" dur="long" dur.ges="6144p" layer="1" oct="3" oct.ges="2" pname="g" pnum="43" staff="3" stem.dir="up" />
 								</layer>
 							</staff>
-							<fermata xml:id="m-309" form="norm" layer="1" shape="angular" staff="2" startid="#m-308" />
 						</measure>
 						<pb xml:id="m-318" n="2" />
 						<measure xml:id="m-317" n="12">
@@ -657,7 +649,7 @@
 						<measure xml:id="m-348" n="13">
 							<staff xml:id="m-349" n="1">
 								<layer xml:id="m-350" n="1">
-									<note xml:id="m-351" dur="long" dur.ges="4096p" layer="1" oct="4" oct.ges="3" pname="a" pnum="57" staff="1" stem.dir="down" stem.mod="1slash">
+									<note xml:id="m-351" dur="long" dur.ges="4096p" layer="1" oct="4" oct.ges="3" pname="a" pnum="57" staff="1" stem.dir="down">
 										<verse xml:id="m-354" n="1">
 											<syl xml:id="m-355" wordpos="i">mest</syl>
 										</verse>
@@ -703,7 +695,7 @@
 							</staff>
 							<staff xml:id="m-375" n="2">
 								<layer xml:id="m-376" n="1">
-									<note xml:id="m-377" dur="long" dur.ges="4096p" layer="1" oct="4" oct.ges="3" pname="c" pnum="48" staff="2" stem.dir="down" stem.mod="1slash">
+									<note xml:id="m-377" dur="long" dur.ges="4096p" layer="1" oct="4" oct.ges="3" pname="c" pnum="48" staff="2" stem.dir="down">
 										<verse xml:id="m-381" n="1">
 											<syl xml:id="m-382" wordpos="t">vient</syl>
 										</verse>
@@ -720,7 +712,6 @@
 									<note xml:id="m-385" dots="1" dur="long" dur.ges="6144p" layer="1" oct="4" oct.ges="3" pname="c" pnum="48" staff="3" stem.dir="down" />
 								</layer>
 							</staff>
-							<fermata xml:id="m-367" form="norm" layer="1" shape="curved" staff="1" startid="#m-366" />
 						</measure>
 						<measure xml:id="m-386" n="15">
 							<staff xml:id="m-387" n="1">
@@ -825,7 +816,6 @@
 								</layer>
 							</staff>
 							<line xml:id="m-428" dur.ges="2652p" layer="1" staff="1" tstamp="1" tstamp2="3.5898" type="bracket" vo="6.7266mm" />
-							<fermata xml:id="m-431" form="norm" layer="1" shape="angular" staff="1" startid="#m-430" />
 						</measure>
 						<measure xml:id="m-449" n="18">
 							<staff xml:id="m-450" n="1">
@@ -861,7 +851,6 @@
 									<note xml:id="m-471" dots="1" dur="long" dur.ges="6144p" layer="1" oct="4" oct.ges="3" pname="c" pnum="48" staff="3" stem.dir="down" />
 								</layer>
 							</staff>
-							<fermata xml:id="m-464" form="norm" layer="1" shape="angular" staff="2" startid="#m-463" />
 						</measure>
 						<measure xml:id="m-472" n="19">
 							<staff xml:id="m-473" n="1">
@@ -934,7 +923,6 @@
 								</layer>
 							</staff>
 							<line xml:id="m-495" dur.ges="1024p" layer="1" staff="1" tstamp="5" tstamp2="6" type="bracket" vo="6.0703mm" />
-							<fermata xml:id="m-498" form="norm" layer="1" shape="angular" staff="1" startid="#m-497" />
 						</measure>
 						<measure xml:id="m-516" n="21">
 							<staff xml:id="m-517" n="1">
@@ -1009,7 +997,7 @@
 						<measure xml:id="m-557" n="23">
 							<staff xml:id="m-558" n="1">
 								<layer xml:id="m-559" n="1">
-									<note xml:id="m-560" dur="long" dur.ges="4096p" layer="1" oct="4" oct.ges="3" pname="d" pnum="50" staff="1" stem.dir="down" stem.mod="1slash">
+									<note xml:id="m-560" dur="long" dur.ges="4096p" layer="1" oct="4" oct.ges="3" pname="d" pnum="50" staff="1" stem.dir="down">
 										<verse xml:id="m-562" n="1">
 											<syl xml:id="m-563" wordpos="i">et</syl>
 										</verse>
@@ -1040,7 +1028,6 @@
 									<note xml:id="m-573" dots="1" dur="long" dur.ges="6144p" layer="1" oct="3" oct.ges="2" pname="g" pnum="43" staff="3" stem.dir="up" />
 								</layer>
 							</staff>
-							<fermata xml:id="m-568" form="norm" layer="1" shape="angular" staff="2" startid="#m-567" />
 						</measure>
 						<measure xml:id="m-574" n="24">
 							<staff xml:id="m-575" n="1">
@@ -1067,7 +1054,6 @@
 									<note xml:id="m-593" dots="1" dur="long" dur.ges="6144p" layer="1" oct="3" oct.ges="2" pname="f" pnum="41" staff="3" stem.dir="up" />
 								</layer>
 							</staff>
-							<fermata xml:id="m-578" form="norm" layer="1" shape="angular" staff="1" startid="#m-577" />
 						</measure>
 						<measure xml:id="m-594" n="25">
 							<staff xml:id="m-595" n="1">
@@ -1143,7 +1129,6 @@
 									<note xml:id="m-637" dots="1" dur="long" dur.ges="6144p" layer="1" oct="3" oct.ges="2" pname="g" pnum="43" staff="3" stem.dir="up" />
 								</layer>
 							</staff>
-							<fermata xml:id="m-630" form="norm" layer="1" shape="angular" staff="2" startid="#m-629" />
 						</measure>
 						<measure xml:id="m-638" n="27">
 							<staff xml:id="m-639" n="1">
@@ -1208,7 +1193,6 @@
 									<note xml:id="m-678" dots="1" dur="long" dur.ges="6144p" layer="1" oct="3" oct.ges="2" pname="a" pnum="45" staff="3" stem.dir="up" />
 								</layer>
 							</staff>
-							<fermata xml:id="m-661" form="norm" layer="1" shape="angular" staff="1" startid="#m-660" />
 						</measure>
 						<pb xml:id="m-680" n="3" />
 						<measure xml:id="m-679" n="29">
@@ -1270,7 +1254,7 @@
 							</staff>
 							<staff xml:id="m-713" n="2">
 								<layer xml:id="m-714" n="1">
-									<note xml:id="m-715" dots="1" dur="long" dur.ges="6144p" layer="1" oct="4" oct.ges="3" pname="e" pnum="52" staff="2" stem.dir="down" stem.mod="1slash">
+									<note xml:id="m-715" dots="1" dur="long" dur.ges="6144p" layer="1" oct="4" oct.ges="3" pname="e" pnum="52" staff="2" stem.dir="down">
 										<verse xml:id="m-739" n="1">
 											<syl xml:id="m-740" wordpos="m">ce</syl>
 										</verse>
@@ -1319,7 +1303,6 @@
 									<note xml:id="m-745" dots="1" dur="long" dur.ges="6144p" layer="1" oct="4" oct.ges="3" pname="c" pnum="48" staff="3" stem.dir="down" />
 								</layer>
 							</staff>
-							<fermata xml:id="m-736" form="norm" layer="1" shape="angular" staff="2" startid="#m-735" />
 						</measure>
 						<measure xml:id="m-746" n="32">
 							<staff xml:id="m-747" n="1">
@@ -1334,7 +1317,7 @@
 							</staff>
 							<staff xml:id="m-754" n="2">
 								<layer xml:id="m-755" n="1">
-									<note xml:id="m-756" dots="1" dur="long" dur.ges="6144p" layer="1" oct="3" oct.ges="2" pname="b" pnum="47" staff="2" stem.dir="down" stem.mod="1slash">
+									<note xml:id="m-756" dots="1" dur="long" dur.ges="6144p" layer="1" oct="3" oct.ges="2" pname="b" pnum="47" staff="2" stem.dir="down">
 										<verse xml:id="m-757" n="1">
 											<syl xml:id="m-758" wordpos="i">qui</syl>
 										</verse>
@@ -1346,7 +1329,6 @@
 									<note xml:id="m-761" dots="1" dur="long" dur.ges="6144p" layer="1" oct="3" oct.ges="2" pname="b" pnum="47" staff="3" stem.dir="down" />
 								</layer>
 							</staff>
-							<fermata xml:id="m-751" form="norm" layer="1" shape="angular" staff="1" startid="#m-749" />
 						</measure>
 						<measure xml:id="m-762" n="33">
 							<staff xml:id="m-763" n="1">
@@ -1489,8 +1471,6 @@
 								</layer>
 							</staff>
 							<line xml:id="m-827" dur.ges="1024p" layer="1" staff="1" tstamp="5" tstamp2="6" type="bracket" vo="6.7266mm" />
-							<fermata xml:id="m-830" form="norm" layer="1" shape="angular" staff="1" startid="#m-829" />
-							<fermata xml:id="m-841" form="norm" layer="1" shape="angular" staff="2" startid="#m-840" />
 						</measure>
 						<measure xml:id="m-849" n="37">
 							<staff xml:id="m-850" n="1">
@@ -1656,7 +1636,7 @@
 							</staff>
 							<staff xml:id="m-946" n="2">
 								<layer xml:id="m-947" n="1">
-									<note xml:id="m-948" artic="stacc" dots="1" dur="long" dur.ges="6144p" layer="1" oct="4" oct.ges="3" pname="c" pnum="48" staff="2" stem.dir="down">
+									<note xml:id="m-948" dots="1" dur="long" dur.ges="6144p" layer="1" oct="4" oct.ges="3" pname="c" pnum="48" staff="2" stem.dir="down
 										<verse xml:id="m-950" n="1">
 											<syl xml:id="m-951" wordpos="i">iours</syl>
 										</verse>
@@ -1668,7 +1648,6 @@
 									<note xml:id="m-954" dots="1" dur="long" dur.ges="6144p" layer="1" oct="4" oct.ges="3" pname="c" pnum="48" staff="3" stem.dir="down" />
 								</layer>
 							</staff>
-							<fermata xml:id="m-949" form="norm" layer="1" shape="angular" staff="2" startid="#m-948" />
 						</measure>
 						<measure xml:id="m-955" n="42">
 							<staff xml:id="m-956" n="1">
@@ -1729,9 +1708,6 @@
 									<note xml:id="m-993" dots="1" dur="long" dur.ges="6144p" layer="1" oct="3" oct.ges="2" pname="g" pnum="43" staff="3" stem.dir="up" />
 								</layer>
 							</staff>
-							<fermata xml:id="m-978" form="norm" layer="1" shape="curved" staff="1" startid="#m-977" />
-							<fermata xml:id="m-986" form="norm" layer="1" shape="curved" staff="2" startid="#m-985" />
-							<fermata xml:id="m-994" form="norm" layer="1" shape="curved" staff="3" startid="#m-993" />
 						</measure>
 					</section>
 				</score>

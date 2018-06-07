@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mei xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.music-encoding.org/ns/mei" meiversion="3.0.0">
+<mei xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
 	<meiHead xml:id="m-2">
 		<fileDesc>
 			<titleStmt>
@@ -9,17 +9,20 @@
 					<corpName>Social Sciences and Humanities Research Council, Canada (SSHRC) </corpName>
 				</funder>
 				<funder>
-					<corpName> Schulich School of Music, McGill University </corpName> 
+					<corpName> Schulich School of Music, McGill University</corpName> 
 				</funder> 
 				 <funder>
 					<corpName>Brandeis University</corpName>
 				</funder>
+				 <funder>
+					<corpName>National Endowment for Humanities (NEH)</corpName> 
+				</funder> 
 				 <respStmt> 
-					<persName role="project director">Karen Desmond</persName>
-					<persName role="encoder" date="7-7-2016">Karen Desmond</persName> 
-					<persName role="proofreader" date="">Emily Hopkins</persName> 
-					<persName role="proofreader" date="">Sam Howes</persName> 
-					<persName role="proofreader" date="">Karen Desmond</persName> 
+					<persName role="project director" auth="VIAF" auth.uri="http://viaf.org/viaf/" codedval="316001213">Karen Desmond</persName>
+					<persName role="encoder" isodate="2016-7-7" xml:id="KD">Karen Desmond</persName> 
+					<persName role="proofreader" isodate="" xml:id="EH">Emily Hopkins</persName> 
+					<persName role="proofreader" isodate="" xml:id="SH">Sam Howes</persName> 
+					<persName role="proofreader" isodate="" xml:id="KD">Karen Desmond</persName> 
 				</respStmt>
 			</titleStmt>
 			<pubStmt>
@@ -37,94 +40,94 @@
 				<editor> 
 					<persName>Karen Desmond</persName> 
 				</editor>
-			</seriesStmt>
-		</fileDesc>
-		<sourceDesc>
-			<source>
-				<notesStmt>
-					<annot>Scanned from PMFC1</annot>
-				</notesStmt>
-			</source>
-			<source>
-				<titleStmt>
-					<title>[Primary source for this encoding]
-						<identifier>Iv</identifier>
-					</title>
-					<pubStmt>
-						<unpub/>
-						</pubStmt>
-						<notesStmt>
-							<annot>Scan checked and corrected against this manuscript</annot>
-							<itemList>
-								<item title="IIIF" target="" folio="23v, 24r"></item>
-								<item title="other/images" target="" motetus="Garison selon nature" folio="23v, 24r"></item>
-								<item title="DIAMM_composition" target=""></item>
-								<item title="DIAMM_source" target="https://www.diamm.ac.uk/sources/141/"></item>
-							</itemList>
-						</notesStmt>
-					</titleStmt>
-				</source>
-				<source>
-					<titleStmt>
-						<title>[Other concordant sources]</title>
-						<pubStmt>
-							<unpub/>
-							</pubStmt>
+				<identifier>
+					<ref targettype="home_page" target="http://www.measuringpolyphony.org"/>
+					</identifier>
+				</seriesStmt>
+				<sourceDesc>
+					<source>
+						<titleStmt>
+							<title>
+								<identifier>Iv</identifier>
+							</title>
+							<notesStmt>
+								<annot>Primary manuscript source for this encoding.</annot>
+								<annot label="original_clefs">Original clefs for this source: </annot>
+								<annot label="commentary"></annot>
+								<itemList>
+									<item targettype="IIIF" target="" codeval="23v, 24r"></item>
+									<item targettype="other/images" target="" motetus="Garison selon nature" folio="23v, 24r"></item>
+									<item targettype="DIAMM_source_record" target="https://www.diamm.ac.uk/sources/141/"></item>
+									<item targettype="DIAMM_composition_record" target=""></item>
+								</itemList>
+							</notesStmt>
+						</titleStmt>
+					</source>
+					<source>
+						<titleStmt>
+							<title>[Other concordant sources]</title>
 							<notesStmt>
 								<annot>Trem (index)</annot>
 							</notesStmt>
 						</titleStmt>
 					</source>
 				</sourceDesc>
-				<encodingDesc> 
-					<appInfo>
-						<application xml:id="sibelius" isodate="2016-4-29T09:24:36Z" version="7510"><name type="operating-system">Mac OS X Mountain Lion</name></application>
-					<application xml:id="sibmei" type="plugin" version="2.0.0b3">
-						<name>Sibelius to MEI Exporter (2.0.0b3)</name>
-					</application> 
-					<application xml:id="meiMENS" isodate="2016-4-29">
-						<name>CMN-MEI to MensuralMEI Translator</name>
-					</application>
-				</appInfo>
-				<editorialDecl>
-					<p>
-						Scanned file corrected from PMFC. Rhythmic durations augmented following our project’s transcription conventions. Pitches, rhythms and mensural notation features checked and corrected against manuscript source. Initial proofreading complete. Final proofreading needed. Text follows PMFC edition.</p>
-						<annot title="variants"></annot>
-					</editorialDecl>
-					<projectDesc>
-						<p>Short Project Description</p>
-					</projectDesc>
-				</encodingDesc>
-				<workDesc>
-					<work>
-						<identifier>
-							<identifier></identifier>
-						</identifier>
-						<titleStmt>
-							<title>Garison</title>
-							<respStmt>
-								<persName role="composer">Philippe de Vitry</persName>
-							</respStmt>
-						</titleStmt>
-						<incip>
-							<incipText title="triplum">Douce playsence est d'amer loyalment</incipText>
-						</incip>
-						<incip>
-							<incipText title="motetus">Garison selon nature</incipText>
-						</incip>
-						<incip>
-							<incipText title="tenor">NEUMA QUINTI TONI</incipText>
-						</incip>
-						<otherChar>Original clefs </otherChar>
-						<classification>
-							<term>Motet</term>
-						</classification>
-					</work>
-				</workDesc>
-				<extMeta>
-					
-					</extMeta>
-					</meiHead>
+			</fileDesc>
+			<encodingDesc> 
+				<appInfo>
+					<application xml:id="sibelius" isodate="2016-4-29T09:24:36Z" version="7510"><name type="operating-system">Mac OS X Mountain Lion</name></application>
+				<application xml:id="sibmei" type="plugin" version="2.0.0b3">
+					<name>Sibelius to MEI Exporter (2.0.0b3)</name>
+				</application> 
+				<application xml:id="meiMENS" isodate="2016-4-29">
+					<name>CMN-MEI to MensuralMEI Translator</name>
+				</application>
+			</appInfo>
+			<editorialDecl>
+				<p>
+					Scanned file corrected from PMFC. Rhythmic durations augmented following our project’s transcription conventions. Pitches, rhythms and mensural notation features checked and corrected against manuscript source. Initial proofreading complete. Final proofreading needed. Text follows PMFC edition.</p>
+				</editorialDecl>
+				<projectDesc>
+					<p>"Measuring Polyphony" presents digitised versions of polyphonic compositions written during the thirteenth and fourteenth centuries, offering new possibilities for mediating the scholarly and public experience of this richly evocative music within its original manuscript context. The project began at the Schulich School of Music at McGill University, and now continues at Brandeis University. It leverages the potential of the rich digital image repositories of music manuscripts and the community-based standards for encoding music notation of the Music Encoding Initiative (MEI).</p>
+				</projectDesc>
+			</encodingDesc>
+			<workDesc>
+				<work>
+					<identifier>
+						<identifier type="catalogue_number"></identifier>
+					</identifier>
+					<title>Garison</title>
+					<composer>Philippe de Vitry</composer>
+					<incip>
+						<incipText label="triplum" corresp="#triplum">
+							<lg><l>Douce playsence est d'amer loyalment</l></lg>
+					</incipText>
+					<incipText label="motetus" corresp="#motetus">
+						<lg><l>Garison selon nature</l></lg>
+				</incipText>
+				<incipText label="tenor" corresp="#tenor">
+					<lg><l>NEUMA QUINTI TONI</l></lg>
+			</incipText>
+		</incip>
+		<otherChar>Original clefs </otherChar>
+		<classification>
+			<termList>
+				<term>Motet</term>
+				<termList>
+				</classification>
+			</work>
+		</workDesc>
+		<revisionDesc>
+			<change resp="#KD" isodate="2018-05-31">
+				<changeDesc>
+					<p></p>
+				</changeDesc>
+			</change>
+		</revisionDesc>
+		<extMeta>
+			
+			</extMeta>
+			</meiHead>
 	<music xml:id="m-24">
 		<body xml:id="m-25">
 			<mdiv xml:id="m-26">
@@ -132,17 +135,14 @@
 					<scoreDef xml:id="m-28" midi.bpm="700" lyric.name="Opus Text Std" meter.count="9" meter.unit="1" music.name="Opus Std" page.botmar="15mm" page.height="279.4mm" page.leftmar="15mm" page.rightmar="15mm" page.topmar="15mm" page.width="215.9mm" ppq="256" text.name="Times New Roman">
 						<staffGrp xml:id="m-29">
 							<staffGrp xml:id="m-39" n="1" symbol="bracket">
-								<staffDef xml:id="m-30" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" label="triplum" lines="5" n="1">
-									<!-- voice.female.alto.ensemble.ah -->
-									<instrDef xml:id="m-32" midi.channel="1" midi.pan="46" midi.volume="100" />
+								<staffDef xml:id="triplum" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" lines="5" n="1">
+									<label>triplum</label>
 								</staffDef>
-								<staffDef xml:id="m-33" clef.dis="8" clef.dis.place="below" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" label="motetus" lines="5" n="2">
-									<!-- voice.male.tenor.ensemble.ah -->
-									<instrDef xml:id="m-35" midi.channel="1" midi.pan="81" midi.volume="100" />
+								<staffDef xml:id="motetus" clef.dis="8" clef.dis.place="below" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" lines="5" n="2">
+									<label>motetus</label>
 								</staffDef>
-								<staffDef xml:id="m-36" clef.dis="8" clef.dis.place="below" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" label="tenor" lines="5" n="3">
-									<!-- voice.male.tenor.ensemble.ah -->
-									<instrDef xml:id="m-38" midi.channel="1" midi.pan="81" midi.volume="100" />
+								<staffDef xml:id="tenor" clef.dis="8" clef.dis.place="below" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" lines="5" n="3">
+									<label>tenor</label>
 								</staffDef>
 							</staffGrp>
 						</staffGrp>
@@ -471,7 +471,7 @@
 										</verse>
 									</note>
 									<rest xml:id="m-225" dur="breve" dur.ges="2048p" />
-									<note xml:id="m-227" dur="long" dur.ges="4096p" layer="1" oct="4" pname="f" pnum="65" staff="1" stem.dir="up" stem.mod="1slash">
+									<note xml:id="m-227" dur="long" dur.ges="4096p" layer="1" oct="4" pname="f" pnum="65" staff="1" stem.dir="up">
 										<verse xml:id="m-236" n="1">
 											<syl xml:id="m-237" wordpos="i">quant</syl>
 										</verse>
@@ -491,7 +491,7 @@
 											<syl xml:id="m-310" wordpos="i">de</syl>
 										</verse>
 									</note>
-									<note xml:id="m-244" artic="stop" dur="long" dur.ges="4096p" layer="1" oct="3" oct.ges="2" pname="b" pnum="46" staff="2" stem.dir="down">
+									<note xml:id="m-244" dur="long" dur.ges="4096p" layer="1" oct="3" oct.ges="2" pname="b" pnum="46" staff="2" stem.dir="down
 										<accid xml:id="m-245" accid="f" />
 										<verse xml:id="m-311" n="1">
 											<syl xml:id="m-312" wordpos="m">si</syl>
@@ -506,11 +506,11 @@
 									<note xml:id="m-258" color="rgba(255,0,0,1)" dur="long" dur.ges="4096p" layer="1" oct="4" oct.ges="3" pname="d" pnum="50" staff="3" stem.dir="down" />
 								</layer>
 							</staff>
-							<barLine form="dashed" xml:id="m-223" layer="1" staff="1" tstamp="5" tstamp2="5" vo="4.1562mm" />
-							<barLine form="dashed" xml:id="m-226" layer="1" staff="1" tstamp="9" tstamp2="9" vo="4.5938mm" />
-							<barLine form="dashed" xml:id="m-242" layer="1" staff="2" tstamp="7" tstamp2="7" vo="4.8125mm" />
-							<barLine form="dashed" xml:id="m-255" layer="1" staff="3" tstamp="5" tstamp2="5" vo="4.5938mm" />
-							<barLine form="dashed" xml:id="m-257" layer="1" staff="3" tstamp="9" tstamp2="9" vo="4.5938mm" />
+							<barLine xml:id="m-223" layer="1" staff="1" tstamp="5" tstamp2="5" vo="4.1562mm" />
+							<barLine xml:id="m-226" layer="1" staff="1" tstamp="9" tstamp2="9" vo="4.5938mm" />
+							<barLine xml:id="m-242" layer="1" staff="2" tstamp="7" tstamp2="7" vo="4.8125mm" />
+							<barLine xml:id="m-255" layer="1" staff="3" tstamp="5" tstamp2="5" vo="4.5938mm" />
+							<barLine xml:id="m-257" layer="1" staff="3" tstamp="9" tstamp2="9" vo="4.5938mm" />
 						</measure>
 						<measure xml:id="m-259" n="6">
 							<staff xml:id="m-260" n="1">
@@ -618,11 +618,11 @@
 									<rest xml:id="m-325" color="rgba(255,0,0,1)" dur="long" dur.ges="4096p" />
 								</layer>
 							</staff>
-							<barLine form="dashed" xml:id="m-263" layer="1" staff="1" tstamp="5" tstamp2="5" vo="4.5938mm" />
-							<barLine form="dashed" xml:id="m-268" layer="1" staff="1" tstamp="9" tstamp2="9" vo="4.5938mm" />
-							<barLine form="dashed" xml:id="m-304" layer="1" staff="2" tstamp="6.4746" tstamp2="6.4746" vo="4.375mm" />
-							<barLine form="dashed" xml:id="m-322" layer="1" staff="3" tstamp="5" tstamp2="5" vo="4.1562mm" />
-							<barLine form="dashed" xml:id="m-324" layer="1" staff="3" tstamp="9" tstamp2="9" vo="5.0859mm" />
+							<barLine xml:id="m-263" layer="1" staff="1" tstamp="5" tstamp2="5" vo="4.5938mm" />
+							<barLine xml:id="m-268" layer="1" staff="1" tstamp="9" tstamp2="9" vo="4.5938mm" />
+							<barLine xml:id="m-304" layer="1" staff="2" tstamp="6.4746" tstamp2="6.4746" vo="4.375mm" />
+							<barLine xml:id="m-322" layer="1" staff="3" tstamp="5" tstamp2="5" vo="4.1562mm" />
+							<barLine xml:id="m-324" layer="1" staff="3" tstamp="9" tstamp2="9" vo="5.0859mm" />
 						</measure>
 						<pb xml:id="m-327" n="2" />
 						<measure xml:id="m-326" n="7">
@@ -952,7 +952,7 @@
 										</verse>
 									</note>
 									<rest xml:id="m-511" dur="breve" dur.ges="2048p" />
-									<note xml:id="m-512" dur="long" dur.ges="4096p" layer="1" oct="4" pname="d" pnum="62" staff="1" stem.dir="up" stem.mod="2slash">
+									<note xml:id="m-512" dur="long" dur.ges="4096p" layer="1" oct="4" pname="d" pnum="62" staff="1" stem.dir="up">
 										<verse xml:id="m-527" n="1">
 											<syl xml:id="m-528" wordpos="i">du</syl>
 										</verse>
@@ -1429,7 +1429,7 @@
 										</verse>
 									</note>
 									<rest xml:id="m-809" dur="breve" dur.ges="2048p" />
-									<note xml:id="m-810" dur="long" dur.ges="4096p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up" stem.mod="1slash">
+									<note xml:id="m-810" dur="long" dur.ges="4096p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up">
 										<verse xml:id="m-859" n="1">
 											<syl xml:id="m-860" wordpos="i">por</syl>
 										</verse>
@@ -1482,7 +1482,7 @@
 											<syl xml:id="m-866" wordpos="t">sirs</syl>
 										</verse>
 									</note>
-									<note xml:id="m-846" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="c" pnum="60" staff="1" stem.dir="up" stem.mod="2slash">
+									<note xml:id="m-846" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="c" pnum="60" staff="1" stem.dir="up">
 										<verse xml:id="m-867" n="1">
 											<syl xml:id="m-868" wordpos="i">qui</syl>
 										</verse>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mei xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.music-encoding.org/ns/mei" meiversion="3.0.0">
+<mei xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
 	<meiHead xml:id="m-2">
 		<fileDesc>
 			<titleStmt>
@@ -9,17 +9,20 @@
 					<corpName>Social Sciences and Humanities Research Council, Canada (SSHRC) </corpName>
 				</funder>
 				<funder>
-					<corpName> Schulich School of Music, McGill University </corpName> 
+					<corpName> Schulich School of Music, McGill University</corpName> 
 				</funder> 
 				 <funder>
 					<corpName>Brandeis University</corpName>
 				</funder>
+				 <funder>
+					<corpName>National Endowment for Humanities (NEH)</corpName> 
+				</funder> 
 				 <respStmt> 
-					<persName role="project director">Karen Desmond</persName>
-					<persName role="encoder" date="7-21-2016">Emily Hopkins</persName> 
-					<persName role="proofreader" date="">Emily Hopkins</persName> 
-					<persName role="proofreader" date="">Sam Howes</persName> 
-					<persName role="proofreader" date="">Karen Desmond</persName> 
+					<persName role="project director" auth="VIAF" auth.uri="http://viaf.org/viaf/" codedval="316001213">Karen Desmond</persName>
+					<persName role="encoder" isodate="2016-7-21" xml:id="EH">Emily Hopkins</persName> 
+					<persName role="proofreader" isodate="" xml:id="EH">Emily Hopkins</persName> 
+					<persName role="proofreader" isodate="" xml:id="SH">Sam Howes</persName> 
+					<persName role="proofreader" isodate="" xml:id="KD">Karen Desmond</persName> 
 				</respStmt>
 			</titleStmt>
 			<pubStmt>
@@ -37,118 +40,114 @@
 				<editor> 
 					<persName>Karen Desmond</persName> 
 				</editor>
-			</seriesStmt>
-		</fileDesc>
-		<sourceDesc>
-			<source>
-				<notesStmt>
-					<annot>Scanned from PMFC5</annot>
-				</notesStmt>
-			</source>
-			<source>
-				<titleStmt>
-					<title>[Primary source for this encoding]
-						<identifier>Iv</identifier>
-					</title>
-					<pubStmt>
-						<unpub/>
-						</pubStmt>
-						<notesStmt>
-							<annot>Scan checked and corrected against this manuscript</annot>
-							<itemList>
-								<item title="IIIF" target="" folio="6v, 7r"></item>
-								<item title="other/images" target="" motetus="Portio nature precellentis geniture" folio="6v, 7r"></item>
-								<item title="DIAMM_composition" target=""></item>
-								<item title="DIAMM_source" target="https://www.diamm.ac.uk/sources/141/"></item>
-							</itemList>
-						</notesStmt>
-					</titleStmt>
-				</source>
-				<source>
-					<titleStmt>
-						<title>[Other concordant sources]</title>
-						<pubStmt>
-							<unpub/>
-							</pubStmt>
+				<identifier>
+					<ref targettype="home_page" target="http://www.measuringpolyphony.org"/>
+					</identifier>
+				</seriesStmt>
+				<sourceDesc>
+					<source>
+						<titleStmt>
+							<title>
+								<identifier>Iv</identifier>
+							</title>
+							<notesStmt>
+								<annot>Primary manuscript source for this encoding.</annot>
+								<annot label="original_clefs">Original clefs for this source: </annot>
+								<annot label="commentary"></annot>
+								<itemList>
+									<item targettype="IIIF" target="" codeval="6v, 7r"></item>
+									<item targettype="other/images" target="" motetus="Portio nature precellentis geniture" folio="6v, 7r"></item>
+									<item targettype="DIAMM_source_record" target="https://www.diamm.ac.uk/sources/141/"></item>
+									<item targettype="DIAMM_composition_record" target=""></item>
+								</itemList>
+							</notesStmt>
+						</titleStmt>
+					</source>
+					<source>
+						<titleStmt>
+							<title>[Other concordant sources]</title>
 							<notesStmt>
 								<annot>Sm 222, Trem (index)</annot>
 							</notesStmt>
 						</titleStmt>
 					</source>
 				</sourceDesc>
-				<encodingDesc> 
-					<appInfo>
-						<application xml:id="sibelius" isodate="2016-4-29T09:24:36Z" version="7510"><name type="operating-system">Mac OS X Mountain Lion</name></application>
-					<application xml:id="sibmei" type="plugin" version="2.0.0b3">
-						<name>Sibelius to MEI Exporter (2.0.0b3)</name>
-					</application> 
-					<application xml:id="meiMENS" isodate="2016-4-29">
-						<name>CMN-MEI to MensuralMEI Translator</name>
-					</application>
-				</appInfo>
-				<editorialDecl>
-					<p>
-						Scanned file corrected from PMFC. Rhythmic durations augmented following our project’s transcription conventions. Pitches, rhythms and mensural notation features checked and corrected against manuscript source. Initial proofreading complete. Final proofreading needed. Text follows PMFC edition.</p>
-						<annot title="variants"></annot>
-					</editorialDecl>
-					<projectDesc>
-						<p>Short Project Description</p>
-					</projectDesc>
-				</encodingDesc>
-				<workDesc>
-					<work>
-						<identifier>
-							<identifier></identifier>
-						</identifier>
-						<titleStmt>
-							<title>Portio</title>
-							<respStmt>
-								<persName role="composer">Anonymous</persName>
-							</respStmt>
-						</titleStmt>
-						<incip>
-							<incipText title="triplum">Ida</incipText>
-						</incip>
-						<incip>
-							<incipText title="motetus">Portio nature precellentis geniture</incipText>
-						</incip>
-						<incip>
-							<incipText title="tenor">[TENOR]</incipText>
-						</incip>
-						<incip>
-							<incipText title="contratenor">[CONTRATENOR]</incipText>
-						</incip>
-						<otherChar>Original clefs </otherChar>
-						<classification>
-							<term>Motet</term>
-						</classification>
-					</work>
-				</workDesc>
-				<extMeta>
-					
-					</extMeta>
-					</meiHead>
+			</fileDesc>
+			<encodingDesc> 
+				<appInfo>
+					<application xml:id="sibelius" isodate="2016-4-29T09:24:36Z" version="7510"><name type="operating-system">Mac OS X Mountain Lion</name></application>
+				<application xml:id="sibmei" type="plugin" version="2.0.0b3">
+					<name>Sibelius to MEI Exporter (2.0.0b3)</name>
+				</application> 
+				<application xml:id="meiMENS" isodate="2016-4-29">
+					<name>CMN-MEI to MensuralMEI Translator</name>
+				</application>
+			</appInfo>
+			<editorialDecl>
+				<p>
+					Scanned file corrected from PMFC. Rhythmic durations augmented following our project’s transcription conventions. Pitches, rhythms and mensural notation features checked and corrected against manuscript source. Initial proofreading complete. Final proofreading needed. Text follows PMFC edition.</p>
+				</editorialDecl>
+				<projectDesc>
+					<p>"Measuring Polyphony" presents digitised versions of polyphonic compositions written during the thirteenth and fourteenth centuries, offering new possibilities for mediating the scholarly and public experience of this richly evocative music within its original manuscript context. The project began at the Schulich School of Music at McGill University, and now continues at Brandeis University. It leverages the potential of the rich digital image repositories of music manuscripts and the community-based standards for encoding music notation of the Music Encoding Initiative (MEI).</p>
+				</projectDesc>
+			</encodingDesc>
+			<workDesc>
+				<work>
+					<identifier>
+						<identifier type="catalogue_number"></identifier>
+					</identifier>
+					<title>Portio</title>
+					<composer>Anonymous</composer>
+					<incip>
+						<incipText label="triplum" corresp="#triplum">
+							<lg><l>Ida</l></lg>
+					</incipText>
+					<incipText label="motetus" corresp="#motetus">
+						<lg><l>Portio nature precellentis geniture</l></lg>
+				</incipText>
+				<incipText label="tenor" corresp="#tenor">
+					<lg><l>[TENOR]</l></lg>
+			</incipText>
+			<incipText label="contratenor" corresp="#contratenor">
+				<lg><l>[CONTRATENOR]</l></lg>
+		</incipText>
+	</incip>
+	<otherChar>Original clefs </otherChar>
+	<classification>
+		<termList>
+			<term>Motet</term>
+			<termList>
+			</classification>
+		</work>
+	</workDesc>
+	<revisionDesc>
+		<change resp="#KD" isodate="2018-05-31">
+			<changeDesc>
+				<p></p>
+			</changeDesc>
+		</change>
+	</revisionDesc>
+	<extMeta>
+		
+		</extMeta>
+		</meiHead>
 	<music xml:id="m-22">
 		<body xml:id="m-23">
 			<mdiv xml:id="m-24">
 				<score xml:id="m-25">
 					<scoreDef xml:id="m-26" midi.bpm="500" lyric.name="Opus Text Std" meter.count="9" meter.unit="1" music.name="Opus Std" page.botmar="15mm" page.height="279.4mm" page.leftmar="15mm" page.rightmar="15mm" page.topmar="15mm" page.width="215.9mm" ppq="256" text.name="Plantin MT Std">
 						<staffGrp xml:id="m-27">
-							<staffDef xml:id="m-28" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" label="triplum" lines="5" n="1">
-								<!-- voice.female.soprano.ensemble.ah -->
-								<instrDef xml:id="m-30" midi.channel="1" midi.pan="63" midi.volume="100" />
+							<staffDef xml:id="triplum" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" lines="5" n="1">
+									<label>triplum</label>
 							</staffDef>
-							<staffDef xml:id="m-31" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" label="motetus" lines="5" n="2">
-								<!-- voice.female.soprano.ensemble.ah -->
-								<instrDef xml:id="m-33" midi.channel="1" midi.pan="63" midi.volume="100" />
+							<staffDef xml:id="motetus" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" lines="5" n="2">
+									<label>motetus</label>
 							</staffDef>
-							<staffDef xml:id="m-34" clef.dis="8" clef.dis.place="below" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" label="contratenor" lines="5" n="3">
-								<!-- voice.male.tenor.ensemble.ah -->
-								<instrDef xml:id="m-36" midi.channel="1" midi.pan="63" midi.volume="100" />
+							<staffDef xml:id="contratenor" clef.dis="8" clef.dis.place="below" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" lines="5" n="3">
+									<label>contratenor</label>
 							</staffDef>
-							<staffDef xml:id="m-37" clef.dis="8" clef.dis.place="below" clef.line="2" clef.shape="G" key.mode="major" key.sig="1f" label="tenor" lines="5" n="4">
-								<!-- voice.male.tenor.ensemble.ah -->
-								<instrDef xml:id="m-39" midi.channel="1" midi.pan="63" midi.volume="100" />
+							<staffDef xml:id="tenor" clef.dis="8" clef.dis.place="below" clef.line="2" clef.shape="G" key.mode="major" key.sig="1f" lines="5" n="4">
+									<label>tenor</label>
 							</staffDef>
 						</staffGrp>
 					</scoreDef>
@@ -243,7 +242,7 @@
 									</note>
 									<note xml:id="m-93" dur="2" dur.ges="512p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up" />
 									<note xml:id="m-94" dur="2" dur.ges="512p" layer="1" oct="4" pname="f" pnum="65" staff="1" stem.dir="up" />
-									<note xml:id="m-95" artic="stacc" dur="2" dur.ges="512p" layer="1" oct="4" pname="e" pnum="64" staff="1" stem.dir="up" />
+									<note xml:id="m-95" dur="2" dur.ges="512p" layer="1" oct="4" pname="e" pnum="64" staff="1" stem.dir="up
 									<note xml:id="m-96" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="1" stem.dir="up">
 										<verse xml:id="m-179" n="1">
 											<syl xml:id="m-180" wordpos="i">ca</syl>
@@ -332,7 +331,7 @@
 										</verse>
 									</note>
 									<note xml:id="m-145" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="2" stem.dir="up" />
-									<note xml:id="m-146" artic="stacc" dur="2" dur.ges="512p" layer="1" oct="4" pname="g" pnum="67" staff="2" stem.dir="up">
+									<note xml:id="m-146" dur="2" dur.ges="512p" layer="1" oct="4" pname="g" pnum="67" staff="2" stem.dir="up
 										<verse xml:id="m-157" n="1">
 											<syl xml:id="m-158" wordpos="t">de</syl>
 										</verse>
@@ -2078,7 +2077,7 @@
 											<syl xml:id="m-1301" con="u" wordpos="t">que</syl>
 										</verse>
 									</note>
-									<note xml:id="m-1289" artic="stacc" dur="2" dur.ges="512p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up" />
+									<note xml:id="m-1289" dur="2" dur.ges="512p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up
 									<note xml:id="m-1290" dur="2" dur.ges="512p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up">
 										<verse xml:id="m-1302" n="1">
 											<syl xml:id="m-1303" wordpos="i">pro</syl>
@@ -4820,11 +4819,7 @@
 								</layer>
 							</staff>
 							<line xml:id="m-3057" dur.ges="3068p" layer="1" staff="1" tstamp="4" tstamp2="6.9961" type="bracket" vo="7mm" />
-							<fermata xml:id="m-3061" form="norm" layer="1" shape="curved" staff="1" startid="#m-3060" />
 							<line xml:id="m-3070" dur.ges="2292p" layer="1" staff="2" tstamp="4" tstamp2="6.2383" type="bracket" vo="6.6172mm" />
-							<fermata xml:id="m-3074" form="norm" layer="1" shape="curved" staff="2" startid="#m-3073" />
-							<fermata xml:id="m-3089" form="norm" layer="1" shape="curved" staff="3" startid="#m-3088" />
-							<fermata xml:id="m-3096" form="norm" layer="1" shape="curved" staff="4" startid="#m-3095" />
 						</measure>
 					</section>
 				</score>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mei xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.music-encoding.org/ns/mei" meiversion="3.0.0">
+<mei xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
 	<meiHead xml:id="m-2">
 		<fileDesc>
 			<titleStmt>
@@ -9,18 +9,21 @@
 					<corpName>Social Sciences and Humanities Research Council, Canada (SSHRC) </corpName>
 				</funder>
 				<funder>
-					<corpName> Schulich School of Music, McGill University </corpName> 
+					<corpName> Schulich School of Music, McGill University</corpName> 
 				</funder> 
 				 <funder>
 					<corpName>Brandeis University</corpName>
 				</funder>
+				 <funder>
+					<corpName>National Endowment for Humanities (NEH)</corpName> 
+				</funder> 
 				 <respStmt> 
-					<persName role="project director">Karen Desmond</persName>
-					<persName role="encoder" date="8-2-2016">Karen Desmond</persName> 
-					<persName role="proofreader" date="5-3-2018">Emily Hopkins</persName> 
-					<persName role="proofreader" date="5-3-2018">Sam Howes</persName> 
-					<persName role="proofreader" date="5-3-2018">Karen Desmond</persName> 
-					<persName role="proofreader" date="5-3-2018">Daniel Shapiro</persName> 
+					<persName role="project director" auth="VIAF" auth.uri="http://viaf.org/viaf/" codedval="316001213">Karen Desmond</persName>
+					<persName role="encoder" isodate="2016-8-2" xml:id="KD">Karen Desmond</persName> 
+					<persName role="proofreader" isodate="2018-5-3" xml:id="EH">Emily Hopkins</persName> 
+					<persName role="proofreader" isodate="2018-5-3" xml:id="SH">Sam Howes</persName> 
+					<persName role="proofreader" isodate="2018-5-3" xml:id="KD">Karen Desmond</persName> 
+					<persName role="proofreader" isodate="2018-5-3" xml:id="DS">Daniel Shapiro</persName> 
 				</respStmt>
 			</titleStmt>
 			<pubStmt>
@@ -38,94 +41,94 @@
 				<editor> 
 					<persName>Karen Desmond</persName> 
 				</editor>
-			</seriesStmt>
-		</fileDesc>
-		<sourceDesc>
-			<source>
-				<notesStmt>
-					<annot>Scanned from PMFC1</annot>
-				</notesStmt>
-			</source>
-			<source>
-				<titleStmt>
-					<title>[Primary source for this encoding]
-						<identifier>Iv</identifier>
-					</title>
-					<pubStmt>
-						<unpub/>
-						</pubStmt>
-						<notesStmt>
-							<annot>Scan checked and corrected against this manuscript</annot>
-							<itemList>
-								<item title="IIIF" target="" folio="14v, 15r"></item>
-								<item title="other/images" target="" motetus="Hugo, Hugo, princeps invidie" folio="14v, 15r"></item>
-								<item title="DIAMM_composition" target=""></item>
-								<item title="DIAMM_source" target="https://www.diamm.ac.uk/sources/141/"></item>
-							</itemList>
-						</notesStmt>
-					</titleStmt>
-				</source>
-				<source>
-					<titleStmt>
-						<title>[Other concordant sources]</title>
-						<pubStmt>
-							<unpub/>
-							</pubStmt>
+				<identifier>
+					<ref targettype="home_page" target="http://www.measuringpolyphony.org"/>
+					</identifier>
+				</seriesStmt>
+				<sourceDesc>
+					<source>
+						<titleStmt>
+							<title>
+								<identifier>Iv</identifier>
+							</title>
+							<notesStmt>
+								<annot>Primary manuscript source for this encoding.</annot>
+								<annot label="original_clefs">Original clefs for this source: c1 c3 c3</annot>
+								<annot label="commentary"></annot>
+								<itemList>
+									<item targettype="IIIF" target="" codeval="14v, 15r"></item>
+									<item targettype="other/images" target="" motetus="Hugo, Hugo, princeps invidie" folio="14v, 15r"></item>
+									<item targettype="DIAMM_source_record" target="https://www.diamm.ac.uk/sources/141/"></item>
+									<item targettype="DIAMM_composition_record" target=""></item>
+								</itemList>
+							</notesStmt>
+						</titleStmt>
+					</source>
+					<source>
+						<titleStmt>
+							<title>[Other concordant sources]</title>
 							<notesStmt>
 								<annot>Cambrai, Trem (index)</annot>
 							</notesStmt>
 						</titleStmt>
 					</source>
 				</sourceDesc>
-				<encodingDesc> 
-					<appInfo>
-						<application xml:id="sibelius" isodate="2016-4-29T09:24:36Z" version="7510"><name type="operating-system">Mac OS X Mountain Lion</name></application>
-					<application xml:id="sibmei" type="plugin" version="2.0.0b3">
-						<name>Sibelius to MEI Exporter (2.0.0b3)</name>
-					</application> 
-					<application xml:id="meiMENS" isodate="2016-4-29">
-						<name>CMN-MEI to MensuralMEI Translator</name>
-					</application>
-				</appInfo>
-				<editorialDecl>
-					<p>
-						Original MusicXML file from Cuthbert (which was transcribed from PMFC). Rhythmic durations augmented following our project’s transcription conventions. Pitches, rhythms and mensural notation features checked and corrected against manuscript source. Initial proofreading complete. Final proofreading needed. Coding of editorial accidentals needs to be fixed. Text follows PMFC edition.</p>
-						<annot title="variants"></annot>
-					</editorialDecl>
-					<projectDesc>
-						<p>Short Project Description</p>
-					</projectDesc>
-				</encodingDesc>
-				<workDesc>
-					<work>
-						<identifier>
-							<identifier></identifier>
-						</identifier>
-						<titleStmt>
-							<title>Hugo</title>
-							<respStmt>
-								<persName role="composer">Philippe de Vitry (attrib.)</persName>
-							</respStmt>
-						</titleStmt>
-						<incip>
-							<incipText title="triplum">Cum statua Nabucodonasor</incipText>
-						</incip>
-						<incip>
-							<incipText title="motetus">Hugo, Hugo, princeps invidie</incipText>
-						</incip>
-						<incip>
-							<incipText title="tenor">TENOR CUM STATUA</incipText>
-						</incip>
-						<otherChar>Original clefs c1 c3 c3</otherChar>
-						<classification>
-							<term>Motet</term>
-						</classification>
-					</work>
-				</workDesc>
-				<extMeta>
-					
-					</extMeta>
-					</meiHead>
+			</fileDesc>
+			<encodingDesc> 
+				<appInfo>
+					<application xml:id="sibelius" isodate="2016-4-29T09:24:36Z" version="7510"><name type="operating-system">Mac OS X Mountain Lion</name></application>
+				<application xml:id="sibmei" type="plugin" version="2.0.0b3">
+					<name>Sibelius to MEI Exporter (2.0.0b3)</name>
+				</application> 
+				<application xml:id="meiMENS" isodate="2016-4-29">
+					<name>CMN-MEI to MensuralMEI Translator</name>
+				</application>
+			</appInfo>
+			<editorialDecl>
+				<p>
+					Original MusicXML file from Cuthbert (which was transcribed from PMFC). Rhythmic durations augmented following our project’s transcription conventions. Pitches, rhythms and mensural notation features checked and corrected against manuscript source. Initial proofreading complete. Final proofreading needed. Coding of editorial accidentals needs to be fixed. Text follows PMFC edition.</p>
+				</editorialDecl>
+				<projectDesc>
+					<p>"Measuring Polyphony" presents digitised versions of polyphonic compositions written during the thirteenth and fourteenth centuries, offering new possibilities for mediating the scholarly and public experience of this richly evocative music within its original manuscript context. The project began at the Schulich School of Music at McGill University, and now continues at Brandeis University. It leverages the potential of the rich digital image repositories of music manuscripts and the community-based standards for encoding music notation of the Music Encoding Initiative (MEI).</p>
+				</projectDesc>
+			</encodingDesc>
+			<workDesc>
+				<work>
+					<identifier>
+						<identifier type="catalogue_number"></identifier>
+					</identifier>
+					<title>Hugo</title>
+					<composer>Philippe de Vitry (attrib.)</composer>
+					<incip>
+						<incipText label="triplum" corresp="#triplum">
+							<lg><l>Cum statua Nabucodonasor</l></lg>
+					</incipText>
+					<incipText label="motetus" corresp="#motetus">
+						<lg><l>Hugo, Hugo, princeps invidie</l></lg>
+				</incipText>
+				<incipText label="tenor" corresp="#tenor">
+					<lg><l>TENOR CUM STATUA</l></lg>
+			</incipText>
+		</incip>
+		<otherChar>Original clefs c1 c3 c3</otherChar>
+		<classification>
+			<termList>
+				<term>Motet</term>
+				<termList>
+				</classification>
+			</work>
+		</workDesc>
+		<revisionDesc>
+			<change resp="#KD" isodate="2018-05-31">
+				<changeDesc>
+					<p></p>
+				</changeDesc>
+			</change>
+		</revisionDesc>
+		<extMeta>
+			
+			</extMeta>
+			</meiHead>
 	<music xml:id="m-24">
 		<body xml:id="m-25">
 			<mdiv xml:id="m-26">
@@ -133,17 +136,14 @@
 					<scoreDef xml:id="m-28" midi.bpm="700" lyric.name="Opus Text Std" meter.count="9" meter.unit="1" music.name="Opus Std" page.botmar="15mm" page.height="279.4mm" page.leftmar="15mm" page.rightmar="15mm" page.topmar="15mm" page.width="215.9mm" ppq="256" text.name="Plantin MT Std">
 						<staffGrp xml:id="m-29">
 							<staffGrp xml:id="m-39" n="1" symbol="bracket">
-								<staffDef xml:id="m-30" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" label="triplum" lines="5" n="1">
-									<!-- voice.female.alto.ensemble.ah -->
-									<instrDef xml:id="m-32" midi.channel="1" midi.pan="46" midi.volume="100" />
+								<staffDef xml:id="triplum" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" lines="5" n="1">
+									<label>triplum</label>
 								</staffDef>
-								<staffDef xml:id="m-33" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" label="motetus" lines="5" n="2">
-									<!-- voice.female.alto.ensemble.ah -->
-									<instrDef xml:id="m-35" midi.channel="1" midi.pan="46" midi.volume="100" />
+								<staffDef xml:id="motetus" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" lines="5" n="2">
+									<label>motetus</label>
 								</staffDef>
-								<staffDef xml:id="m-36" clef.dis="8" clef.dis.place="below" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" label="tenor" lines="5" n="3">
-									<!-- voice.male.tenor.ensemble.ah -->
-									<instrDef xml:id="m-38" midi.channel="1" midi.pan="81" midi.volume="100" />
+								<staffDef xml:id="tenor" clef.dis="8" clef.dis.place="below" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" lines="5" n="3">
+									<label>tenor</label>
 								</staffDef>
 							</staffGrp>
 						</staffGrp>
@@ -227,7 +227,7 @@
 							<staff xml:id="m-84" n="3">
 								<layer xml:id="m-85" n="1">
 									<rest xml:id="m-86" dots="1" dur="breve" dur.ges="3072p" />
-									<note xml:id="m-87" artic="stop" dots="1" dur="long" dur.ges="6144p" layer="1" oct="4" oct.ges="3" pname="d" pnum="50" staff="3" stem.dir="down" />
+									<note xml:id="m-87" dots="1" dur="long" dur.ges="6144p" layer="1" oct="4" oct.ges="3" pname="d" pnum="50" staff="3" stem.dir="down
 								</layer>
 							</staff>
 							<tie xml:id="m-77" endid="#m-79" startid="#m-76" />
@@ -270,7 +270,7 @@
 							</staff>
 							<staff xml:id="m-114" n="3">
 								<layer xml:id="m-115" n="1">
-									<note xml:id="m-116" artic="stacc" dots="1" dur="long" dur.ges="6144p" layer="1" oct="4" oct.ges="3" pname="c" pnum="48" staff="3" stem.dir="down" />
+									<note xml:id="m-116" dots="1" dur="long" dur.ges="6144p" layer="1" oct="4" oct.ges="3" pname="c" pnum="48" staff="3" stem.dir="down
 									<note xml:id="m-118" dots="1" dur="breve" dur.ges="3072p" layer="1" oct="4" oct.ges="3" pname="c" pnum="48" staff="3" stem.dir="down" />
 								</layer>
 							</staff>
@@ -314,7 +314,7 @@
 							<staff xml:id="m-136" n="2">
 								<layer xml:id="m-137" n="1">
 									<note xml:id="m-139" dots="1" dur="long" dur.ges="6144p" layer="1" oct="4" pname="d" pnum="62" staff="2" stem.dir="up" />
-									<note xml:id="m-140" artic="stacc" dots="1" dur="breve" dur.ges="3072p" layer="1" oct="4" pname="c" pnum="60" staff="2" stem.dir="up" />
+									<note xml:id="m-140" dots="1" dur="breve" dur.ges="3072p" layer="1" oct="4" pname="c" pnum="60" staff="2" stem.dir="up
 								</layer>
 							</staff>
 							<staff xml:id="m-141" n="3">
@@ -335,7 +335,7 @@
 											<syl xml:id="m-161" wordpos="t">ve</syl>
 										</verse>
 									</note>
-									<note xml:id="m-151" artic="stacc" dots="1" dur="1" dur.ges="1536p" layer="1" oct="4" pname="f" pnum="65" staff="1" stem.dir="up">
+									<note xml:id="m-151" dots="1" dur="1" dur.ges="1536p" layer="1" oct="4" pname="f" pnum="65" staff="1" stem.dir="up
 										<verse xml:id="m-162" n="1">
 											<syl xml:id="m-163" wordpos="i">Sy</syl>
 										</verse>
@@ -351,7 +351,7 @@
 							<staff xml:id="m-166" n="2">
 								<layer xml:id="m-167" n="1">
 									<note xml:id="m-168" dots="1" dur="breve" dur.ges="3072p" layer="1" oct="3" pname="b" pnum="59" staff="2" stem.dir="up" />
-									<note xml:id="m-170" artic="stop" dots="1" dur="long" dur.ges="6144p" layer="1" oct="4" pname="c" pnum="60" staff="2" stem.dir="up" />
+									<note xml:id="m-170" dots="1" dur="long" dur.ges="6144p" layer="1" oct="4" pname="c" pnum="60" staff="2" stem.dir="up
 								</layer>
 							</staff>
 							<staff xml:id="m-171" n="3">
@@ -424,7 +424,7 @@
 							</staff>
 							<staff xml:id="m-212" n="2">
 								<layer xml:id="m-213" n="1">
-									<note xml:id="m-214" artic="stacc" dots="1" dur="long" dur.ges="6144p" layer="1" oct="4" pname="f" pnum="66" staff="2" stem.dir="up">
+									<note xml:id="m-214" dots="1" dur="long" dur.ges="6144p" layer="1" oct="4" pname="f" pnum="66" staff="2" stem.dir="up
 										<accid xml:id="m-215" accid="s" />
 										<verse xml:id="m-247" n="1">
 											<syl xml:id="m-248" wordpos="i">Hu</syl>
@@ -438,7 +438,7 @@
 							<staff xml:id="m-219" n="3">
 								<layer xml:id="m-220" n="1">
 									<rest xml:id="m-221" dots="1" dur="breve" dur.ges="3072p" />
-									<note xml:id="m-223" artic="stop" dots="1" dur="long" dur.ges="6144p" layer="1" oct="4" oct.ges="3" pname="d" pnum="50" staff="3" stem.dir="down" />
+									<note xml:id="m-223" dots="1" dur="long" dur.ges="6144p" layer="1" oct="4" oct.ges="3" pname="d" pnum="50" staff="3" stem.dir="down
 								</layer>
 							</staff>
 							<tie xml:id="m-216" endid="#m-217" startid="#m-214" />
@@ -731,7 +731,7 @@
 							<staff xml:id="m-398" n="3">
 								<layer xml:id="m-399" n="1">
 									<rest xml:id="m-400" dots="1" dur="breve" dur.ges="3072p" />
-									<note xml:id="m-402" artic="stop" dots="1" dur="long" dur.ges="6144p" layer="1" oct="3" oct.ges="2" pname="a" pnum="45" staff="3" stem.dir="up" />
+									<note xml:id="m-402" dots="1" dur="long" dur.ges="6144p" layer="1" oct="3" oct.ges="2" pname="a" pnum="45" staff="3" stem.dir="up
 								</layer>
 							</staff>
 							<line xml:id="m-401" dur.ges="6144p" layer="1" staff="3" subtype="start" tstamp="4" tstamp2="1" type="bracket" vo="7mm" />
@@ -1003,7 +1003,7 @@
 							<staff xml:id="m-564" n="3">
 								<layer xml:id="m-565" n="1">
 									<rest xml:id="m-566" dots="1" dur="breve" dur.ges="3072p" />
-									<note xml:id="m-568" artic="stop" dots="1" dur="long" dur.ges="6144p" layer="1" oct="4" oct.ges="3" pname="d" pnum="50" staff="3" stem.dir="down" />
+									<note xml:id="m-568" dots="1" dur="long" dur.ges="6144p" layer="1" oct="4" oct.ges="3" pname="d" pnum="50" staff="3" stem.dir="down
 								</layer>
 							</staff>
 							<line xml:id="m-540" dur.ges="1536p" layer="1" staff="1" tstamp="4" tstamp2="5.5" type="bracket" vo="7mm" />
@@ -1304,7 +1304,7 @@
 							<staff xml:id="m-742" n="3">
 								<layer xml:id="m-743" n="1">
 									<rest xml:id="m-744" dots="1" dur="breve" dur.ges="3072p" />
-									<note xml:id="m-746" artic="stop" dots="1" dur="long" dur.ges="6144p" layer="1" oct="4" oct.ges="3" pname="d" pnum="50" staff="3" stem.dir="down" />
+									<note xml:id="m-746" dots="1" dur="long" dur.ges="6144p" layer="1" oct="4" oct.ges="3" pname="d" pnum="50" staff="3" stem.dir="down
 								</layer>
 							</staff>
 							<line xml:id="m-745" dur.ges="12995p" layer="1" staff="3" tstamp="4" tstamp2="7.6904" type="bracket" vo="13.7812mm" />
@@ -1557,7 +1557,7 @@
 							<staff xml:id="m-905" n="3">
 								<layer xml:id="m-906" n="1">
 									<rest xml:id="m-907" dots="1" dur="breve" dur.ges="3072p" />
-									<note xml:id="m-909" artic="stop" dots="1" dur="long" dur.ges="6144p" layer="1" oct="3" oct.ges="2" pname="a" pnum="45" staff="3" stem.dir="up" />
+									<note xml:id="m-909" dots="1" dur="long" dur.ges="6144p" layer="1" oct="3" oct.ges="2" pname="a" pnum="45" staff="3" stem.dir="up
 								</layer>
 							</staff>
 							<line xml:id="m-908" dur.ges="6144p" layer="1" staff="3" subtype="start" tstamp="4" tstamp2="1" type="bracket" vo="10.5mm" />
@@ -1566,7 +1566,7 @@
 						<measure xml:id="m-910" n="28">
 							<staff xml:id="m-912" n="1">
 								<layer xml:id="m-913" n="1">
-									<note xml:id="m-914" artic="stacc" dots="1" dur="long" dur.ges="6144p" layer="1" oct="4" pname="d" pnum="62" staff="1" stem.dir="up">
+									<note xml:id="m-914" dots="1" dur="long" dur.ges="6144p" layer="1" oct="4" pname="d" pnum="62" staff="1" stem.dir="up
 										<verse xml:id="m-921" n="1">
 											<syl xml:id="m-922" con="u" wordpos="t">bus</syl>
 										</verse>
@@ -1837,7 +1837,7 @@
 							<staff xml:id="m-1077" n="3">
 								<layer xml:id="m-1078" n="1">
 									<rest xml:id="m-1079" dots="1" dur="breve" dur.ges="3072p" />
-									<note xml:id="m-1081" artic="stop" dots="1" dur="long" dur.ges="6144p" layer="1" oct="4" oct.ges="3" pname="d" pnum="50" staff="3" stem.dir="down" />
+									<note xml:id="m-1081" dots="1" dur="long" dur.ges="6144p" layer="1" oct="4" oct.ges="3" pname="d" pnum="50" staff="3" stem.dir="down
 								</layer>
 							</staff>
 							<line xml:id="m-1068" dur.ges="1536p" layer="1" staff="2" tstamp="1" tstamp2="2.5" type="bracket" vo="7mm" />
@@ -1846,7 +1846,7 @@
 						<measure xml:id="m-1082" n="33">
 							<staff xml:id="m-1083" n="1">
 								<layer xml:id="m-1084" n="1">
-									<note xml:id="m-1085" artic="stacc" dots="1" dur="long" dur.ges="6144p" layer="1" oct="5" pname="c" pnum="72" staff="1" stem.dir="down">
+									<note xml:id="m-1085" dots="1" dur="long" dur.ges="6144p" layer="1" oct="5" pname="c" pnum="72" staff="1" stem.dir="down
 										<verse xml:id="m-1094" n="1">
 											<syl xml:id="m-1095" con="u" wordpos="t">ce.</syl>
 										</verse>
@@ -2087,7 +2087,7 @@
 							<staff xml:id="m-1237" n="3">
 								<layer xml:id="m-1238" n="1">
 									<rest xml:id="m-1239" dots="1" dur="breve" dur.ges="3072p" />
-									<note xml:id="m-1241" artic="stop" dots="1" dur="long" dur.ges="6144p" layer="1" oct="4" oct.ges="3" pname="d" pnum="50" staff="3" stem.dir="down" />
+									<note xml:id="m-1241" dots="1" dur="long" dur.ges="6144p" layer="1" oct="4" oct.ges="3" pname="d" pnum="50" staff="3" stem.dir="down
 								</layer>
 							</staff>
 							<line xml:id="m-1240" dur.ges="12923p" layer="1" staff="3" tstamp="4" tstamp2="7.6201" type="bracket" vo="13.7812mm" />
@@ -2352,7 +2352,7 @@
 							<staff xml:id="m-1401" n="3">
 								<layer xml:id="m-1402" n="1">
 									<rest xml:id="m-1403" dots="1" dur="breve" dur.ges="3072p" />
-									<note xml:id="m-1405" artic="stop" dots="1" dur="long" dur.ges="6144p" layer="1" oct="3" oct.ges="2" pname="a" pnum="45" staff="3" stem.dir="up" />
+									<note xml:id="m-1405" dots="1" dur="long" dur.ges="6144p" layer="1" oct="3" oct.ges="2" pname="a" pnum="45" staff="3" stem.dir="up
 								</layer>
 							</staff>
 							<line xml:id="m-1404" dur.ges="12610p" layer="1" staff="3" tstamp="4" tstamp2="7.3145" type="bracket" vo="13.7812mm" />

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mei xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.music-encoding.org/ns/mei" meiversion="3.0.0">
+<mei xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
 	<meiHead xml:id="m-2">
 		<fileDesc>
 			<titleStmt>
@@ -9,17 +9,20 @@
 					<corpName>Social Sciences and Humanities Research Council, Canada (SSHRC) </corpName>
 				</funder>
 				<funder>
-					<corpName> Schulich School of Music, McGill University </corpName> 
+					<corpName> Schulich School of Music, McGill University</corpName> 
 				</funder> 
 				 <funder>
 					<corpName>Brandeis University</corpName>
 				</funder>
+				 <funder>
+					<corpName>National Endowment for Humanities (NEH)</corpName> 
+				</funder> 
 				 <respStmt> 
-					<persName role="project director">Karen Desmond</persName>
-					<persName role="encoder" date="4-29-2016">Karen Desmond</persName> 
-					<persName role="proofreader" date="3-22-2016">Emily Hopkins</persName> 
-					<persName role="proofreader" date="3-22-2016">Sam Howes</persName> 
-					<persName role="proofreader" date="3-22-2016">Karen Desmond</persName> 
+					<persName role="project director" auth="VIAF" auth.uri="http://viaf.org/viaf/" codedval="316001213">Karen Desmond</persName>
+					<persName role="encoder" isodate="2016-4-29" xml:id="KD">Karen Desmond</persName> 
+					<persName role="proofreader" isodate="2016-3-22" xml:id="EH">Emily Hopkins</persName> 
+					<persName role="proofreader" isodate="2016-3-22" xml:id="SH">Sam Howes</persName> 
+					<persName role="proofreader" isodate="2016-3-22" xml:id="KD">Karen Desmond</persName> 
 				</respStmt>
 			</titleStmt>
 			<pubStmt>
@@ -37,111 +40,108 @@
 				<editor> 
 					<persName>Karen Desmond</persName> 
 				</editor>
-			</seriesStmt>
-		</fileDesc>
-		<sourceDesc>
-			<source>
-				<notesStmt>
-					<annot>Scanned from </annot>
-				</notesStmt>
-			</source>
-			<source>
-				<titleStmt>
-					<title>[Primary source for this encoding]
-						<identifier>Br</identifier>
-					</title>
-					<pubStmt>
-						<unpub/>
-						</pubStmt>
-						<notesStmt>
-							<annot>Scan checked and corrected against this manuscript</annot>
-							<itemList>
-								<item title="IIIF" target="" folio="r"></item>
-								<item title="other/images" target="" motetus="Gaude virgo mater" folio="r"></item>
-								<item title="DIAMM_composition" target=""></item>
-								<item title="DIAMM_source" target="https://www.diamm.ac.uk/sources/4/"></item>
-							</itemList>
-						</notesStmt>
-					</titleStmt>
-				</source>
-				<source>
-					<titleStmt>
-						<title>[Other concordant sources]</title>
-						<pubStmt>
-							<unpub/>
-							</pubStmt>
+				<identifier>
+					<ref targettype="home_page" target="http://www.measuringpolyphony.org"/>
+					</identifier>
+				</seriesStmt>
+				<sourceDesc>
+					<source>
+						<titleStmt>
+							<title>
+								<identifier>Br</identifier>
+							</title>
+							<notesStmt>
+								<annot>Primary manuscript source for this encoding.</annot>
+								<annot label="original_clefs">Original clefs for this source: c2 c2 f2c4</annot>
+								<annot label="commentary"></annot>
+								<itemList>
+									<item targettype="IIIF" target="" codeval="r"></item>
+									<item targettype="other/images" target="" motetus="Gaude virgo mater" folio="r"></item>
+									<item targettype="DIAMM_source_record" target="https://www.diamm.ac.uk/sources/4/"></item>
+									<item targettype="DIAMM_composition_record" target=""></item>
+								</itemList>
+							</notesStmt>
+						</titleStmt>
+					</source>
+					<source>
+						<titleStmt>
+							<title>[Other concordant sources]</title>
 							<notesStmt>
 								<annot>Koblenz</annot>
 							</notesStmt>
 						</titleStmt>
 					</source>
 				</sourceDesc>
-				<encodingDesc> 
-					<appInfo>
-						<application xml:id="sibelius" isodate="2016-4-29T09:24:36Z" version="7510"><name type="operating-system">Mac OS X Mountain Lion</name></application>
-					<application xml:id="sibmei" type="plugin" version="2.0.0b3">
-						<name>Sibelius to MEI Exporter (2.0.0b3)</name>
-					</application> 
-					<application xml:id="meiMENS" isodate="2016-4-29">
-						<name>CMN-MEI to MensuralMEI Translator</name>
-					</application>
-				</appInfo>
-				<editorialDecl>
-					<p>
-						Original transcription from Cuthbert. Rhythmic durations augmented following our project’s transcription conventions. Pitches, rhythms and mensural notation features checked and corrected against manuscript source. Initial proofreading complete. Final proofreading needed. Coding of editorial accidentals needs to be fixed. Text follows Br.</p>
-						<annot title="variants"></annot>
-					</editorialDecl>
-					<projectDesc>
-						<p>Short Project Description</p>
-					</projectDesc>
-				</encodingDesc>
-				<workDesc>
-					<work>
-						<identifier>
-							<identifier></identifier>
-						</identifier>
-						<titleStmt>
-							<title>Gaude</title>
-							<respStmt>
-								<persName role="composer">Anonymous</persName>
-							</respStmt>
-						</titleStmt>
-						<incip>
-							<incipText title="triplum">Mater formosa tu nobilis</incipText>
-						</incip>
-						<incip>
-							<incipText title="motetus">Gaude virgo mater</incipText>
-						</incip>
-						<incip>
-							<incipText title="tenor">[TENOR]</incipText>
-						</incip>
-						<otherChar>Original clefs c2 c2 f2c4</otherChar>
-						<classification>
-							<term>Motet</term>
-						</classification>
-					</work>
-				</workDesc>
-				<extMeta>
-					
-					</extMeta>
-					</meiHead>
+			</fileDesc>
+			<encodingDesc> 
+				<appInfo>
+					<application xml:id="sibelius" isodate="2016-4-29T09:24:36Z" version="7510"><name type="operating-system">Mac OS X Mountain Lion</name></application>
+				<application xml:id="sibmei" type="plugin" version="2.0.0b3">
+					<name>Sibelius to MEI Exporter (2.0.0b3)</name>
+				</application> 
+				<application xml:id="meiMENS" isodate="2016-4-29">
+					<name>CMN-MEI to MensuralMEI Translator</name>
+				</application>
+			</appInfo>
+			<editorialDecl>
+				<p>
+					Original transcription from Cuthbert. Rhythmic durations augmented following our project’s transcription conventions. Pitches, rhythms and mensural notation features checked and corrected against manuscript source. Initial proofreading complete. Final proofreading needed. Coding of editorial accidentals needs to be fixed. Text follows Br.</p>
+				</editorialDecl>
+				<projectDesc>
+					<p>"Measuring Polyphony" presents digitised versions of polyphonic compositions written during the thirteenth and fourteenth centuries, offering new possibilities for mediating the scholarly and public experience of this richly evocative music within its original manuscript context. The project began at the Schulich School of Music at McGill University, and now continues at Brandeis University. It leverages the potential of the rich digital image repositories of music manuscripts and the community-based standards for encoding music notation of the Music Encoding Initiative (MEI).</p>
+				</projectDesc>
+			</encodingDesc>
+			<workDesc>
+				<work>
+					<identifier>
+						<identifier type="catalogue_number"></identifier>
+					</identifier>
+					<title>Gaude</title>
+					<composer>Anonymous</composer>
+					<incip>
+						<incipText label="triplum" corresp="#triplum">
+							<lg><l>Mater formosa tu nobilis</l></lg>
+					</incipText>
+					<incipText label="motetus" corresp="#motetus">
+						<lg><l>Gaude virgo mater</l></lg>
+				</incipText>
+				<incipText label="tenor" corresp="#tenor">
+					<lg><l>[TENOR]</l></lg>
+			</incipText>
+		</incip>
+		<otherChar>Original clefs c2 c2 f2c4</otherChar>
+		<classification>
+			<termList>
+				<term>Motet</term>
+				<termList>
+				</classification>
+			</work>
+		</workDesc>
+		<revisionDesc>
+			<change resp="#KD" isodate="2018-05-31">
+				<changeDesc>
+					<p></p>
+				</changeDesc>
+			</change>
+		</revisionDesc>
+		<extMeta>
+			
+			</extMeta>
+			</meiHead>
 	<music xml:id="m-24">
 		<body xml:id="m-25">
 			<mdiv xml:id="m-26">
 				<score xml:id="m-27">
 					<scoreDef xml:id="m-28" midi.bpm="600" lyric.name="Opus Text Std" meter.count="9" meter.unit="1" music.name="Opus Std" page.botmar="15mm" page.height="279.4mm" page.leftmar="15mm" page.rightmar="15mm" page.topmar="15mm" page.width="215.9mm" ppq="256" text.name="Adobe Garamond Pro">
 						<staffGrp xml:id="m-29">
-							<staffDef xml:id="m-30" clef.dis="8" clef.dis.place="below" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" label="triplum" lines="5" n="1">
-								<!-- keyboard.piano.grand.bright -->
-								<instrDef xml:id="m-32" midi.channel="1" midi.pan="63" midi.volume="100" />
+							<staffDef xml:id="triplum" clef.dis="8" clef.dis.place="below" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" lines="5" n="1">
+									<label>triplum</label>
 							</staffDef>
-							<staffDef xml:id="m-33" clef.dis="8" clef.dis.place="below" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" label="motetus" lines="5" n="2">
-								<!-- keyboard.piano.grand.bright -->
-								<instrDef xml:id="m-35" midi.channel="1" midi.pan="63" midi.volume="100" />
+							<staffDef xml:id="motetus" clef.dis="8" clef.dis.place="below" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" lines="5" n="2">
+									<label>motetus</label>
 							</staffDef>
-							<staffDef xml:id="m-36" clef.dis="8" clef.dis.place="below" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" label="tenor" lines="5" n="3">
-								<!-- voice.male.tenor.ah -->
-								<instrDef xml:id="m-38" midi.channel="1" midi.pan="81" midi.volume="100" />
+							<staffDef xml:id="tenor" clef.dis="8" clef.dis.place="below" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" lines="5" n="3">
+									<label>tenor</label>
 							</staffDef>
 						</staffGrp>
 					</scoreDef>
@@ -149,7 +149,7 @@
 						<measure xml:id="m-40" label="1" n="1">
 							<staff xml:id="m-41" n="1">
 								<layer xml:id="m-42" n="1">
-									<note xml:id="m-43" artic="stacc" dots="1" dur="breve" dur.ges="3072p" layer="1" oct="4" oct.ges="3" pname="d" pnum="50" staff="1" stem.dir="down">
+									<note xml:id="m-43" dots="1" dur="breve" dur.ges="3072p" layer="1" oct="4" oct.ges="3" pname="d" pnum="50" staff="1" stem.dir="down
 										<verse xml:id="m-57" n="1">
 											<syl xml:id="m-58" wordpos="i">Ma</syl>
 										</verse>
@@ -231,7 +231,6 @@
 								</layer>
 							</staff>
 							<tie xml:id="m-90" endid="#m-91" startid="#m-89" />
-							<fermata xml:id="m-56" form="norm" layer="1" shape="angular" staff="1" startid="#m-55" />
 						</measure>
 						<measure xml:id="m-92" n="2">
 							<staff xml:id="m-93" n="1">
@@ -254,7 +253,7 @@
 											<syl xml:id="m-114" wordpos="m">ro</syl>
 										</verse>
 									</note>
-									<note xml:id="m-101" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" oct.ges="3" pname="c" pnum="49" staff="1" stem.dir="down">
+									<note xml:id="m-101" dur="1" dur.ges="1024p" layer="1" oct="4" oct.ges="3" pname="c" pnum="49" staff="1" stem.dir="down
 										<accid xml:id="m-102" accid="s" />
 										<verse xml:id="m-115" n="1">
 											<syl xml:id="m-116" wordpos="t">sa:</syl>
@@ -279,7 +278,7 @@
 												<syl xml:id="m-156" wordpos="m">mo</syl>
 											</verse>
 										</note>
-										<note xml:id="m-107" artic="ten" dur="1" dur.ges="1024p" layer="1" oct="4" oct.ges="3" pname="c" pnum="49" staff="1" stem.dir="down">
+										<note xml:id="m-107" dur="1" dur.ges="1024p" layer="1" oct="4" oct.ges="3" pname="c" pnum="49" staff="1" stem.dir="down
 											<accid xml:id="m-108" accid="s" />
 										</note>
 									</tuplet>
@@ -358,7 +357,6 @@
 								</layer>
 							</staff>
 							<tie xml:id="m-172" endid="#m-173" startid="#m-171" />
-							<fermata xml:id="m-164" form="norm" layer="1" shape="angular" staff="2" startid="#m-163" />
 						</measure>
 						<measure xml:id="m-174" n="4">
 							<staff xml:id="m-175" n="1">
@@ -426,13 +424,12 @@
 									<mRest xml:id="m-207" />
 								</layer>
 							</staff>
-							<fermata xml:id="m-182" form="norm" layer="1" shape="angular" staff="1" startid="#m-181" />
 							<line xml:id="m-197" dur.ges="3072p" layer="1" staff="2" tstamp="1" tstamp2="4" type="bracket" vo="7mm" />
 						</measure>
 						<measure xml:id="m-208" n="5">
 							<staff xml:id="m-209" n="1">
 								<layer xml:id="m-210" n="1">
-									<note xml:id="m-211" artic="stacc" dots="1" dur="breve" dur.ges="3072p" layer="1" oct="4" oct.ges="3" pname="c" pnum="48" staff="1" stem.dir="down">
+									<note xml:id="m-211" dots="1" dur="breve" dur.ges="3072p" layer="1" oct="4" oct.ges="3" pname="c" pnum="48" staff="1" stem.dir="down
 										<verse xml:id="m-240" n="1">
 											<syl xml:id="m-241" wordpos="t">sa</syl>
 										</verse>
@@ -517,7 +514,7 @@
 							</staff>
 							<staff xml:id="m-268" n="2">
 								<layer xml:id="m-269" n="1">
-									<note xml:id="m-270" artic="stacc" dots="1" dur="long" dur.ges="6144p" layer="1" oct="4" oct.ges="3" pname="c" pnum="48" staff="2" stem.dir="down">
+									<note xml:id="m-270" dots="1" dur="long" dur.ges="6144p" layer="1" oct="4" oct.ges="3" pname="c" pnum="48" staff="2" stem.dir="down
 										<verse xml:id="m-276" n="2">
 											<syl xml:id="m-277" wordpos="i">frau</syl>
 										</verse>
@@ -545,7 +542,7 @@
 						<measure xml:id="m-285" n="6">
 							<staff xml:id="m-286" n="1">
 								<layer xml:id="m-287" n="1">
-									<note xml:id="m-288" artic="stacc" dots="1" dur="breve" dur.ges="3072p" layer="1" oct="4" oct.ges="3" pname="f" pnum="53" staff="1" stem.dir="down">
+									<note xml:id="m-288" dots="1" dur="breve" dur.ges="3072p" layer="1" oct="4" oct.ges="3" pname="f" pnum="53" staff="1" stem.dir="down
 										<verse xml:id="m-299" n="1">
 											<syl xml:id="m-300" wordpos="t">sa</syl>
 										</verse>
@@ -647,7 +644,7 @@
 												<syl xml:id="m-364" wordpos="t">tis</syl>
 											</verse>
 										</note>
-										<note xml:id="m-351" artic="ten" dur="1" dur.ges="1024p" layer="1" oct="4" oct.ges="3" pname="d" pnum="50" staff="1" stem.dir="down" />
+										<note xml:id="m-351" dur="1" dur.ges="1024p" layer="1" oct="4" oct.ges="3" pname="d" pnum="50" staff="1" stem.dir="down
 										<note xml:id="m-353" dur="1" dur.ges="1024p" layer="1" oct="4" oct.ges="3" pname="g" pnum="55" staff="1" stem.dir="down">
 											<verse xml:id="m-367" n="1">
 												<syl xml:id="m-368" wordpos="m">ter</syl>
@@ -701,7 +698,7 @@
 						<measure xml:id="m-379" n="9">
 							<staff xml:id="m-380" n="1">
 								<layer xml:id="m-381" n="1">
-									<note xml:id="m-382" artic="stacc" dots="1" dur="breve" dur.ges="3072p" layer="1" oct="4" oct.ges="3" pname="d" pnum="50" staff="1" stem.dir="down">
+									<note xml:id="m-382" dots="1" dur="breve" dur.ges="3072p" layer="1" oct="4" oct.ges="3" pname="d" pnum="50" staff="1" stem.dir="down
 										<verse xml:id="m-394" n="1">
 											<syl xml:id="m-395" wordpos="t">sa</syl>
 										</verse>
@@ -844,12 +841,11 @@
 								</layer>
 							</staff>
 							<tie xml:id="m-472" endid="#m-473" startid="#m-471" />
-							<fermata xml:id="m-460" form="norm" layer="1" shape="angular" staff="2" startid="#m-459" />
 						</measure>
 						<measure xml:id="m-474" n="11">
 							<staff xml:id="m-475" n="1">
 								<layer xml:id="m-476" n="1">
-									<note xml:id="m-477" artic="stacc" dots="1" dur="breve" dur.ges="3072p" layer="1" oct="4" oct.ges="3" pname="e" pnum="52" staff="1" stem.dir="down">
+									<note xml:id="m-477" dots="1" dur="breve" dur.ges="3072p" layer="1" oct="4" oct.ges="3" pname="e" pnum="52" staff="1" stem.dir="down
 										<verse xml:id="m-487" n="1">
 											<syl xml:id="m-488" wordpos="t">sa</syl>
 										</verse>
@@ -986,7 +982,6 @@
 									<mRest xml:id="m-567" />
 								</layer>
 							</staff>
-							<fermata xml:id="m-528" form="norm" layer="1" shape="angular" staff="1" startid="#m-526" />
 							<line xml:id="m-555" dur.ges="3072p" layer="1" staff="2" tstamp="1" tstamp2="4" type="bracket" vo="7mm" />
 						</measure>
 						<measure xml:id="m-568" n="13">
@@ -1327,7 +1322,6 @@
 									<mRest xml:id="m-770" />
 								</layer>
 							</staff>
-							<fermata xml:id="m-715" form="norm" layer="1" shape="angular" staff="1" startid="#m-714" />
 						</measure>
 						<measure xml:id="m-771" n="17">
 							<staff xml:id="m-772" n="1">
@@ -1356,7 +1350,7 @@
 												<syl xml:id="m-833" wordpos="m">ro</syl>
 											</verse>
 										</note>
-										<note xml:id="m-779" artic="ten" dur="1" dur.ges="1024p" layer="1" oct="4" oct.ges="3" pname="f" pnum="54" staff="1" stem.dir="down">
+										<note xml:id="m-779" dur="1" dur.ges="1024p" layer="1" oct="4" oct.ges="3" pname="f" pnum="54" staff="1" stem.dir="down
 											<accid xml:id="m-780" accid="s" />
 										</note>
 									</tuplet>
@@ -1477,7 +1471,6 @@
 								</layer>
 							</staff>
 							<tie xml:id="m-864" endid="#m-865" startid="#m-863" />
-							<fermata xml:id="m-853" form="norm" layer="1" shape="angular" staff="2" startid="#m-852" />
 						</measure>
 						<measure xml:id="m-866" n="19">
 							<staff xml:id="m-867" n="1">
@@ -1526,7 +1519,6 @@
 								</layer>
 							</staff>
 							<tie xml:id="m-896" endid="#m-897" startid="#m-895" />
-							<fermata xml:id="m-870" form="norm" layer="1" shape="angular" staff="1" startid="#m-869" />
 						</measure>
 						<measure xml:id="m-898" n="20">
 							<staff xml:id="m-899" n="1">
@@ -1634,7 +1626,7 @@
 										</verse>
 									</note>
 									<note xml:id="m-966" dur="1" dur.ges="1024p" layer="1" oct="4" oct.ges="3" pname="d" pnum="50" staff="2" stem.dir="down" />
-									<note xml:id="m-967" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" oct.ges="3" pname="c" pnum="49" staff="2" stem.dir="down">
+									<note xml:id="m-967" dur="1" dur.ges="1024p" layer="1" oct="4" oct.ges="3" pname="c" pnum="49" staff="2" stem.dir="down
 										<accid xml:id="m-968" accid="s" />
 									</note>
 								</layer>
@@ -1721,7 +1713,7 @@
 												<syl xml:id="m-1028" wordpos="t">sit</syl>
 											</verse>
 										</note>
-										<note xml:id="m-1019" artic="stacc ten" dur="1" dur.ges="1024p" layer="1" oct="4" oct.ges="3" pname="d" pnum="50" staff="2" stem.dir="down" />
+										<note xml:id="m-1019" dur="1" dur.ges="1024p" layer="1" oct="4" oct.ges="3" pname="d" pnum="50" staff="2" stem.dir="down
 										<note xml:id="m-1021" dur="1" dur.ges="1024p" layer="1" oct="4" oct.ges="3" pname="e" pnum="52" staff="2" stem.dir="down">
 											<verse xml:id="m-1073" n="2">
 												<syl xml:id="m-1074" wordpos="m">ti</syl>
@@ -1815,7 +1807,6 @@
 							</staff>
 							<tie xml:id="m-1069" endid="#m-1070" startid="#m-1068" />
 							<tie xml:id="m-1080" endid="#m-1081" startid="#m-1079" />
-							<fermata xml:id="m-1039" form="norm" layer="1" shape="angular" staff="1" startid="#m-1038" />
 						</measure>
 						<pb xml:id="m-1083" n="4" />
 						<measure xml:id="m-1082" n="24">
@@ -1854,7 +1845,7 @@
 										</note>
 										<note xml:id="m-1094" dur="2" dur.ges="512p" layer="1" oct="4" oct.ges="3" pname="f" pnum="53" staff="1" stem.dir="down" />
 									</tuplet>
-									<note xml:id="m-1095" artic="stacc" dots="1" dur="breve" dur.ges="3072p" layer="1" oct="4" oct.ges="3" pname="g" pnum="55" staff="1" stem.dir="down">
+									<note xml:id="m-1095" dots="1" dur="breve" dur.ges="3072p" layer="1" oct="4" oct.ges="3" pname="g" pnum="55" staff="1" stem.dir="down
 										<verse xml:id="m-1120" n="1">
 											<syl xml:id="m-1121" wordpos="t">ra</syl>
 										</verse>
@@ -2003,7 +1994,7 @@
 						<measure xml:id="m-1188" n="26">
 							<staff xml:id="m-1189" n="1">
 								<layer xml:id="m-1190" n="1">
-									<note xml:id="m-1191" artic="stacc" dots="1" dur="breve" dur.ges="3072p" layer="1" oct="4" oct.ges="3" pname="g" pnum="55" staff="1" stem.dir="down">
+									<note xml:id="m-1191" dots="1" dur="breve" dur.ges="3072p" layer="1" oct="4" oct.ges="3" pname="g" pnum="55" staff="1" stem.dir="down
 										<verse xml:id="m-1204" n="1">
 											<syl xml:id="m-1205" wordpos="t">rum</syl>
 										</verse>
@@ -2068,12 +2059,11 @@
 								</layer>
 							</staff>
 							<tie xml:id="m-1235" endid="#m-1236" startid="#m-1234" />
-							<fermata xml:id="m-1219" form="norm" layer="1" shape="angular" staff="2" startid="#m-1218" />
 						</measure>
 						<measure xml:id="m-1237" n="27">
 							<staff xml:id="m-1238" n="1">
 								<layer xml:id="m-1239" n="1">
-									<note xml:id="m-1240" artic="stacc" dots="1" dur="breve" dur.ges="3072p" layer="1" oct="4" oct.ges="3" pname="d" pnum="50" staff="1" stem.dir="down">
+									<note xml:id="m-1240" dots="1" dur="breve" dur.ges="3072p" layer="1" oct="4" oct.ges="3" pname="d" pnum="50" staff="1" stem.dir="down
 										<verse xml:id="m-1251" n="1">
 											<syl xml:id="m-1252" wordpos="t">rans</syl>
 										</verse>
@@ -2088,7 +2078,7 @@
 											<syl xml:id="m-1256" wordpos="t">tus</syl>
 										</verse>
 									</note>
-									<note xml:id="m-1243" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" oct.ges="3" pname="e" pnum="52" staff="1" stem.dir="down">
+									<note xml:id="m-1243" dur="1" dur.ges="1024p" layer="1" oct="4" oct.ges="3" pname="e" pnum="52" staff="1" stem.dir="down
 										<verse xml:id="m-1287" n="1">
 											<syl xml:id="m-1288" wordpos="i">vi</syl>
 										</verse>
@@ -2102,7 +2092,7 @@
 												<syl xml:id="m-1292" wordpos="m">o</syl>
 											</verse>
 										</note>
-										<note xml:id="m-1246" artic="ten" dur="1" dur.ges="1024p" layer="1" oct="4" oct.ges="3" pname="e" pnum="52" staff="1" stem.dir="down" />
+										<note xml:id="m-1246" dur="1" dur.ges="1024p" layer="1" oct="4" oct.ges="3" pname="e" pnum="52" staff="1" stem.dir="down
 									</tuplet>
 								</layer>
 							</staff>
@@ -2132,7 +2122,7 @@
 						<measure xml:id="m-1267" n="28">
 							<staff xml:id="m-1268" n="1">
 								<layer xml:id="m-1269" n="1">
-									<note xml:id="m-1270" artic="stacc" dots="1" dur="breve" dur.ges="3072p" layer="1" oct="4" oct.ges="3" pname="d" pnum="50" staff="1" stem.dir="down">
+									<note xml:id="m-1270" dots="1" dur="breve" dur.ges="3072p" layer="1" oct="4" oct.ges="3" pname="d" pnum="50" staff="1" stem.dir="down
 										<verse xml:id="m-1293" n="1">
 											<syl xml:id="m-1294" wordpos="t">rum</syl>
 										</verse>
@@ -2208,7 +2198,7 @@
 						<measure xml:id="m-1324" n="29">
 							<staff xml:id="m-1325" n="1">
 								<layer xml:id="m-1326" n="1">
-									<note xml:id="m-1327" artic="stacc" dots="1" dur="breve" dur.ges="3072p" layer="1" oct="4" oct.ges="3" pname="d" pnum="50" staff="1" stem.dir="down">
+									<note xml:id="m-1327" dots="1" dur="breve" dur.ges="3072p" layer="1" oct="4" oct.ges="3" pname="d" pnum="50" staff="1" stem.dir="down
 										<verse xml:id="m-1341" n="1">
 											<syl xml:id="m-1342" wordpos="i">spes</syl>
 										</verse>
@@ -2285,7 +2275,6 @@
 								</layer>
 							</staff>
 							<tie xml:id="m-1371" endid="#m-1372" startid="#m-1370" />
-							<fermata xml:id="m-1332" form="norm" layer="1" shape="angular" staff="1" startid="#m-1331" />
 						</measure>
 						<measure xml:id="m-1373" n="30">
 							<staff xml:id="m-1374" n="1">
@@ -2490,7 +2479,7 @@
 						<measure xml:id="m-1496" n="33">
 							<staff xml:id="m-1497" n="1">
 								<layer xml:id="m-1498" n="1">
-									<note xml:id="m-1499" artic="stacc" dots="1" dur="breve" dur.ges="3072p" layer="1" oct="4" oct.ges="3" pname="f" pnum="53" staff="1" stem.dir="down">
+									<note xml:id="m-1499" dots="1" dur="breve" dur.ges="3072p" layer="1" oct="4" oct.ges="3" pname="f" pnum="53" staff="1" stem.dir="down
 										<verse xml:id="m-1511" n="1">
 											<syl xml:id="m-1512" wordpos="t">rum</syl>
 										</verse>
@@ -2647,7 +2636,6 @@
 								</layer>
 							</staff>
 							<tie xml:id="m-1597" endid="#m-1598" startid="#m-1596" />
-							<fermata xml:id="m-1581" form="norm" layer="1" shape="angular" staff="2" startid="#m-1580" />
 						</measure>
 						<measure xml:id="m-1599" n="35">
 							<staff xml:id="m-1600" n="1">
@@ -3174,7 +3162,7 @@
 						<measure xml:id="m-1920" n="42">
 							<staff xml:id="m-1922" n="1">
 								<layer xml:id="m-1923" n="1">
-									<note xml:id="m-1924" artic="stacc" dots="1" dur="breve" dur.ges="3072p" layer="1" oct="4" oct.ges="3" pname="g" pnum="55" staff="1" stem.dir="down">
+									<note xml:id="m-1924" dots="1" dur="breve" dur.ges="3072p" layer="1" oct="4" oct.ges="3" pname="g" pnum="55" staff="1" stem.dir="down
 										<verse xml:id="m-1934" n="1">
 											<syl xml:id="m-1935" wordpos="t">na</syl>
 										</verse>
@@ -3227,7 +3215,6 @@
 								</layer>
 							</staff>
 							<tie xml:id="m-1956" endid="#m-1957" startid="#m-1955" />
-							<fermata xml:id="m-1947" form="norm" layer="1" shape="angular" staff="2" startid="#m-1946" />
 						</measure>
 						<measure xml:id="m-1958" n="43">
 							<staff xml:id="m-1959" n="1">
@@ -3340,7 +3327,6 @@
 								</layer>
 							</staff>
 							<tie xml:id="m-2028" endid="#m-2029" startid="#m-2027" />
-							<fermata xml:id="m-1994" form="norm" layer="1" shape="angular" staff="1" startid="#m-1993" />
 						</measure>
 						<measure xml:id="m-2030" n="45">
 							<staff xml:id="m-2031" n="1">
@@ -3603,7 +3589,6 @@
 								</layer>
 							</staff>
 							<tie xml:id="m-2186" endid="#m-2187" startid="#m-2185" />
-							<fermata xml:id="m-2155" form="norm" layer="1" shape="angular" staff="1" startid="#m-2154" />
 						</measure>
 						<measure xml:id="m-2188" n="48">
 							<staff xml:id="m-2189" n="1">
@@ -3715,9 +3700,6 @@
 							<tie xml:id="m-2242" endid="#m-2244" startid="#m-2241" />
 							<tie xml:id="m-2252" endid="#m-2254" startid="#m-2251" />
 							<tie xml:id="m-2264" endid="#m-2266" startid="#m-2263" />
-							<fermata xml:id="m-2243" form="norm" layer="1" shape="angular" staff="1" startid="#m-2241" />
-							<fermata xml:id="m-2253" form="norm" layer="1" shape="angular" staff="2" startid="#m-2251" />
-							<fermata xml:id="m-2265" form="norm" layer="1" shape="angular" staff="3" startid="#m-2263" />
 						</measure>
 					</section>
 				</score>

@@ -14,6 +14,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 import java.util.Scanner;
 //INSERT element and value in first category
 public class UpdateMei {
@@ -85,8 +87,8 @@ public class UpdateMei {
 		    String line;
 		    while ((line = br.readLine()) != null) {
 		    	if (line.contains("meiversion=")) {
-		    		line = replaceVersion(line);
-		    		line = removeXmlId(line);
+		    		line = replaceType(line,"meiversion", "4.0.0");
+		    		line = removeType(line, "xml:id");
 		    		
 		    	}
 				    	if (line.contains("<meiHead")){ //insert the data in meihead
@@ -122,12 +124,30 @@ public class UpdateMei {
 							if (line.contains("&amp;amp;amp;apos;")) {
 								line =  line.replace("&amp;amp;amp;apos;", "'");
 							}
-							if (line.contains("barLine")) {
-								line =  line.replace("barLine", "barLine form=\"dashed\"");
+							if (file.getPath().contains("MENSURAL.mei")) {
+								if (line.contains("dur.ges")) {
+									line =  removeType(line, "dur.ges");
+								}
+								if (line.contains("quality")) {
+									line = replaceType(line,"quality", "dur.quality");
+								}
+							} else {
+								if (line.contains("stem.mod")) {
+									line =  removeType(line, "stem.mod");
+								}
+								if (line.contains("artic")) {
+									line =  removeType(line, "artic");
+								}
+							}
+							if (line.contains("<staffDef")) {
+								String label = getType(line,"label");
+								line = removeType(line,"label");
+								line = replaceType(line,"xml:id", label);
+								line = line + "\n\t\t\t\t\t\t\t\t\t<label>" + label + "</label>";
+								
 							}
 							
-
-	
+							if (!line.contains("<!--") && !line.contains("<instrDef") && !line.contains("<fermata")) { 
 							String nextline = "";
 							BUFFER_SIZE = 1000;
 					    	br.mark(BUFFER_SIZE);
@@ -142,6 +162,7 @@ public class UpdateMei {
 								}
 							}
 							writer.println(line);
+							}
 						}
 				    	
 		    		}
@@ -165,17 +186,70 @@ public class UpdateMei {
 		}
 	}
 	
-	public static String replaceVersion(String line) {
-		String[] splitline = line.split("meiversion");
+	/*public static void replaceSyllables(File file) throws IOException {
+		// Open a temporary file to write to.
+		PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter("temp.mei")));
+		BufferedReader br = null;
+		int BUFFER_SIZE = 0;
+		FileReader reader = null;
+		boolean alreadyFound=false; //only inserts it in first one
+		int  j= findFile(file);
+		String allmusic="";
+		if (j!=0) {
+		try {
+		    reader = new FileReader(file.getPath());
+		    br = new BufferedReader(reader);
+		    String line;
+		    while ((line = br.readLine()) != null) {
+				    	if (line.contains("<meiHead")){ //insert the data in meihead
+				    	
+				    			alreadyFound=true;
+				    		
+						} else if (alreadyFound && line.contains("</meiHead>")) {
+							alreadyFound=false;
+						} else if (!alreadyFound) {
+							
+							allmusic=allmusic+"";
+							}
+						}
+				    	
+		    		
+		}
+
+		} catch (FileNotFoundException e) {
+		    e.printStackTrace();
+		}finally{
+		    reader.close();
+
+		}
+
+		// ... and finally ...
+		String path =file.getPath();
+		String newpath = "newfiles/" + path.substring(9, path.length());
+		
+		File realName = new File(newpath);
+		realName.delete();
+		new File("temp.mei").renameTo(realName); // Rename temp file
+		}
+	} */
+	
+	public static String getType(String line, String type) {
+		String[] splitline = line.split(type);
 		String[] splitversion = splitline[1].split("\"");
-		splitversion[1]= "3.0.0";
-		String updatedversion = String.join("\"", splitversion);
-		splitline[1]=updatedversion+"\">";
-		return String.join("meiversion", splitline);
+		return splitversion[1];
 	}
 	
-	public static String removeXmlId(String line) {
-		String[] splitline = line.split("xml:id");
+	public static String replaceType(String line, String type, String replacement) {
+		String[] splitline = line.split(type);
+		String[] splitversion = splitline[1].split("\"");
+		splitversion[1]= replacement;
+		String updatedversion = String.join("\"", splitversion);
+		splitline[1]=updatedversion+"\">";
+		return String.join(type, splitline);
+	}
+	
+	public static String removeType(String line, String type) {
+		String[] splitline = line.split(type);
 		String[] splitversion = splitline[1].split("\"");
 		String updatedversion;
 		if (splitversion.length>3) {
@@ -189,6 +263,7 @@ public class UpdateMei {
 		splitline[0] = splitline[0].substring(0, splitline[0].length()-1);
 		return String.join("", splitline);
 	}
+
 	
 	public static String insertTabs(String line, String temp) {
 		String output="";
@@ -272,10 +347,11 @@ public class UpdateMei {
 		return "\t\t<fileDesc>\n<titleStmt>\n<title>" + alldata[j][0] + "</title>"
 				+ "\n<composer>" + alldata[j][1] + "</composer> \n " +
 				"<funder>\n<corpName>Social Sciences and Humanities Research Council, Canada (SSHRC) </corpName>\n</funder>\n"
-				+ "<funder>\n<corpName> Schulich School of Music, McGill University </corpName> \n</funder> \n "
+				+ "<funder>\n<corpName> Schulich School of Music, McGill University</corpName> \n</funder> \n "
 				+ "<funder>\n<corpName>Brandeis University</corpName>\n</funder>\n "
+				+ "<funder>\n<corpName>National Endowment for Humanities (NEH)</corpName> \n</funder> \n "
 				+ "<respStmt> \n"
-				+ "<persName role=\"project director\">Karen Desmond</persName>\n"
+				+ "<persName role=\"project director\" auth=\"VIAF\" auth.uri=\"http://viaf.org/viaf/\" codedval=\"316001213\">Karen Desmond</persName>\n"
 				+ initialsToNames(alldata[j][20],alldata[j][19],"encoder") //convert initials to names
 				+ initialsToNames(alldata[j][22],alldata[j][21],"proofreader") //for loop
 				+ "</respStmt>\n" + "</titleStmt>"
@@ -283,28 +359,39 @@ public class UpdateMei {
 				+ "<persName>Karen Desmond</persName>\n<corpName>Brandeis University</corpName>\n " + "</publisher>"
 				+ "\n<date>2018</date> \n<availability>\n<useRestrict>Available for purposes of academic research and teaching only.</useRestrict>\n</availability>"
 				+ "\n</pubStmt> \n<seriesStmt> \n<title>Measuring Polyphony</title> \n<editor> \n<persName>Karen Desmond</persName> \n"
-				+ "</editor>\n</seriesStmt>\n</fileDesc>\n<sourceDesc>\n<source>\n<notesStmt>\n<annot>Scanned from "+alldata[j][8]+"</annot>\n"
-				+ "</notesStmt>\n</source>\n<source>\n<titleStmt>\n<title>[Primary source for this encoding]\n<identifier>"+alldata[j][3]+"</identifier>\n"
-				+ "</title>\n<pubStmt>\n<unpub/>\n</pubStmt>\n<notesStmt>\n"
-				+ "<annot>Scan checked and corrected against this manuscript</annot>\n<itemList>\n" 
-				+ "<item title=\"IIIF\" target=\""+alldata[j][15]+"\" folio=\""+alldata[j][4]+"\"></item>\n" 
-				+ "<item title=\"other/images\" target=\"" + replaceAmp(alldata[j][18]) + "\" motetus=\""+alldata[j][28]+"\" folio=\"" + alldata[j][4]+ "\"></item>\n" 
-				+ "<item title=\"DIAMM_composition\" target=\""+alldata[j][16]+"\"></item>\n" 
-				+ "<item title=\"DIAMM_source\" target=\""+alldata[j][17]+"\"></item>\n" 
+				+ "</editor>\n<identifier>\n" + 
+				"<ref targettype=\"home_page\" target=\"http://www.measuringpolyphony.org\"/>\n" + 
+				"</identifier>\n</seriesStmt>\n<sourceDesc>\n<source>\n<titleStmt>\n<title>\n<identifier>"+alldata[j][3]+"</identifier>\n"
+				+ "</title>\n<notesStmt>\n"
+				+ "<annot>Primary manuscript source for this encoding.</annot>"
+				+ "\n<annot label=\"original_clefs\">Original clefs for this source: " + clefFormat(alldata[j][6]) + "</annot>"
+				+ "\n<annot label=\"commentary\">" + alldata[j][25] + "</annot>"
+				+ "\n<itemList>\n" 
+				+ "<item targettype=\"IIIF\" target=\""+alldata[j][15]+"\" codeval=\""+alldata[j][4]+"\"></item>\n" 
+				+ "<item targettype=\"other/images\" target=\"" + replaceAmp(alldata[j][18]) + "\" motetus=\""+alldata[j][28]+"\" folio=\"" + alldata[j][4]+ "\"></item>\n" 
+				+ "<item targettype=\"DIAMM_source_record\" target=\""+alldata[j][17]+"\"></item>\n" 
+				+ "<item targettype=\"DIAMM_composition_record\" target=\""+alldata[j][16]+"\"></item>\n" 
 				+ "</itemList>\n</notesStmt>\n</titleStmt>\n</source>\n<source>\n"
-				+ "<titleStmt>\n<title>[Other concordant sources]</title>\n<pubStmt>\n<unpub/>\n</pubStmt>\n<notesStmt>\n"
-				+ "<annot>" + alldata[j][7] + "</annot>\n</notesStmt>\n</titleStmt>\n</source>\n</sourceDesc>\n<encodingDesc> \n"
+				+ "<titleStmt>\n<title>[Other concordant sources]</title>\n<notesStmt>\n"
+				+ "<annot>" + alldata[j][7] + "</annot>\n</notesStmt>\n</titleStmt>\n</source>\n</sourceDesc>\n</fileDesc>\n<encodingDesc> \n"
 				+ "<appInfo>\n<application xml:id=\"sibelius\" isodate=\"2016-4-29T09:24:36Z\" version=\"7510\">"
 				+ "<name type=\"operating-system\">Mac OS X Mountain Lion</name>"
 				+ "</application>\n<application xml:id=\"sibmei\" type=\"plugin\" version=\"2.0.0b3\">\n<name>Sibelius to MEI Exporter (2.0.0b3)</name>\n"
 				+ "</application> \n<application xml:id=\"meiMENS\" isodate=\"2016-4-29\">\n<name>CMN-MEI to MensuralMEI Translator</name>\n"
 				+ "</application>\n</appInfo>\n<editorialDecl>\n<p>\n" + alldata[j][23] + " " + alldata[j][24] + "</p>\n"
-				+ "<annot title=\"variants\">" + alldata[j][25] + "</annot>"
-				+ "\n</editorialDecl>\n<projectDesc>\n<p>Short Project Description</p>\n</projectDesc>\n</encodingDesc>\n<workDesc>\n<work>\n<identifier>"
-				+ "\n<identifier>"+alldata[j][9]+"</identifier>\n</identifier>\n<titleStmt>\n<title>" + alldata[j][0]+"</title>\n<respStmt>\n"
-				+ "<persName role=\"composer\">" + alldata[j][1] + "</persName>\n</respStmt>\n</titleStmt>\n"
+				+ "</editorialDecl>\n<projectDesc>\n<p>\"Measuring Polyphony\" presents digitised versions of polyphonic compositions written during the thirteenth and fourteenth centuries, offering new possibilities for mediating the scholarly and public experience of this richly evocative music within its original manuscript context. The project began at the Schulich School of Music at McGill University, and now continues at Brandeis University. It leverages the potential of the rich digital image repositories of music manuscripts and the community-based standards for encoding music notation of the Music Encoding Initiative (MEI).</p>"
+				+ "\n</projectDesc>\n</encodingDesc>\n<workDesc>\n<work>\n<identifier>"
+				+ "\n<identifier type=\"catalogue_number\">"+alldata[j][9]+"</identifier>\n</identifier>\n<title>" + alldata[j][0]+"</title>\n"
+				+ "<composer>" + alldata[j][1] + "</composer>\n"
 				+ makeParts(j)
-				+ "<otherChar>Original clefs " + clefFormat(alldata[j][6]) + "</otherChar>\n<classification>\n<term>" + alldata[j][2] + "</term>\n</classification>\n</work>\n</workDesc>\n<extMeta>\n"
+				+ "<otherChar>Original clefs " + clefFormat(alldata[j][6]) + "</otherChar>\n<classification>\n<termList>\n<term>" + alldata[j][2] + "</term>\n<termList>\n</classification>\n</work>\n"
+						+ "</workDesc>\n<revisionDesc>\n" + 
+						"<change resp=\"#KD\" isodate=\"2018-05-31\">\n" + 
+						"<changeDesc>\n" + 
+						"<p></p>\n" + 
+						"</changeDesc>\n" + 
+						"</change>\n" + 
+						"</revisionDesc>\n<extMeta>\n"
 				+ alldata[j][25] + "\n</extMeta>\n</meiHead>";
 	}
 	
@@ -316,19 +403,19 @@ public class UpdateMei {
 		String output="";
 		for (int i=0; i<splitInput.length; i++) {
 			if (splitInput[i].equals("KD")) {
-				output = output + "<persName role=\""+role+"\" date=\"" + dateFormat(date) + "\">Karen Desmond</persName> \n";
+				output = output + "<persName role=\""+role+"\" isodate=\"" + dateFormat(date) + "\" xml:id=\"" + splitInput[i] + "\">Karen Desmond</persName> \n";
 			} else if (splitInput[i].equals("EH")) {
-				output = output + "<persName role=\""+role+"\" date=\"" + dateFormat(date) + "\">Emily Hopkins</persName> \n";
+				output = output + "<persName role=\""+role+"\" isodate=\"" + dateFormat(date) + "\" xml:id=\"" + splitInput[i] + "\">Emily Hopkins</persName> \n";
 			} else if (splitInput[i].equals("SH")) {
-				output = output + "<persName role=\""+role+"\" date=\"" + dateFormat(date) + "\">Sam Howes</persName> \n";
+				output = output + "<persName role=\""+role+"\" isodate=\"" + dateFormat(date) + "\" xml:id=\"" + splitInput[i] + "\">Sam Howes</persName> \n";
 			} else if (splitInput[i].equals("SM")) {
-				output = output + "<persName role=\""+role+"\" date=\"" + dateFormat(date) + "\">Sadie Menicanin</persName> \n";
+				output = output + "<persName role=\""+role+"\" isodate=\"" + dateFormat(date) + "\" xml:id=\"" + splitInput[i] + "\">Sadie Menicanin</persName> \n";
 			} else if (splitInput[i].equals("DS")) {
-				output = output + "<persName role=\""+role+"\" date=\"" + dateFormat(date) + "\">Daniel Shapiro</persName> \n";
+				output = output + "<persName role=\""+role+"\" isodate=\"" + dateFormat(date) + "\" xml:id=\"" + splitInput[i] + "\">Daniel Shapiro</persName> \n";
 			} else if (splitInput[i].equals("SMK")) {
-				output = output + "<persName role=\""+role+"\" date=\"" + dateFormat(date) + "\">Shawn Mikkelson</persName> \n";
+				output = output + "<persName role=\""+role+"\" isodate=\"" + dateFormat(date) + "\" xml:id=\"" + splitInput[i] + "\">Shawn Mikkelson</persName> \n";
 			} else {
-				output = output + "<persName role=\""+role+"\" date=\"" + dateFormat(date) + "\">" + splitInput[i] + "</persName> \n";
+				output = output + "<persName role=\""+role+"\" isodate=\"" + dateFormat(date) + "\" xml:id=\"" + splitInput[i] + "\">" + splitInput[i] + "</persName> \n";
 			}
 			}
 		
@@ -336,22 +423,33 @@ public class UpdateMei {
 	}
 	
 	public static String makeParts(int j) {
-		String output = "";
+		String output = "<incip>\n";
 		for (int i=0; i<5; i++) {
 			if(alldata[j][26+i]!=null) {
 			if ( !alldata[j][26+i].equals("")) {
-			output=output+ "<incip>\n<incipText title=\""+ alldata[0][26+i] + "\">"+alldata[j][26+i]+"</incipText>\n</incip>\n";
+			output=output+ "<incipText label=\""+ alldata[0][26+i] + "\" corresp=\"#"+ alldata[0][26+i] + "\">\n<lg><l>"+alldata[j][26+i]+"</l></lg>\n</incipText>\n";
 			}
 			}
 		}
+		output = output + "</incip>\n";
 		return output;
 	}
 	public static String dateFormat(String input) {
 		String[] splitInput = input.split("/");
-		String s = String.join("-", splitInput);
-		return s;
+		if (splitInput[splitInput.length-1].length() == 2) {
+			splitInput[splitInput.length-1] = "20" + splitInput[splitInput.length-1];
+		}
+		//IMPORTANT - THIS METHOD RELIES ON HOW THE DATE IS FORMATTED IN THE DATA, CURRENTLY AS MONTH/DAY/YEAR
+		if (splitInput.length==3) {
+		String temp = splitInput[0];
+		splitInput[0]=splitInput[2];
+		splitInput[2] = splitInput[1];
+		splitInput[1] = temp;
+		}
+		return String.join("-", splitInput);
 	}
 	
+
 	public static String clefFormat(String input) {
 		String[] splitInput = input.split(",");
 		String s = String.join("", splitInput);
