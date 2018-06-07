@@ -78,15 +78,17 @@ public class UpdateMei {
 		FileReader reader = null;
 		boolean alreadyFound=false; //only inserts it in first one
 		int  j= findFile(file);
-		String name = alldata[j][13];
-		String name2 = alldata[j][14];
 		if (j!=0) {
 		try {
 		    reader = new FileReader(file.getPath());
 		    br = new BufferedReader(reader);
 		    String line;
 		    while ((line = br.readLine()) != null) {
-		    	
+		    	if (line.contains("meiversion=")) {
+		    		line = replaceVersion(line);
+		    		line = removeXmlId(line);
+		    		
+		    	}
 				    	if (line.contains("<meiHead")){ //insert the data in meihead
 				    		writer.println(line);
 				    		String temp="";
@@ -116,6 +118,9 @@ public class UpdateMei {
 							}
 							if (line.contains("&amp;amp;apos;")) {
 								line =  line.replace("&amp;amp;apos;", "'");
+							}
+							if (line.contains("&amp;amp;amp;apos;")) {
+								line =  line.replace("&amp;amp;amp;apos;", "'");
 							}
 							if (line.contains("barLine")) {
 								line =  line.replace("barLine", "barLine form=\"dashed\"");
@@ -159,6 +164,32 @@ public class UpdateMei {
 		new File("temp.mei").renameTo(realName); // Rename temp file*/
 		}
 	}
+	
+	public static String replaceVersion(String line) {
+		String[] splitline = line.split("meiversion");
+		String[] splitversion = splitline[1].split("\"");
+		splitversion[1]= "3.0.0";
+		String updatedversion = String.join("\"", splitversion);
+		splitline[1]=updatedversion+"\">";
+		return String.join("meiversion", splitline);
+	}
+	
+	public static String removeXmlId(String line) {
+		String[] splitline = line.split("xml:id");
+		String[] splitversion = splitline[1].split("\"");
+		String updatedversion;
+		if (splitversion.length>3) {
+			String subsplitversion[] = Arrays.copyOfRange(splitversion,  2, splitversion.length-1);
+			
+			updatedversion = String.join("\"", subsplitversion);
+		} else {
+			updatedversion = splitversion[splitversion.length-1];
+		}
+		splitline[1] = updatedversion;
+		splitline[0] = splitline[0].substring(0, splitline[0].length()-1);
+		return String.join("", splitline);
+	}
+	
 	public static String insertTabs(String line, String temp) {
 		String output="";
 		int counter=2;
@@ -238,8 +269,8 @@ public class UpdateMei {
 	}
 	
 	public static String createLines(int j) {
-		return "\t\t<fileDesc xml:id=\"m-3\">\n<titleStmt xml:id=\"m-4\">\n<title xml:id=\"m-10\">" + alldata[j][0] + "</title>"
-				+ "\n<composer xml:id=\"m-11\">" + alldata[j][1] + "</composer> \n " +
+		return "\t\t<fileDesc>\n<titleStmt>\n<title>" + alldata[j][0] + "</title>"
+				+ "\n<composer>" + alldata[j][1] + "</composer> \n " +
 				"<funder>\n<corpName>Social Sciences and Humanities Research Council, Canada (SSHRC) </corpName>\n</funder>\n"
 				+ "<funder>\n<corpName> Schulich School of Music, McGill University </corpName> \n</funder> \n "
 				+ "<funder>\n<corpName>Brandeis University</corpName>\n</funder>\n "
@@ -248,7 +279,7 @@ public class UpdateMei {
 				+ initialsToNames(alldata[j][20],alldata[j][19],"encoder") //convert initials to names
 				+ initialsToNames(alldata[j][22],alldata[j][21],"proofreader") //for loop
 				+ "</respStmt>\n" + "</titleStmt>"
-				+ "\n<pubStmt xml:id=\"m-15\">\n<publisher>\n "
+				+ "\n<pubStmt>\n<publisher>\n "
 				+ "<persName>Karen Desmond</persName>\n<corpName>Brandeis University</corpName>\n " + "</publisher>"
 				+ "\n<date>2018</date> \n<availability>\n<useRestrict>Available for purposes of academic research and teaching only.</useRestrict>\n</availability>"
 				+ "\n</pubStmt> \n<seriesStmt> \n<title>Measuring Polyphony</title> \n<editor> \n<persName>Karen Desmond</persName> \n"
@@ -262,16 +293,16 @@ public class UpdateMei {
 				+ "<item title=\"DIAMM_source\" target=\""+alldata[j][17]+"\"></item>\n" 
 				+ "</itemList>\n</notesStmt>\n</titleStmt>\n</source>\n<source>\n"
 				+ "<titleStmt>\n<title>[Other concordant sources]</title>\n<pubStmt>\n<unpub/>\n</pubStmt>\n<notesStmt>\n"
-				+ "<annot>" + alldata[j][7] + "</annot>\n</notesStmt>\n</titleStmt>\n</source>\n</sourceDesc>\n<encodingDesc xml:id=\"m-18\"> \n"
-				+ "<appInfo xml:id=\"m-19\">\n<application xml:id=\"sibelius\" isodate=\"2016-4-29T09:24:36Z\" version=\"7510\">"
-				+ "<name xml:id=\"m-21\" type=\"operating-system\">Mac OS X Mountain Lion</name>"
-				+ "</application>\n<application xml:id=\"sibmei\" type=\"plugin\" version=\"2.0.0b3\">\n<name xml:id=\"m-23\">Sibelius to MEI Exporter (2.0.0b3)</name>\n"
-				+ "</application> \n<application xml:id=\"meiMENS\" isodate=\"2016-4-29\">\n<name xml:id=\"m-23\">CMN-MEI to MensuralMEI Translator</name>\n"
+				+ "<annot>" + alldata[j][7] + "</annot>\n</notesStmt>\n</titleStmt>\n</source>\n</sourceDesc>\n<encodingDesc> \n"
+				+ "<appInfo>\n<application xml:id=\"sibelius\" isodate=\"2016-4-29T09:24:36Z\" version=\"7510\">"
+				+ "<name type=\"operating-system\">Mac OS X Mountain Lion</name>"
+				+ "</application>\n<application xml:id=\"sibmei\" type=\"plugin\" version=\"2.0.0b3\">\n<name>Sibelius to MEI Exporter (2.0.0b3)</name>\n"
+				+ "</application> \n<application xml:id=\"meiMENS\" isodate=\"2016-4-29\">\n<name>CMN-MEI to MensuralMEI Translator</name>\n"
 				+ "</application>\n</appInfo>\n<editorialDecl>\n<p>\n" + alldata[j][23] + " " + alldata[j][24] + "</p>\n"
 				+ "<annot title=\"variants\">" + alldata[j][25] + "</annot>"
-				+ "\n</editorialDecl>\n<projectDesc>\n<p>Short Project Description</p>\n</projectDesc>\n</encodingDesc>\n<workDesc xml:id=\"m-5\">\n<work xml:id=\"m-6\">\n<identifier>"
-				+ "\n<identifier>"+alldata[j][9]+"</identifier>\n</identifier>\n<titleStmt xml:id=\"m-7\">\n<title xml:id=\"m-8\">" + alldata[j][0]+"</title>\n<respStmt xml:id=\"m-9\">\n"
-				+ "<persName xml:id=\"m-12\" role=\"composer\">" + alldata[j][1] + "</persName>\n</respStmt>\n</titleStmt>\n"
+				+ "\n</editorialDecl>\n<projectDesc>\n<p>Short Project Description</p>\n</projectDesc>\n</encodingDesc>\n<workDesc>\n<work>\n<identifier>"
+				+ "\n<identifier>"+alldata[j][9]+"</identifier>\n</identifier>\n<titleStmt>\n<title>" + alldata[j][0]+"</title>\n<respStmt>\n"
+				+ "<persName role=\"composer\">" + alldata[j][1] + "</persName>\n</respStmt>\n</titleStmt>\n"
 				+ makeParts(j)
 				+ "<otherChar>Original clefs " + clefFormat(alldata[j][6]) + "</otherChar>\n<classification>\n<term>" + alldata[j][2] + "</term>\n</classification>\n</work>\n</workDesc>\n<extMeta>\n"
 				+ alldata[j][25] + "\n</extMeta>\n</meiHead>";
