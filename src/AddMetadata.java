@@ -10,7 +10,7 @@ import java.util.Arrays;
 
 import java.util.Scanner;
 //INSERT element and value in first category
-public class AddData {
+public class AddMetadata {
 	static String[][] alldata = new String[200][50];
 	static int allelements =0;
 	static boolean FILENOTFOUND;
