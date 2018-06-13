@@ -7,9 +7,10 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Arrays;
+
 import java.util.Scanner;
 //INSERT element and value in first category
-public class UpdateMei {
+public class AddData {
 	static String[][] alldata = new String[200][50];
 	static int allelements =0;
 	static boolean FILENOTFOUND;
@@ -39,9 +40,6 @@ public class UpdateMei {
 	}
 	
 	public static void takeInputs() throws IOException {
-	     //System.out.print("Folder?:"); 
-	    // Scanner four = new Scanner(System.in);
-	     //String folder = four.next();
 		mainLoop("oldfiles/Fauv/"); 
 		mainLoop("oldfiles/IvTrem/");
 	     mainLoop("oldfiles/Montpellier/");
@@ -67,7 +65,6 @@ public class UpdateMei {
 		// Open a temporary file to write to.
 		PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter("temp.mei")));
 		BufferedReader br = null;
-		int BUFFER_SIZE = 0;
 		FileReader reader = null;
 		boolean alreadyFound=false; //only inserts it in first one
 		int  j= findFile(file);
@@ -77,11 +74,7 @@ public class UpdateMei {
 		    br = new BufferedReader(reader);
 		    String line;
 		    while ((line = br.readLine()) != null) {
-		    	if (line.contains("meiversion=")) {
-		    		line = replaceType(line,"meiversion", "4.0.0");
-		    		line = removeType(line, "xml:id");
-		    		
-		    	}
+		  
 				    	if (line.contains("<meiHead")){ //insert the data in meihead
 				    		writer.println(line);
 				    		String temp="";
@@ -100,89 +93,10 @@ public class UpdateMei {
 						} else if (alreadyFound && line.contains("</meiHead>")) {
 							alreadyFound=false;
 						} else if (!alreadyFound) {
-							if (line.contains("<scoreDef xml") && !line.contains("midi.bpm")) {
-								line =  line.substring(0, 28) + " midi.bpm=\"" + alldata[j][31] + "\"" + line.substring(28, line.length());
-							}
-							if (line.contains("<staffDef xml") && !line.contains("notationtype") && file.getPath().contains("MENSURAL.mei")) {
-								line =  line.substring(0, 30) + " notationtype=\"mensural.black\"" + line.substring(30, line.length());
-							}
-							if (line.contains("&amp;apos;")) {
-								line =  line.replace("&amp;apos;", "'");
-							}
-							if (line.contains("&amp;amp;apos;")) {
-								line =  line.replace("&amp;amp;apos;", "'");
-							}
-							if (line.contains("&amp;amp;amp;apos;")) {
-								line =  line.replace("&amp;amp;amp;apos;", "'");
-							}
-							if (line.contains("barLine")) {
-								line =  line.replace("barLine", "barLine form=\"dashed\"");
-							}
-							if (file.getPath().contains("MENSURAL.mei")) {
-								if (line.contains("dur.ges")) {
-									line =  removeType(line, "dur.ges");
-								}
-								if (line.contains("quality")) {
-									line = replaceType(line,"quality", "dur.quality");
-								}
-							} else {
-								if (line.contains("stem.mod")) {
-									line =  removeType(line, "stem.mod");
-								}
-								if (line.contains("artic")) {
-									line =  removeType(line, "artic");
-								}
-							}
-							if (line.contains("<staffDef")) {
-								String label = getType(line,"label");
-								line = removeType(line,"label");
-								line = replaceType(line,"xml:id", label);
-								line = line + "\n\t\t\t\t\t\t\t\t\t<label>" + label + "</label>";
-								
-							}
-							if (line.contains("<syl")&& line.contains("wordpos=\"m\"")) {
-								line=addCon(line);
-							}
-							if (!line.contains("<!--") && !line.contains("<instrDef") && !line.contains("<fermata")) { 
-							String findnextsyl = "";
-							String nextline = "";
-							BUFFER_SIZE = 1000;
-					    	br.mark(BUFFER_SIZE);
-					    	int counter=0;
-					    	boolean cont=true;
-					    	while (cont==true) {
-					    		if ((findnextsyl = br.readLine()) != null && BUFFER_SIZE !=0){
-					    			counter++;
-					    			if (counter==1) {
-					    				nextline=findnextsyl;
-					    			}
-									if ( findnextsyl.contains("<syl") || counter==8) {
-										br.reset();
-										cont=false;
-									}
-					    		} else {
-					    			br.reset();
-									cont=false;
-					    		}
-							}
-							if (nextline != null && nextline.contains("</layer>")) {
-								if (line.contains("barLine form=\"dashed\"")) {
-									line =  line.replace("barLine form=\"dashed\"", "barLine form=\"dbl\"");
-								}
-							}
-							
-							if (line.contains("<syl") && line.contains("wordpos=\"i\"")) {
-								
-								 
-								if (findnextsyl != null && findnextsyl.contains("<syl") && !findnextsyl.contains("wordpos=\"i\"")) {
-								line=addCon(line);
-							}
-							}
 							writer.println(line);
 							}
 						}
 				    	
-		    		}
 		    writer.close();
 
 		} catch (FileNotFoundException e) {
@@ -428,7 +342,6 @@ public class UpdateMei {
 		String s = String.join("", splitInput);
 		return s;
 	}
-
 }
 		
 	
