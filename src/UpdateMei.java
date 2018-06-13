@@ -317,8 +317,8 @@ public class UpdateMei {
 	}
 	
 	public static String createLines(int j) {
-		return "\t\t<fileDesc>\n<titleStmt>\n<title>" + alldata[j][0] + "</title>"
-				+ "\n<composer>" + alldata[j][1] + "</composer> \n " +
+		String temp= "\t\t<fileDesc>\n<titleStmt>\n<title>" + alldata[j][0] + ": A Digital Edition</title>"
+				+ "\n<editor>Karen Desmond</editor> \n " +
 				"<funder>\n<corpName>Social Sciences and Humanities Research Council, Canada (SSHRC) </corpName>\n</funder>\n"
 				+ "<funder>\n<corpName> Schulich School of Music, McGill University</corpName> \n</funder> \n "
 				+ "<funder>\n<corpName>Brandeis University</corpName>\n</funder>\n "
@@ -331,22 +331,31 @@ public class UpdateMei {
 				+ "\n<pubStmt>\n<publisher>\n "
 				+ "<persName>Karen Desmond</persName>\n<corpName>Brandeis University</corpName>\n " + "</publisher>"
 				+ "\n<date>2018</date> \n<availability>\n<useRestrict>Available for purposes of academic research and teaching only.</useRestrict>\n</availability>"
-				+ "\n</pubStmt> \n<seriesStmt> \n<title>Measuring Polyphony</title> \n<editor> \n<persName>Karen Desmond</persName> \n"
+				+ "\n</pubStmt> \n<seriesStmt> \n<title>Measuring Polyphony: Digital Encodings of Late Medieval Music</title> \n<editor> \n<persName>Karen Desmond</persName> \n"
 				+ "</editor>\n<identifier>\n" + 
 				"<ref targettype=\"home_page\" target=\"http://www.measuringpolyphony.org\"/>\n" + 
 				"</identifier>\n</seriesStmt>\n<sourceDesc>\n<source>\n<titleStmt>\n<title>\n<identifier>"+alldata[j][3]+"</identifier>\n"
-				+ "</title>\n<notesStmt>\n"
+				+ "</title>\n</titleStmt>\n<notesStmt>\n"
 				+ "<annot>Primary manuscript source for this encoding.</annot>"
 				+ "\n<annot label=\"original_clefs\">Original clefs for this source: " + clefFormat(alldata[j][6]) + "</annot>"
 				+ "\n<annot label=\"commentary\">" + alldata[j][25] + "</annot>"
-				+ "\n<itemList>\n" 
-				+ "<item targettype=\"IIIF\" target=\""+alldata[j][15]+"\" codeval=\""+alldata[j][4]+"\"></item>\n" 
-				+ "<item targettype=\"other/images\" target=\"" + replaceAmp(alldata[j][18]) + "\" motetus=\""+alldata[j][28]+"\" folio=\"" + alldata[j][4]+ "\"></item>\n" 
-				+ "<item targettype=\"DIAMM_source_record\" target=\""+alldata[j][17]+"\"></item>\n" 
-				+ "<item targettype=\"DIAMM_composition_record\" target=\""+alldata[j][16]+"\"></item>\n" 
-				+ "</itemList>\n</notesStmt>\n</titleStmt>\n</source>\n<source>\n"
-				+ "<titleStmt>\n<title>[Other concordant sources]</title>\n<notesStmt>\n"
-				+ "<annot>" + alldata[j][7] + "</annot>\n</notesStmt>\n</titleStmt>\n</source>\n</sourceDesc>\n</fileDesc>\n<encodingDesc> \n"
+				+ "\n</notesStmt>\n<itemList>\n";
+				if (!alldata[j][15].equals("")) {
+					temp = temp + "<item targettype=\"IIIF\" target=\""+alldata[j][15]+"\" codedval=\""+alldata[j][4]+"\"></item>\n";
+				}
+				if (!alldata[j][18].equals("")) {
+					temp = temp + "<item targettype=\"other_images\" target=\"" + replaceAmp(alldata[j][18]) + "\" motetus=\""+alldata[j][28]+"\" folio=\"" + alldata[j][4]+ "\"></item>\n";
+				}
+				if (!alldata[j][17].equals("")) {
+					temp = temp+"<item targettype=\"DIAMM_source_record\" target=\""+alldata[j][17]+"\"></item>\n";
+				}
+				
+				if (!alldata[j][16].equals("")) {
+					temp=temp+"<item targettype=\"DIAMM_composition_record\" target=\""+alldata[j][16]+"\"></item>\n";
+				}
+				temp=temp+ "</itemList>\n</source>\n<source>\n"
+				+ "<titleStmt>\n<title>[Other concordant sources]</title>\n</titleStmt>\n<notesStmt>\n"
+				+ "<annot>" + alldata[j][7] + "</annot>\n</notesStmt>\n</source>\n</sourceDesc>\n</fileDesc>\n<encodingDesc> \n"
 				+ "<appInfo>\n<application xml:id=\"sibelius\" isodate=\"2016-4-29T09:24:36Z\" version=\"7510\">"
 				+ "<name type=\"operating-system\">Mac OS X Mountain Lion</name>"
 				+ "</application>\n<application xml:id=\"sibmei\" type=\"plugin\" version=\"2.0.0b3\">\n<name>Sibelius to MEI Exporter (2.0.0b3)</name>\n"
@@ -357,17 +366,24 @@ public class UpdateMei {
 				+ "\n<identifier type=\"catalogue_number\">"+alldata[j][9]+"</identifier>\n</identifier>\n<title>" + alldata[j][0]+"</title>\n"
 				+ "<composer>" + alldata[j][1] + "</composer>\n"
 				+ makeParts(j)
-				+ "<otherChar>Original clefs " + clefFormat(alldata[j][6]) + "</otherChar>\n<classification>\n<termList>\n<term>" + alldata[j][2] + "</term>\n</termList>\n</classification>\n</work>\n"
+				+ "\n<classification>\n<termList>\n<term>" + alldata[j][2] + "</term>\n</termList>\n</classification>\n</work>\n"
 						+ "</workDesc>\n<revisionDesc>\n" + 
 						"<change resp=\"#KD\" isodate=\"2018-05-31\">\n" + 
 						"<changeDesc>\n" + 
 						"<p></p>\n" + 
 						"</changeDesc>\n" + 
 						"</change>\n" + 
-						"</revisionDesc>\n<extMeta>\n"
-				+ alldata[j][25] + "\n</extMeta>\n</meiHead>";
+						"</revisionDesc>\n</meiHead>";
+				return temp;
 	}
 	
+	public static String checkTarget(String link,int j, int x) {
+		if (alldata[j][x]!="") {
+			return link;
+		} else {
+			return "";
+		}
+	}
 	public static String replaceAmp(String link) {
 		return link.replace("&", "&amp;");
 	}
