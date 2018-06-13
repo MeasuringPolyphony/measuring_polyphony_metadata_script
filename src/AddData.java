@@ -40,9 +40,9 @@ public class AddData {
 	}
 	
 	public static void takeInputs() throws IOException {
-		mainLoop("oldfiles/Fauv/"); 
-		mainLoop("oldfiles/IvTrem/");
-	     mainLoop("oldfiles/Montpellier/");
+		mainLoop("oldfilesadddata/Fauv/"); 
+		mainLoop("oldfilesadddata/IvTrem/");
+	     mainLoop("oldfilesadddata/Montpellier/");
 	}
 	
 	public static void mainLoop(String folder) throws IOException {
@@ -108,7 +108,7 @@ public class AddData {
 
 		// ... and finally ...
 		String path =file.getPath();
-		String newpath = "newfiles/" + path.substring(9, path.length());
+		String newpath = "newfiles" + path.substring(8, path.length());
 		
 		File realName = new File(newpath);
 		realName.delete();

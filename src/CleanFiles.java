@@ -15,13 +15,13 @@ public class CleanFiles {
 	static boolean FILENOTFOUND;
 	public static void main(String[] args) throws IOException {
 		  takeInputs();
-		  System.out.println("File update completed. Find updated files in the newfiles folder.");
+		  System.out.println("File update completed. Find updated files in the newfilescleanscript folder.");
 	}
 	
 	public static void takeInputs() throws IOException {
-		mainLoop("oldfiles/Fauv/"); 
-		mainLoop("oldfiles/IvTrem/");
-	     mainLoop("oldfiles/Montpellier/");
+		mainLoop("oldfilescleanscript/Fauv/"); 
+		mainLoop("oldfilescleanscript/IvTrem/");
+	     mainLoop("oldfilescleanscript/Montpellier/");
 	}
 	
 	public static void mainLoop(String folder) throws IOException {
@@ -150,7 +150,7 @@ public class CleanFiles {
 
 		// ... and finally ...
 		String path =file.getPath();
-		String newpath = "newfiles/" + path.substring(9, path.length());
+		String newpath = "newfiles" + path.substring(8, path.length());
 		
 		File realName = new File(newpath);
 		realName.delete();
