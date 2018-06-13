@@ -123,7 +123,7 @@ public class UpdateMei {
 									line =  removeType(line, "dur.ges");
 								}
 								if (line.contains("quality")) {
-									line = replaceType(line,"quality", "dur.quality");
+									line =  line.replace("quality", "dur.quality");
 								}
 							} else {
 								if (line.contains("stem.mod")) {

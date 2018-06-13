@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mei xml:id="m-1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.music-encoding.org/ns/mei" meiversion="3.0.0">
+<mei xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
 	<meiHead xml:id="m-2">
 		<fileDesc>
 			<titleStmt>
@@ -135,24 +135,20 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 		<body xml:id="m-23">
 			<mdiv xml:id="m-24">
 				<score xml:id="m-25">
-					<scoreDef xml:id="m-26" lyric.name="Opus Text Std" meter.count="4" meter.unit="1" music.name="Opus Std" page.botmar="15mm" page.height="279.4mm" page.leftmar="15mm" page.rightmar="15mm" page.topmar="15mm" page.width="215.9mm" ppq="256" text.name="Plantin MT Std">
+					<scoreDef xml:id="m-26" midi.bpm="800" lyric.name="Opus Text Std" meter.count="4" meter.unit="1" music.name="Opus Std" page.botmar="15mm" page.height="279.4mm" page.leftmar="15mm" page.rightmar="15mm" page.topmar="15mm" page.width="215.9mm" ppq="256" text.name="Plantin MT Std">
 						<staffGrp xml:id="m-27">
 							<staffGrp xml:id="m-40" n="1" symbol="bracket">
-								<staffDef xml:id="m-28" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" label="quadruplum" lines="5" n="1">
-									<!-- voice.female.soprano.ensemble.ah -->
-									<instrDef xml:id="m-30" midi.channel="1" midi.pan="26" midi.volume="100" />
+								<staffDef xml:id="quadruplum" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" lines="5" n="1">
+									<label>quadruplum</label>
 								</staffDef>
-								<staffDef xml:id="m-31" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" label="triplum" lines="5" n="2">
-									<!-- voice.female.alto.ensemble.ah -->
-									<instrDef xml:id="m-33" midi.channel="1" midi.pan="46" midi.volume="100" />
+								<staffDef xml:id="triplum" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" lines="5" n="2">
+									<label>triplum</label>
 								</staffDef>
-								<staffDef xml:id="m-34" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" label="motetus" lines="5" n="3">
-									<!-- voice.female.soprano.ah -->
-									<instrDef xml:id="m-36" midi.channel="1" midi.pan="81" midi.volume="100" />
+								<staffDef xml:id="motetus" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" lines="5" n="3">
+									<label>motetus</label>
 								</staffDef>
-								<staffDef xml:id="m-37" clef.dis="8" clef.dis.place="below" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" label="tenor" lines="5" n="4">
-									<!-- voice.male.tenor.ah -->
-									<instrDef xml:id="m-39" midi.channel="1" midi.pan="101" midi.volume="100" />
+								<staffDef xml:id="tenor" clef.dis="8" clef.dis.place="below" clef.line="2" clef.shape="G" key.mode="major" key.sig="0" lines="5" n="4">
+									<label>tenor</label>
 								</staffDef>
 							</staffGrp>
 						</staffGrp>
@@ -163,10 +159,10 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 								<layer xml:id="m-44" n="1">
 									<note xml:id="m-45" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up">
 										<verse xml:id="m-47" n="1">
-											<syl xml:id="m-48" wordpos="i">Qua</syl>
+											<syl xml:id="m-48" con="d" wordpos="i">Qua</syl>
 										</verse>
 									</note>
-									<note xml:id="m-46" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up" stem.mod="1slash">
+									<note xml:id="m-46" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up">
 										<verse xml:id="m-49" n="1">
 											<syl xml:id="m-50" wordpos="t">si</syl>
 										</verse>
@@ -175,13 +171,13 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 							</staff>
 							<staff xml:id="m-51" n="2">
 								<layer xml:id="m-52" n="1">
-									<note xml:id="m-54" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="g" pnum="67" staff="2" stem.dir="up" stem.mod="2slash">
+									<note xml:id="m-54" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="g" pnum="67" staff="2" stem.dir="up">
 										<verse xml:id="m-57" n="1">
-											<syl xml:id="m-58" wordpos="i">Tra</syl>
+											<syl xml:id="m-58" con="d" wordpos="i">Tra</syl>
 										</verse>
 									</note>
 									<note xml:id="m-55" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="2" stem.dir="up" />
-									<note xml:id="m-56" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="2" stem.dir="up">
+									<note xml:id="m-56" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="2" stem.dir="up">
 										<verse xml:id="m-59" n="1">
 											<syl xml:id="m-60" wordpos="t">hunt</syl>
 										</verse>
@@ -211,7 +207,7 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 						<measure xml:id="m-71" n="2">
 							<staff xml:id="m-72" n="1">
 								<layer xml:id="m-73" n="1">
-									<note xml:id="m-74" artic="ten" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="1" stem.dir="up">
+									<note xml:id="m-74" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="1" stem.dir="up">
 										<verse xml:id="m-80" n="1">
 											<syl xml:id="m-81" wordpos="i">non</syl>
 										</verse>
@@ -219,23 +215,23 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									<tuplet xml:id="m-76" endid="#m-77" num="2" num.format="ratio" numbase="1" startid="#m-75">
 										<note xml:id="m-75" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="65" staff="1" stem.dir="up">
 											<verse xml:id="m-123" n="1">
-												<syl xml:id="m-124" wordpos="i">mi</syl>
+												<syl xml:id="m-124" con="d" wordpos="i">mi</syl>
 											</verse>
 										</note>
-										<note xml:id="m-77" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up">
+										<note xml:id="m-77" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up">
 											<verse xml:id="m-125" n="1">
-												<syl xml:id="m-126" wordpos="m">ni</syl>
+												<syl xml:id="m-126" con="d" wordpos="m">ni</syl>
 											</verse>
 										</note>
 									</tuplet>
-									<note xml:id="m-78" artic="ten" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="1" stem.dir="up">
+									<note xml:id="m-78" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="1" stem.dir="up">
 										<verse xml:id="m-127" n="1">
-											<syl xml:id="m-128" wordpos="m">ste</syl>
+											<syl xml:id="m-128" con="d" wordpos="m">ste</syl>
 										</verse>
 									</note>
 									<note xml:id="m-79" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up">
 										<verse xml:id="m-129" n="1">
-											<syl xml:id="m-130" wordpos="m">ri</syl>
+											<syl xml:id="m-130" con="d" wordpos="m">ri</syl>
 										</verse>
 									</note>
 								</layer>
@@ -250,23 +246,23 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 										</note>
 										<note xml:id="m-86" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="2" stem.dir="up">
 											<verse xml:id="m-142" n="1">
-												<syl xml:id="m-143" wordpos="i">pre</syl>
+												<syl xml:id="m-143" con="d" wordpos="i">pre</syl>
 											</verse>
 										</note>
-										<note xml:id="m-87" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="2" stem.dir="up">
+										<note xml:id="m-87" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="2" stem.dir="up">
 											<verse xml:id="m-144" n="1">
-												<syl xml:id="m-145" wordpos="m">ci</syl>
+												<syl xml:id="m-145" con="d" wordpos="m">ci</syl>
 											</verse>
 										</note>
 									</tuplet>
 									<note xml:id="m-88" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="65" staff="2" stem.dir="up">
 										<verse xml:id="m-146" n="1">
-											<syl xml:id="m-147" wordpos="m">pi</syl>
+											<syl xml:id="m-147" con="d" wordpos="m">pi</syl>
 										</verse>
 									</note>
 									<note xml:id="m-89" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="2" stem.dir="up">
 										<verse xml:id="m-148" n="1">
-											<syl xml:id="m-149" wordpos="m">ci</syl>
+											<syl xml:id="m-149" con="d" wordpos="m">ci</syl>
 										</verse>
 									</note>
 								</layer>
@@ -280,7 +276,7 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 											</verse>
 										</note>
 										<note xml:id="m-96" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="65" staff="3" stem.dir="up" />
-										<note xml:id="m-97" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="3" stem.dir="up" />
+										<note xml:id="m-97" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="3" stem.dir="up" />
 									</tuplet>
 									<tuplet xml:id="m-99" endid="#m-101" num="4" num.format="ratio" numbase="2" startid="#m-98">
 										<note xml:id="m-98" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="3" stem.dir="up">
@@ -314,23 +310,23 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 						<measure xml:id="m-114" n="3">
 							<staff xml:id="m-115" n="1">
 								<layer xml:id="m-116" n="1">
-									<note xml:id="m-117" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="a" pnum="69" staff="1" stem.dir="up" stem.mod="2slash">
+									<note xml:id="m-117" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="a" pnum="69" staff="1" stem.dir="up">
 										<verse xml:id="m-131" n="1">
 											<syl xml:id="m-132" wordpos="t">um</syl>
 										</verse>
 									</note>
-									<note xml:id="m-118" artic="ten" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="1" stem.dir="up">
+									<note xml:id="m-118" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="1" stem.dir="up">
 										<verse xml:id="m-133" n="1">
-											<syl xml:id="m-134" wordpos="i">cre</syl>
+											<syl xml:id="m-134" con="d" wordpos="i">cre</syl>
 										</verse>
 									</note>
 									<tuplet xml:id="m-120" endid="#m-121" num="2" num.format="ratio" numbase="1" startid="#m-119">
 										<note xml:id="m-119" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="1" stem.dir="up">
 											<verse xml:id="m-135" n="1">
-												<syl xml:id="m-136" wordpos="m">di</syl>
+												<syl xml:id="m-136" con="d" wordpos="m">di</syl>
 											</verse>
 										</note>
-										<note xml:id="m-121" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="1" stem.dir="up">
+										<note xml:id="m-121" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="1" stem.dir="up">
 											<verse xml:id="m-137" n="1">
 												<syl xml:id="m-138" wordpos="t">tum</syl>
 											</verse>
@@ -371,31 +367,29 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									</note>
 								</layer>
 							</staff>
-							<fermata xml:id="m-122" form="norm" layer="1" shape="angular" staff="1" startid="#m-121" />
 							<slur xml:id="m-154" layer="1" lform="dashed" staff="3" tstamp="1" tstamp2="3" />
-							<fermata xml:id="m-157" form="norm" layer="1" shape="angular" staff="3" startid="#m-156" />
 						</measure>
 						<measure xml:id="m-168" n="4">
 							<staff xml:id="m-169" n="1">
 								<layer xml:id="m-170" n="1">
-									<note xml:id="m-171" artic="ten" dur="1" dur.ges="1024p" layer="1" oct="5" pname="c" pnum="72" staff="1" stem.dir="down">
+									<note xml:id="m-171" dur="1" dur.ges="1024p" layer="1" oct="5" pname="c" pnum="72" staff="1" stem.dir="down">
 										<verse xml:id="m-175" n="1">
 											<syl xml:id="m-176" wordpos="i">sit</syl>
 										</verse>
 									</note>
 									<note xml:id="m-172" dur="1" dur.ges="1024p" layer="1" oct="5" pname="c" pnum="72" staff="1" stem.dir="down">
 										<verse xml:id="m-209" n="1">
-											<syl xml:id="m-210" wordpos="i">pa</syl>
+											<syl xml:id="m-210" con="d" wordpos="i">pa</syl>
 										</verse>
 									</note>
 									<note xml:id="m-173" dur="1" dur.ges="1024p" layer="1" oct="4" pname="b" pnum="71" staff="1" stem.dir="down">
 										<verse xml:id="m-211" n="1">
-											<syl xml:id="m-212" wordpos="m">sto</syl>
+											<syl xml:id="m-212" con="d" wordpos="m">sto</syl>
 										</verse>
 									</note>
 									<note xml:id="m-174" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up">
 										<verse xml:id="m-213" n="1">
-											<syl xml:id="m-214" wordpos="m">ri</syl>
+											<syl xml:id="m-214" con="d" wordpos="m">ri</syl>
 										</verse>
 									</note>
 								</layer>
@@ -413,15 +407,15 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 												<syl xml:id="m-189" wordpos="i">nos</syl>
 											</verse>
 										</note>
-										<note xml:id="m-183" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="2" stem.dir="up">
+										<note xml:id="m-183" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="2" stem.dir="up">
 											<verse xml:id="m-190" n="1">
-												<syl xml:id="m-191" wordpos="i">te</syl>
+												<syl xml:id="m-191" con="d" wordpos="i">te</syl>
 											</verse>
 										</note>
 									</tuplet>
-									<note xml:id="m-184" artic="ten" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="65" staff="2" stem.dir="up">
+									<note xml:id="m-184" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="65" staff="2" stem.dir="up">
 										<verse xml:id="m-192" n="1">
-											<syl xml:id="m-193" wordpos="m">nen</syl>
+											<syl xml:id="m-193" con="d" wordpos="m">nen</syl>
 										</verse>
 									</note>
 									<note xml:id="m-185" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="2" stem.dir="up">
@@ -435,12 +429,12 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 								<layer xml:id="m-197" n="1">
 									<note xml:id="m-198" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="c" pnum="60" staff="3" stem.dir="up">
 										<verse xml:id="m-230" n="1">
-											<syl xml:id="m-231" wordpos="m">fi</syl>
+											<syl xml:id="m-231" con="d" wordpos="m">fi</syl>
 										</verse>
 									</note>
 									<note xml:id="m-199" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="d" pnum="62" staff="3" stem.dir="up">
 										<verse xml:id="m-232" n="1">
-											<syl xml:id="m-233" wordpos="m">ci</syl>
+											<syl xml:id="m-233" con="d" wordpos="m">ci</syl>
 										</verse>
 									</note>
 								</layer>
@@ -451,7 +445,6 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									<note xml:id="m-204" dur="breve" dur.ges="2048p" layer="1" oct="3" oct.ges="2" pname="b" pnum="47" staff="4" stem.dir="down" />
 								</layer>
 							</staff>
-							<fermata xml:id="m-182" form="norm" layer="1" shape="angular" staff="2" startid="#m-181" />
 							<line xml:id="m-202" dur.ges="6144p" layer="1" staff="4" tstamp="1" tstamp2="3" type="bracket" vo="0.875mm" />
 						</measure>
 						<measure xml:id="m-205" n="5">
@@ -466,7 +459,7 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 							</staff>
 							<staff xml:id="m-217" n="2">
 								<layer xml:id="m-218" n="1">
-									<note xml:id="m-219" dur="long" dur.ges="4096p" layer="1" oct="4" pname="a" pnum="69" staff="2" stem.dir="up" stem.mod="1slash">
+									<note xml:id="m-219" dur="long" dur.ges="4096p" layer="1" oct="4" pname="a" pnum="69" staff="2" stem.dir="up">
 										<verse xml:id="m-283" n="1">
 											<syl xml:id="m-284" wordpos="i">re</syl>
 										</verse>
@@ -475,7 +468,7 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 							</staff>
 							<staff xml:id="m-220" n="3">
 								<layer xml:id="m-221" n="1">
-									<note xml:id="m-223" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="e" pnum="64" staff="3" stem.dir="up" stem.mod="2slash">
+									<note xml:id="m-223" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="e" pnum="64" staff="3" stem.dir="up">
 										<verse xml:id="m-234" n="1">
 											<syl xml:id="m-235" con="u" wordpos="t">unt</syl>
 										</verse>
@@ -506,9 +499,9 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 							</staff>
 							<staff xml:id="m-243" n="2">
 								<layer xml:id="m-244" n="1">
-									<note xml:id="m-245" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="g" pnum="67" staff="2" stem.dir="up" stem.mod="2slash">
+									<note xml:id="m-245" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="g" pnum="67" staff="2" stem.dir="up">
 										<verse xml:id="m-285" n="1">
-											<syl xml:id="m-286" wordpos="m">ge</syl>
+											<syl xml:id="m-286" con="d" wordpos="m">ge</syl>
 										</verse>
 									</note>
 									<tuplet xml:id="m-247" endid="#m-249" num="4" num.format="ratio" numbase="2" startid="#m-246">
@@ -525,13 +518,13 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 								<layer xml:id="m-253" n="1">
 									<note xml:id="m-254" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="d" pnum="62" staff="3" stem.dir="up">
 										<verse xml:id="m-299" n="1">
-											<syl xml:id="m-300" wordpos="m">pe</syl>
+											<syl xml:id="m-300" con="d" wordpos="m">pe</syl>
 										</verse>
 									</note>
 									<tuplet xml:id="m-257" endid="#m-260" num="3" num.format="count" numbase="2" startid="#m-256">
 										<note xml:id="m-256" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="3" stem.dir="up">
 											<verse xml:id="m-301" n="1">
-												<syl xml:id="m-302" wordpos="m">sta</syl>
+												<syl xml:id="m-302" con="d" wordpos="m">sta</syl>
 											</verse>
 										</note>
 										<note xml:id="m-258" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="3" stem.dir="up">
@@ -547,7 +540,6 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									<note xml:id="m-265" dur="breve" dur.ges="2048p" layer="1" oct="3" oct.ges="2" pname="a" pnum="45" staff="4" stem.dir="up" />
 								</layer>
 							</staff>
-							<fermata xml:id="m-255" form="norm" layer="1" shape="angular" staff="3" startid="#m-254" />
 							<line xml:id="m-263" dur.ges="6144p" layer="1" staff="4" tstamp="1" tstamp2="3" type="bracket" vo="0.875mm" />
 						</measure>
 						<measure xml:id="m-266" n="7">
@@ -562,10 +554,10 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									<note xml:id="m-271" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="1" stem.dir="up">
 										<accid xml:id="m-272" accid="s" />
 										<verse xml:id="m-276" n="1">
-											<syl xml:id="m-277" wordpos="i">reg</syl>
+											<syl xml:id="m-277" con="d" wordpos="i">reg</syl>
 										</verse>
 									</note>
-									<note xml:id="m-273" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="1" stem.dir="up">
+									<note xml:id="m-273" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="1" stem.dir="up">
 										<verse xml:id="m-278" n="1">
 											<syl xml:id="m-279" wordpos="t">num</syl>
 										</verse>
@@ -615,19 +607,19 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 											<syl xml:id="m-318" wordpos="i">et</syl>
 										</verse>
 									</note>
-									<note xml:id="m-313" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="1" stem.dir="up">
+									<note xml:id="m-313" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="1" stem.dir="up">
 										<verse xml:id="m-339" n="1">
-											<syl xml:id="m-340" wordpos="i">im</syl>
+											<syl xml:id="m-340" con="d" wordpos="i">im</syl>
 										</verse>
 									</note>
 									<note xml:id="m-315" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up">
 										<verse xml:id="m-341" n="1">
-											<syl xml:id="m-342" wordpos="m">pe</syl>
+											<syl xml:id="m-342" con="d" wordpos="m">pe</syl>
 										</verse>
 									</note>
 									<note xml:id="m-316" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up">
 										<verse xml:id="m-343" n="1">
-											<syl xml:id="m-344" wordpos="m">ri</syl>
+											<syl xml:id="m-344" con="d" wordpos="m">ri</syl>
 										</verse>
 									</note>
 								</layer>
@@ -639,16 +631,16 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 							</staff>
 							<staff xml:id="m-322" n="3">
 								<layer xml:id="m-323" n="1">
-									<note xml:id="m-325" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="a" pnum="69" staff="3" stem.dir="up" stem.mod="2slash">
+									<note xml:id="m-325" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="a" pnum="69" staff="3" stem.dir="up">
 										<verse xml:id="m-364" n="1">
-											<syl xml:id="m-365" wordpos="m">ti</syl>
+											<syl xml:id="m-365" con="d" wordpos="m">ti</syl>
 										</verse>
 									</note>
 									<tuplet xml:id="m-327" endid="#m-329" num="3" num.format="count" numbase="2" startid="#m-326">
 										<note xml:id="m-326" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="3" stem.dir="up" />
 										<note xml:id="m-328" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="3" stem.dir="up">
 											<verse xml:id="m-366" n="1">
-												<syl xml:id="m-367" wordpos="m">cu</syl>
+												<syl xml:id="m-367" con="d" wordpos="m">cu</syl>
 											</verse>
 										</note>
 										<note xml:id="m-329" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="65" staff="3" stem.dir="up" />
@@ -661,7 +653,6 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									<note xml:id="m-334" dur="breve" dur.ges="2048p" layer="1" oct="3" oct.ges="2" pname="g" pnum="43" staff="4" stem.dir="up" />
 								</layer>
 							</staff>
-							<fermata xml:id="m-314" form="norm" layer="1" shape="angular" staff="1" startid="#m-313" />
 							<slur xml:id="m-324" layer="1" lform="dashed" staff="3" tstamp="1" tstamp2="3" />
 							<line xml:id="m-332" dur.ges="5120p" layer="1" staff="4" tstamp="1" tstamp2="2" type="bracket" vo="6.6172mm" />
 						</measure>
@@ -684,14 +675,14 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 											</verse>
 										</note>
 										<note xml:id="m-351" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="2" stem.dir="up" />
-										<note xml:id="m-352" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="65" staff="2" stem.dir="up" />
+										<note xml:id="m-352" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="65" staff="2" stem.dir="up" />
 									</tuplet>
-									<note xml:id="m-353" artic="ten" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="2" stem.dir="up">
+									<note xml:id="m-353" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="2" stem.dir="up">
 										<verse xml:id="m-357" n="1">
 											<syl xml:id="m-358" wordpos="i">qua</syl>
 										</verse>
 									</note>
-									<note xml:id="m-354" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="2" stem.dir="up">
+									<note xml:id="m-354" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="2" stem.dir="up">
 										<verse xml:id="m-393" n="1">
 											<syl xml:id="m-394" wordpos="i">de</syl>
 										</verse>
@@ -719,7 +710,7 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									<tuplet xml:id="m-377" endid="#m-379" num="3" num.format="count" numbase="2" startid="#m-376">
 										<note xml:id="m-376" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up">
 											<verse xml:id="m-382" n="1">
-												<syl xml:id="m-383" wordpos="i">o</syl>
+												<syl xml:id="m-383" con="d" wordpos="i">o</syl>
 											</verse>
 										</note>
 										<note xml:id="m-378" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="65" staff="1" stem.dir="up">
@@ -727,20 +718,20 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 												<syl xml:id="m-385" wordpos="t">nus</syl>
 											</verse>
 										</note>
-										<note xml:id="m-379" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up">
+										<note xml:id="m-379" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up">
 											<verse xml:id="m-411" n="1">
-												<syl xml:id="m-412" wordpos="i">de</syl>
+												<syl xml:id="m-412" con="d" wordpos="i">de</syl>
 											</verse>
 										</note>
 									</tuplet>
 									<note xml:id="m-380" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="1" stem.dir="up">
 										<verse xml:id="m-413" n="1">
-											<syl xml:id="m-414" wordpos="m">re</syl>
+											<syl xml:id="m-414" con="d" wordpos="m">re</syl>
 										</verse>
 									</note>
-									<note xml:id="m-381" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="1" stem.dir="up">
+									<note xml:id="m-381" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="1" stem.dir="up">
 										<verse xml:id="m-415" n="1">
-											<syl xml:id="m-416" wordpos="m">lin</syl>
+											<syl xml:id="m-416" con="d" wordpos="m">lin</syl>
 										</verse>
 									</note>
 								</layer>
@@ -752,19 +743,19 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 											<syl xml:id="m-396" wordpos="t">cent</syl>
 										</verse>
 									</note>
-									<note xml:id="m-390" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="2" stem.dir="up">
+									<note xml:id="m-390" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="2" stem.dir="up">
 										<verse xml:id="m-428" n="1">
-											<syl xml:id="m-429" wordpos="i">sa</syl>
+											<syl xml:id="m-429" con="d" wordpos="i">sa</syl>
 										</verse>
 									</note>
 									<note xml:id="m-391" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="2" stem.dir="up">
 										<verse xml:id="m-430" n="1">
-											<syl xml:id="m-431" wordpos="m">lu</syl>
+											<syl xml:id="m-431" con="d" wordpos="m">lu</syl>
 										</verse>
 									</note>
 									<note xml:id="m-392" dur="1" dur.ges="1024p" layer="1" oct="4" pname="c" pnum="60" staff="2" stem.dir="up">
 										<verse xml:id="m-432" n="1">
-											<syl xml:id="m-433" wordpos="m">bri</syl>
+											<syl xml:id="m-433" con="d" wordpos="m">bri</syl>
 										</verse>
 									</note>
 								</layer>
@@ -780,23 +771,22 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									<note xml:id="m-404" dur="breve" dur.ges="2048p" layer="1" oct="3" oct.ges="2" pname="a" pnum="45" staff="4" stem.dir="up" />
 								</layer>
 							</staff>
-							<fermata xml:id="m-389" form="norm" layer="1" shape="angular" staff="2" startid="#m-388" />
 							<line xml:id="m-402" dur.ges="5120p" layer="1" staff="4" tstamp="1" tstamp2="2" type="bracket" vo="6.6719mm" />
 						</measure>
 						<measure xml:id="m-405" n="11">
 							<staff xml:id="m-406" n="1">
 								<layer xml:id="m-407" n="1">
-									<note xml:id="m-408" artic="ten" dur="1" dur.ges="1024p" layer="1" oct="4" pname="b" pnum="71" staff="1" stem.dir="down">
+									<note xml:id="m-408" dur="1" dur.ges="1024p" layer="1" oct="4" pname="b" pnum="71" staff="1" stem.dir="down">
 										<verse xml:id="m-417" n="1">
-											<syl xml:id="m-418" wordpos="m">quen</syl>
+											<syl xml:id="m-418" con="d" wordpos="m">quen</syl>
 										</verse>
 									</note>
 									<note xml:id="m-409" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="1" stem.dir="up">
 										<verse xml:id="m-419" n="1">
-											<syl xml:id="m-420" wordpos="m">ti</syl>
+											<syl xml:id="m-420" con="d" wordpos="m">ti</syl>
 										</verse>
 									</note>
-									<note xml:id="m-410" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="b" pnum="71" staff="1" stem.dir="down" stem.mod="2slash">
+									<note xml:id="m-410" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="b" pnum="71" staff="1" stem.dir="down">
 										<verse xml:id="m-421" n="1">
 											<syl xml:id="m-422" wordpos="t">bus</syl>
 										</verse>
@@ -805,17 +795,17 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 							</staff>
 							<staff xml:id="m-423" n="2">
 								<layer xml:id="m-424" n="1">
-									<note xml:id="m-425" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="d" pnum="62" staff="2" stem.dir="up" stem.mod="2slash">
+									<note xml:id="m-425" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="d" pnum="62" staff="2" stem.dir="up">
 										<verse xml:id="m-434" n="1">
 											<syl xml:id="m-435" wordpos="t">a</syl>
 										</verse>
 									</note>
-									<note xml:id="m-426" artic="ten" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="2" stem.dir="up">
+									<note xml:id="m-426" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="2" stem.dir="up">
 										<verse xml:id="m-436" n="1">
-											<syl xml:id="m-437" wordpos="i">pri</syl>
+											<syl xml:id="m-437" con="d" wordpos="i">pri</syl>
 										</verse>
 									</note>
-									<note xml:id="m-427" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="2" stem.dir="up">
+									<note xml:id="m-427" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="2" stem.dir="up">
 										<verse xml:id="m-438" n="1">
 											<syl xml:id="m-439" wordpos="t">mo</syl>
 										</verse>
@@ -824,7 +814,7 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 							</staff>
 							<staff xml:id="m-440" n="3">
 								<layer xml:id="m-441" n="1">
-									<note xml:id="m-442" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="f" pnum="66" staff="3" stem.dir="up" stem.mod="2slash">
+									<note xml:id="m-442" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="f" pnum="66" staff="3" stem.dir="up">
 										<accid xml:id="m-443" accid="s" />
 										<verse xml:id="m-449" n="1">
 											<syl xml:id="m-450" wordpos="i">qui</syl>
@@ -835,7 +825,7 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 											<accid xml:id="m-445" accid="s" />
 										</note>
 										<note xml:id="m-447" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="3" stem.dir="up" />
-										<note xml:id="m-448" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="3" stem.dir="up" />
+										<note xml:id="m-448" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="3" stem.dir="up" />
 									</tuplet>
 								</layer>
 							</staff>
@@ -851,17 +841,17 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									<tuplet xml:id="m-458" endid="#m-460" num="3" num.format="count" numbase="2" startid="#m-457">
 										<note xml:id="m-457" dur="1" dur.ges="1024p" layer="1" oct="4" pname="b" pnum="71" staff="1" stem.dir="down">
 											<verse xml:id="m-464" n="1">
-												<syl xml:id="m-465" wordpos="i">ua</syl>
+												<syl xml:id="m-465" con="d" wordpos="i">ua</syl>
 											</verse>
 										</note>
 										<note xml:id="m-459" dur="1" dur.ges="1024p" layer="1" oct="4" pname="b" pnum="71" staff="1" stem.dir="down">
 											<verse xml:id="m-466" n="1">
-												<syl xml:id="m-467" wordpos="m">cu</syl>
+												<syl xml:id="m-467" con="d" wordpos="m">cu</syl>
 											</verse>
 										</note>
-										<note xml:id="m-460" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="b" pnum="71" staff="1" stem.dir="down">
+										<note xml:id="m-460" dur="1" dur.ges="1024p" layer="1" oct="4" pname="b" pnum="71" staff="1" stem.dir="down">
 											<verse xml:id="m-468" n="1">
-												<syl xml:id="m-469" wordpos="m">is</syl>
+												<syl xml:id="m-469" con="d" wordpos="m">is</syl>
 											</verse>
 										</note>
 									</tuplet>
@@ -870,7 +860,7 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 											<syl xml:id="m-471" wordpos="t">que</syl>
 										</verse>
 									</note>
-									<note xml:id="m-463" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up">
+									<note xml:id="m-463" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up">
 										<verse xml:id="m-502" n="1">
 											<syl xml:id="m-503" wordpos="i">lam</syl>
 										</verse>
@@ -887,23 +877,23 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 										</note>
 										<note xml:id="m-476" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="2" stem.dir="up">
 											<verse xml:id="m-513" n="1">
-												<syl xml:id="m-514" wordpos="i">for</syl>
+												<syl xml:id="m-514" con="d" wordpos="i">for</syl>
 											</verse>
 										</note>
-										<note xml:id="m-477" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="2" stem.dir="up">
+										<note xml:id="m-477" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="2" stem.dir="up">
 											<verse xml:id="m-515" n="1">
-												<syl xml:id="m-516" wordpos="m">man</syl>
+												<syl xml:id="m-516" con="d" wordpos="m">man</syl>
 											</verse>
 										</note>
 									</tuplet>
 									<note xml:id="m-478" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="2" stem.dir="up">
 										<verse xml:id="m-517" n="1">
-											<syl xml:id="m-518" wordpos="m">to</syl>
+											<syl xml:id="m-518" con="d" wordpos="m">to</syl>
 										</verse>
 									</note>
 									<note xml:id="m-479" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="2" stem.dir="up">
 										<verse xml:id="m-519" n="1">
-											<syl xml:id="m-520" wordpos="m">pe</syl>
+											<syl xml:id="m-520" con="d" wordpos="m">pe</syl>
 										</verse>
 									</note>
 								</layer>
@@ -912,13 +902,13 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 								<layer xml:id="m-483" n="1">
 									<note xml:id="m-484" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="e" pnum="64" staff="3" stem.dir="up">
 										<verse xml:id="m-529" n="1">
-											<syl xml:id="m-530" wordpos="i">ue</syl>
+											<syl xml:id="m-530" con="d" wordpos="i">ue</syl>
 										</verse>
 									</note>
 									<tuplet xml:id="m-486" endid="#m-488" num="4" num.format="ratio" numbase="2" startid="#m-485">
 										<note xml:id="m-485" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="3" stem.dir="up">
 											<verse xml:id="m-531" n="1">
-												<syl xml:id="m-532" wordpos="m">ra</syl>
+												<syl xml:id="m-532" con="d" wordpos="m">ra</syl>
 											</verse>
 										</note>
 										<note xml:id="m-487" dur="1" dur.ges="1024p" layer="1" oct="4" pname="c" pnum="60" staff="3" stem.dir="up" />
@@ -935,7 +925,6 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									<note xml:id="m-495" dur="breve" dur.ges="2048p" layer="1" oct="3" oct.ges="2" pname="e" pnum="40" staff="4" stem.dir="up" />
 								</layer>
 							</staff>
-							<fermata xml:id="m-462" form="norm" layer="1" shape="angular" staff="1" startid="#m-461" />
 							<line xml:id="m-494" dur.ges="2490p" layer="1" staff="4" tstamp="3" tstamp2="1.4316" type="bracket" vo="7.2188mm" />
 						</measure>
 						<measure xml:id="m-496" n="13">
@@ -943,15 +932,15 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 								<layer xml:id="m-498" n="1">
 									<note xml:id="m-499" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="1" stem.dir="up">
 										<verse xml:id="m-504" n="1">
-											<syl xml:id="m-505" wordpos="m">pa</syl>
+											<syl xml:id="m-505" con="d" wordpos="m">pa</syl>
 										</verse>
 									</note>
 									<note xml:id="m-500" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="1" stem.dir="up">
 										<verse xml:id="m-506" n="1">
-											<syl xml:id="m-507" wordpos="m">di</syl>
+											<syl xml:id="m-507" con="d" wordpos="m">di</syl>
 										</verse>
 									</note>
-									<note xml:id="m-501" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="d" pnum="62" staff="1" stem.dir="up" stem.mod="2slash">
+									<note xml:id="m-501" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="d" pnum="62" staff="1" stem.dir="up">
 										<verse xml:id="m-508" n="1">
 											<syl xml:id="m-509" wordpos="t">bus</syl>
 										</verse>
@@ -969,7 +958,7 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 							</staff>
 							<staff xml:id="m-523" n="3">
 								<layer xml:id="m-524" n="1">
-									<note xml:id="m-526" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="d" pnum="62" staff="3" stem.dir="up" stem.mod="2slash">
+									<note xml:id="m-526" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="d" pnum="62" staff="3" stem.dir="up">
 										<verse xml:id="m-533" n="1">
 											<syl xml:id="m-534" con="u" wordpos="t">ces</syl>
 										</verse>
@@ -995,15 +984,15 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									<tuplet xml:id="m-542" endid="#m-544" num="3" num.format="count" numbase="2" startid="#m-541">
 										<note xml:id="m-541" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up">
 											<verse xml:id="m-551" n="1">
-												<syl xml:id="m-552" wordpos="i">su</syl>
+												<syl xml:id="m-552" con="d" wordpos="i">su</syl>
 											</verse>
 										</note>
 										<note xml:id="m-543" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="65" staff="1" stem.dir="up">
 											<verse xml:id="m-553" n="1">
-												<syl xml:id="m-554" wordpos="m">mun</syl>
+												<syl xml:id="m-554" con="d" wordpos="m">mun</syl>
 											</verse>
 										</note>
-										<note xml:id="m-544" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up">
+										<note xml:id="m-544" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up">
 											<verse xml:id="m-555" n="1">
 												<syl xml:id="m-556" wordpos="t">tur</syl>
 											</verse>
@@ -1017,19 +1006,19 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 										</note>
 										<note xml:id="m-547" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up">
 											<verse xml:id="m-584" n="1">
-												<syl xml:id="m-585" wordpos="i">do</syl>
+												<syl xml:id="m-585" con="d" wordpos="i">do</syl>
 											</verse>
 										</note>
 										<note xml:id="m-548" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="1" stem.dir="up">
 											<verse xml:id="m-586" n="1">
-												<syl xml:id="m-587" wordpos="m">mi</syl>
+												<syl xml:id="m-587" con="d" wordpos="m">mi</syl>
 											</verse>
 										</note>
 									</tuplet>
 									<tuplet xml:id="m-550" num="4" num.format="ratio" numbase="2" startid="#m-549">
 										<note xml:id="m-549" dur="1" dur.ges="1024p" layer="1" oct="4" pname="b" pnum="71" staff="1" stem.dir="down">
 											<verse xml:id="m-588" n="1">
-												<syl xml:id="m-589" wordpos="m">ni</syl>
+												<syl xml:id="m-589" con="d" wordpos="m">ni</syl>
 											</verse>
 										</note>
 									</tuplet>
@@ -1044,13 +1033,13 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 								<layer xml:id="m-564" n="1">
 									<note xml:id="m-565" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="d" pnum="62" staff="3" stem.dir="up">
 										<verse xml:id="m-616" n="1">
-											<syl xml:id="m-617" wordpos="m">i</syl>
+											<syl xml:id="m-617" con="d" wordpos="m">i</syl>
 										</verse>
 									</note>
 									<tuplet xml:id="m-567" endid="#m-569" num="4" num.format="ratio" numbase="2" startid="#m-566">
 										<note xml:id="m-566" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="3" stem.dir="up">
 											<verse xml:id="m-618" n="1">
-												<syl xml:id="m-619" wordpos="m">ci</syl>
+												<syl xml:id="m-619" con="d" wordpos="m">ci</syl>
 											</verse>
 										</note>
 										<note xml:id="m-568" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="3" stem.dir="up" />
@@ -1069,8 +1058,6 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									<note xml:id="m-578" dur="breve" dur.ges="2048p" layer="1" oct="3" oct.ges="2" pname="a" pnum="45" staff="4" stem.dir="up" />
 								</layer>
 							</staff>
-							<fermata xml:id="m-562" form="norm" layer="1" shape="angular" staff="2" startid="#m-561" />
-							<fermata xml:id="m-572" form="norm" layer="1" shape="angular" staff="3" startid="#m-570" />
 							<line xml:id="m-576" dur.ges="2560p" layer="1" staff="4" tstamp="1" tstamp2="3.5" type="bracket" vo="7.875mm" />
 						</measure>
 						<pb xml:id="m-580" n="3" />
@@ -1089,7 +1076,7 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									<tuplet xml:id="m-595" endid="#m-597" num="3" num.format="count" numbase="2" startid="#m-594">
 										<note xml:id="m-594" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="2" stem.dir="up">
 											<verse xml:id="m-600" n="1">
-												<syl xml:id="m-601" wordpos="i">gau</syl>
+												<syl xml:id="m-601" con="d" wordpos="i">gau</syl>
 											</verse>
 										</note>
 										<note xml:id="m-596" dur="1" dur.ges="1024p" layer="1" oct="3" pname="a" pnum="57" staff="2" stem.dir="up">
@@ -1097,18 +1084,18 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 												<syl xml:id="m-603" wordpos="t">dent</syl>
 											</verse>
 										</note>
-										<note xml:id="m-597" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="2" stem.dir="up">
+										<note xml:id="m-597" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="2" stem.dir="up">
 											<verse xml:id="m-604" n="1">
-												<syl xml:id="m-605" wordpos="i">fru</syl>
+												<syl xml:id="m-605" con="d" wordpos="i">fru</syl>
 											</verse>
 										</note>
 									</tuplet>
-									<note xml:id="m-598" artic="ten" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="2" stem.dir="up">
+									<note xml:id="m-598" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="2" stem.dir="up">
 										<verse xml:id="m-606" n="1">
 											<syl xml:id="m-607" wordpos="t">i</syl>
 										</verse>
 									</note>
-									<note xml:id="m-599" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="2" stem.dir="up">
+									<note xml:id="m-599" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="2" stem.dir="up">
 										<verse xml:id="m-637" n="1">
 											<syl xml:id="m-638" wordpos="i">po</syl>
 										</verse>
@@ -1149,13 +1136,13 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									<note xml:id="m-632" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="2" stem.dir="up">
 										<accid xml:id="m-633" accid="s" />
 										<verse xml:id="m-639" n="1">
-											<syl xml:id="m-640" wordpos="m">ten</syl>
+											<syl xml:id="m-640" con="d" wordpos="m">ten</syl>
 										</verse>
 									</note>
 									<note xml:id="m-634" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="2" stem.dir="up">
 										<accid xml:id="m-635" accid="s" />
 										<verse xml:id="m-641" n="1">
-											<syl xml:id="m-642" wordpos="m">ci</syl>
+											<syl xml:id="m-642" con="d" wordpos="m">ci</syl>
 										</verse>
 									</note>
 									<note xml:id="m-636" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="g" pnum="67" staff="2" stem.dir="up">
@@ -1192,7 +1179,7 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									<tuplet xml:id="m-662" endid="#m-664" num="3" num.format="count" numbase="2" startid="#m-660">
 										<note xml:id="m-660" dur="1" dur.ges="1024p" layer="1" oct="4" pname="b" pnum="71" staff="1" stem.dir="down">
 											<verse xml:id="m-669" n="1">
-												<syl xml:id="m-670" wordpos="i">pen</syl>
+												<syl xml:id="m-670" con="d" wordpos="i">pen</syl>
 											</verse>
 										</note>
 										<note xml:id="m-663" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="1" stem.dir="up">
@@ -1200,19 +1187,19 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 												<syl xml:id="m-672" wordpos="t">sat</syl>
 											</verse>
 										</note>
-										<note xml:id="m-664" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up">
+										<note xml:id="m-664" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up">
 											<verse xml:id="m-673" n="1">
 												<syl xml:id="m-674" wordpos="i">que</syl>
 											</verse>
 										</note>
 									</tuplet>
-									<note xml:id="m-665" artic="ten" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="1" stem.dir="up">
+									<note xml:id="m-665" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="1" stem.dir="up">
 										<accid xml:id="m-666" accid="s" />
 										<verse xml:id="m-675" n="1">
-											<syl xml:id="m-676" wordpos="i">la</syl>
+											<syl xml:id="m-676" con="d" wordpos="i">la</syl>
 										</verse>
 									</note>
-									<note xml:id="m-667" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="1" stem.dir="up">
+									<note xml:id="m-667" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="1" stem.dir="up">
 										<accid xml:id="m-668" accid="s" />
 										<verse xml:id="m-677" n="1">
 											<syl xml:id="m-678" wordpos="t">ne</syl>
@@ -1234,11 +1221,11 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 								<layer xml:id="m-684" n="1">
 									<note xml:id="m-686" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="d" pnum="62" staff="3" stem.dir="up">
 										<verse xml:id="m-691" n="1">
-											<syl xml:id="m-692" wordpos="m">en</syl>
+											<syl xml:id="m-692" con="d" wordpos="m">en</syl>
 										</verse>
 									</note>
 									<note xml:id="m-687" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="3" stem.dir="up" />
-									<note xml:id="m-688" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="3" stem.dir="up">
+									<note xml:id="m-688" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="3" stem.dir="up">
 										<verse xml:id="m-693" n="1">
 											<syl xml:id="m-694" wordpos="t">tes</syl>
 										</verse>
@@ -1250,7 +1237,6 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									<note xml:id="m-697" dur="long" dur.ges="4096p" layer="1" oct="3" oct.ges="2" pname="b" pnum="47" staff="4" stem.dir="down" />
 								</layer>
 							</staff>
-							<fermata xml:id="m-661" form="norm" layer="1" shape="angular" staff="1" startid="#m-660" />
 							<slur xml:id="m-685" layer="1" lform="dashed" staff="3" tstamp="1" tstamp2="3" />
 						</measure>
 						<measure xml:id="m-698" n="18">
@@ -1259,21 +1245,21 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									<tuplet xml:id="m-702" endid="#m-704" num="3" num.format="count" numbase="2" startid="#m-701">
 										<note xml:id="m-701" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="1" stem.dir="up">
 											<verse xml:id="m-707" n="1">
-												<syl xml:id="m-708" wordpos="i">pre</syl>
+												<syl xml:id="m-708" con="d" wordpos="i">pre</syl>
 											</verse>
 										</note>
 										<note xml:id="m-703" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="1" stem.dir="up">
 											<verse xml:id="m-709" n="1">
-												<syl xml:id="m-710" wordpos="m">ci</syl>
+												<syl xml:id="m-710" con="d" wordpos="m">ci</syl>
 											</verse>
 										</note>
-										<note xml:id="m-704" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="1" stem.dir="up">
+										<note xml:id="m-704" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="1" stem.dir="up">
 											<verse xml:id="m-711" n="1">
 												<syl xml:id="m-712" wordpos="t">um</syl>
 											</verse>
 										</note>
 									</tuplet>
-									<note xml:id="m-705" artic="ten" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up">
+									<note xml:id="m-705" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up">
 										<verse xml:id="m-713" n="1">
 											<syl xml:id="m-714" wordpos="i">et</syl>
 										</verse>
@@ -1289,7 +1275,7 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 								<layer xml:id="m-718" n="1">
 									<note xml:id="m-719" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="e" pnum="64" staff="2" stem.dir="up">
 										<verse xml:id="m-725" n="1">
-											<syl xml:id="m-726" wordpos="m">no</syl>
+											<syl xml:id="m-726" con="d" wordpos="m">no</syl>
 										</verse>
 									</note>
 									<note xml:id="m-721" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="2" stem.dir="up">
@@ -1309,12 +1295,12 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 											</verse>
 										</note>
 										<note xml:id="m-733" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="3" stem.dir="up" />
-										<note xml:id="m-734" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="c" pnum="60" staff="3" stem.dir="up" />
+										<note xml:id="m-734" dur="1" dur.ges="1024p" layer="1" oct="4" pname="c" pnum="60" staff="3" stem.dir="up" />
 									</tuplet>
 									<tuplet xml:id="m-736" endid="#m-738" num="4" num.format="ratio" numbase="2" startid="#m-735">
 										<note xml:id="m-735" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="3" stem.dir="up">
 											<verse xml:id="m-765" n="1">
-												<syl xml:id="m-766" wordpos="m">cu</syl>
+												<syl xml:id="m-766" con="d" wordpos="m">cu</syl>
 											</verse>
 										</note>
 										<note xml:id="m-737" dur="1" dur.ges="1024p" layer="1" oct="4" pname="c" pnum="60" staff="3" stem.dir="up" />
@@ -1337,9 +1323,9 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 						<measure xml:id="m-746" n="19">
 							<staff xml:id="m-747" n="1">
 								<layer xml:id="m-748" n="1">
-									<note xml:id="m-750" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up" stem.mod="2slash">
+									<note xml:id="m-750" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up">
 										<verse xml:id="m-753" n="1">
-											<syl xml:id="m-754" wordpos="i">cu</syl>
+											<syl xml:id="m-754" con="d" wordpos="i">cu</syl>
 										</verse>
 									</note>
 									<note xml:id="m-751" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up" />
@@ -1379,7 +1365,7 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 						<measure xml:id="m-773" n="20">
 							<staff xml:id="m-774" n="1">
 								<layer xml:id="m-775" n="1">
-									<note xml:id="m-776" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="a" pnum="69" staff="1" stem.dir="up" stem.mod="1slash">
+									<note xml:id="m-776" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="a" pnum="69" staff="1" stem.dir="up">
 										<verse xml:id="m-781" n="1">
 											<syl xml:id="m-782" wordpos="i">de</syl>
 										</verse>
@@ -1387,12 +1373,12 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									<note xml:id="m-778" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="1" stem.dir="up">
 										<accid xml:id="m-779" accid="s" />
 										<verse xml:id="m-809" n="1">
-											<syl xml:id="m-810" wordpos="i">o</syl>
+											<syl xml:id="m-810" con="d" wordpos="i">o</syl>
 										</verse>
 									</note>
 									<note xml:id="m-780" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="1" stem.dir="up">
 										<verse xml:id="m-811" n="1">
-											<syl xml:id="m-812" wordpos="m">ui</syl>
+											<syl xml:id="m-812" con="d" wordpos="m">ui</syl>
 										</verse>
 									</note>
 								</layer>
@@ -1406,16 +1392,16 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 											</verse>
 										</note>
 										<note xml:id="m-787" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="2" stem.dir="up" />
-										<note xml:id="m-788" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="c" pnum="60" staff="2" stem.dir="up" />
+										<note xml:id="m-788" dur="1" dur.ges="1024p" layer="1" oct="4" pname="c" pnum="60" staff="2" stem.dir="up" />
 									</tuplet>
 									<note xml:id="m-790" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="2" stem.dir="up">
 										<verse xml:id="m-819" n="1">
-											<syl xml:id="m-820" wordpos="i">o</syl>
+											<syl xml:id="m-820" con="d" wordpos="i">o</syl>
 										</verse>
 									</note>
 									<note xml:id="m-791" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="2" stem.dir="up">
 										<verse xml:id="m-821" n="1">
-											<syl xml:id="m-822" wordpos="m">ne</syl>
+											<syl xml:id="m-822" con="d" wordpos="m">ne</syl>
 										</verse>
 									</note>
 								</layer>
@@ -1431,9 +1417,6 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									<note xml:id="m-803" dur="breve" dur.ges="2048p" layer="1" oct="3" oct.ges="2" pname="b" pnum="47" staff="4" stem.dir="down" />
 								</layer>
 							</staff>
-							<fermata xml:id="m-777" form="norm" layer="1" shape="angular" staff="1" startid="#m-776" />
-							<fermata xml:id="m-789" form="norm" layer="1" shape="angular" staff="2" startid="#m-788" />
-							<fermata xml:id="m-799" form="norm" layer="1" shape="angular" staff="3" startid="#m-798" />
 						</measure>
 						<measure xml:id="m-804" n="21">
 							<staff xml:id="m-805" n="1">
@@ -1480,17 +1463,17 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 							</staff>
 							<staff xml:id="m-838" n="2">
 								<layer xml:id="m-839" n="1">
-									<note xml:id="m-840" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="d" pnum="62" staff="2" stem.dir="up" stem.mod="2slash">
+									<note xml:id="m-840" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="d" pnum="62" staff="2" stem.dir="up">
 										<verse xml:id="m-843" n="1">
-											<syl xml:id="m-844" wordpos="i">pro</syl>
+											<syl xml:id="m-844" con="d" wordpos="i">pro</syl>
 										</verse>
 									</note>
-									<note xml:id="m-841" artic="ten" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="65" staff="2" stem.dir="up">
+									<note xml:id="m-841" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="65" staff="2" stem.dir="up">
 										<verse xml:id="m-845" n="1">
-											<syl xml:id="m-846" wordpos="m">mo</syl>
+											<syl xml:id="m-846" con="d" wordpos="m">mo</syl>
 										</verse>
 									</note>
-									<note xml:id="m-842" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="65" staff="2" stem.dir="up">
+									<note xml:id="m-842" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="65" staff="2" stem.dir="up">
 										<verse xml:id="m-847" n="1">
 											<syl xml:id="m-848" wordpos="t">uent</syl>
 										</verse>
@@ -1501,7 +1484,7 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 								<layer xml:id="m-850" n="1">
 									<note xml:id="m-851" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="g" pnum="67" staff="3" stem.dir="up">
 										<verse xml:id="m-857" n="1">
-											<syl xml:id="m-858" wordpos="i">pen</syl>
+											<syl xml:id="m-858" con="d" wordpos="i">pen</syl>
 										</verse>
 									</note>
 									<tuplet xml:id="m-854" endid="#m-856" num="3" num.format="count" numbase="2" startid="#m-852">
@@ -1532,8 +1515,8 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 											<syl xml:id="m-875" wordpos="i">de</syl>
 										</verse>
 									</note>
-									<note xml:id="m-871" artic="ten" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="1" stem.dir="up" />
-									<note xml:id="m-872" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="68" staff="1" stem.dir="up">
+									<note xml:id="m-871" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="1" stem.dir="up" />
+									<note xml:id="m-872" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="68" staff="1" stem.dir="up">
 										<accid xml:id="m-873" accid="s" />
 										<verse xml:id="m-909" n="1">
 											<syl xml:id="m-910" wordpos="i">quo</syl>
@@ -1543,13 +1526,13 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 							</staff>
 							<staff xml:id="m-876" n="2">
 								<layer xml:id="m-877" n="1">
-									<note xml:id="m-879" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="e" pnum="64" staff="2" stem.dir="up" stem.mod="2slash">
+									<note xml:id="m-879" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="e" pnum="64" staff="2" stem.dir="up">
 										<verse xml:id="m-883" n="1">
 											<syl xml:id="m-884" wordpos="i">ad</syl>
 										</verse>
 									</note>
 									<note xml:id="m-880" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="2" stem.dir="up" />
-									<note xml:id="m-881" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="c" pnum="61" staff="2" stem.dir="up">
+									<note xml:id="m-881" dur="1" dur.ges="1024p" layer="1" oct="4" pname="c" pnum="61" staff="2" stem.dir="up">
 										<accid xml:id="m-882" accid="s" />
 										<verse xml:id="m-924" n="1">
 											<syl xml:id="m-925" wordpos="i">of</syl>
@@ -1597,23 +1580,23 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 										</note>
 										<note xml:id="m-905" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up">
 											<verse xml:id="m-913" n="1">
-												<syl xml:id="m-914" wordpos="i">san</syl>
+												<syl xml:id="m-914" con="d" wordpos="i">san</syl>
 											</verse>
 										</note>
-										<note xml:id="m-906" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="1" stem.dir="up">
+										<note xml:id="m-906" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="1" stem.dir="up">
 											<verse xml:id="m-915" n="1">
 												<syl xml:id="m-916" wordpos="t">guis</syl>
 											</verse>
 										</note>
 									</tuplet>
-									<note xml:id="m-907" artic="ten" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="1" stem.dir="up">
+									<note xml:id="m-907" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="1" stem.dir="up">
 										<verse xml:id="m-950" n="1">
-											<syl xml:id="m-951" wordpos="i">o</syl>
+											<syl xml:id="m-951" con="d" wordpos="i">o</syl>
 										</verse>
 									</note>
 									<note xml:id="m-908" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="1" stem.dir="up">
 										<verse xml:id="m-952" n="1">
-											<syl xml:id="m-953" wordpos="m">ui</syl>
+											<syl xml:id="m-953" con="d" wordpos="m">ui</syl>
 										</verse>
 									</note>
 								</layer>
@@ -1622,20 +1605,20 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 								<layer xml:id="m-918" n="1">
 									<note xml:id="m-919" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="2" stem.dir="up">
 										<verse xml:id="m-926" n="1">
-											<syl xml:id="m-927" wordpos="m">fi</syl>
+											<syl xml:id="m-927" con="d" wordpos="m">fi</syl>
 										</verse>
 									</note>
-									<note xml:id="m-920" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="3" pname="b" pnum="59" staff="2" stem.dir="up">
+									<note xml:id="m-920" dur="1" dur.ges="1024p" layer="1" oct="3" pname="b" pnum="59" staff="2" stem.dir="up">
 										<verse xml:id="m-928" n="1">
-											<syl xml:id="m-929" wordpos="m">ci</syl>
+											<syl xml:id="m-929" con="d" wordpos="m">ci</syl>
 										</verse>
 									</note>
-									<note xml:id="m-921" artic="ten" dur="1" dur.ges="1024p" layer="1" oct="4" pname="c" pnum="60" staff="2" stem.dir="up">
+									<note xml:id="m-921" dur="1" dur.ges="1024p" layer="1" oct="4" pname="c" pnum="60" staff="2" stem.dir="up">
 										<verse xml:id="m-930" n="1">
 											<syl xml:id="m-931" wordpos="t">a</syl>
 										</verse>
 									</note>
-									<note xml:id="m-922" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="2" stem.dir="up">
+									<note xml:id="m-922" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="2" stem.dir="up">
 										<verse xml:id="m-932" n="1">
 											<syl xml:id="m-933" wordpos="i">quos</syl>
 										</verse>
@@ -1646,13 +1629,13 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 								<layer xml:id="m-935" n="1">
 									<note xml:id="m-936" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="d" pnum="62" staff="3" stem.dir="up">
 										<verse xml:id="m-968" n="1">
-											<syl xml:id="m-969" wordpos="m">pi</syl>
+											<syl xml:id="m-969" con="d" wordpos="m">pi</syl>
 										</verse>
 									</note>
 									<tuplet xml:id="m-938" endid="#m-940" num="3" num.format="count" numbase="2" startid="#m-937">
 										<note xml:id="m-937" dur="1" dur.ges="1024p" layer="1" oct="4" pname="c" pnum="60" staff="3" stem.dir="up">
 											<verse xml:id="m-970" n="1">
-												<syl xml:id="m-971" wordpos="m">ci</syl>
+												<syl xml:id="m-971" con="d" wordpos="m">ci</syl>
 											</verse>
 										</note>
 										<note xml:id="m-939" dur="1" dur.ges="1024p" layer="1" oct="3" pname="b" pnum="59" staff="3" stem.dir="up" />
@@ -1666,13 +1649,12 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									<note xml:id="m-945" dur="breve" dur.ges="2048p" layer="1" oct="3" oct.ges="2" pname="e" pnum="40" staff="4" stem.dir="up" />
 								</layer>
 							</staff>
-							<fermata xml:id="m-923" form="norm" layer="1" shape="angular" staff="2" startid="#m-922" />
 							<line xml:id="m-943" dur.ges="2730p" layer="1" staff="4" tstamp="1" tstamp2="3.666" type="bracket" vo="7.875mm" />
 						</measure>
 						<measure xml:id="m-946" n="25">
 							<staff xml:id="m-947" n="1">
 								<layer xml:id="m-948" n="1">
-									<note xml:id="m-949" dur="long" dur.ges="4096p" layer="1" oct="4" pname="e" pnum="64" staff="1" stem.dir="up" stem.mod="2slash">
+									<note xml:id="m-949" dur="long" dur.ges="4096p" layer="1" oct="4" pname="e" pnum="64" staff="1" stem.dir="up">
 										<verse xml:id="m-954" n="1">
 											<syl xml:id="m-955" wordpos="t">um</syl>
 										</verse>
@@ -1681,23 +1663,23 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 							</staff>
 							<staff xml:id="m-956" n="2">
 								<layer xml:id="m-957" n="1">
-									<note xml:id="m-958" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="e" pnum="64" staff="2" stem.dir="up" stem.mod="2slash">
+									<note xml:id="m-958" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="e" pnum="64" staff="2" stem.dir="up">
 										<verse xml:id="m-995" n="1">
-											<syl xml:id="m-996" wordpos="i">de</syl>
+											<syl xml:id="m-996" con="d" wordpos="i">de</syl>
 										</verse>
 									</note>
 									<note xml:id="m-959" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="2" stem.dir="up" />
-									<note xml:id="m-960" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="2" stem.dir="up">
+									<note xml:id="m-960" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="2" stem.dir="up">
 										<accid xml:id="m-961" accid="s" />
 										<verse xml:id="m-997" n="1">
-											<syl xml:id="m-998" wordpos="m">be</syl>
+											<syl xml:id="m-998" con="d" wordpos="m">be</syl>
 										</verse>
 									</note>
 								</layer>
 							</staff>
 							<staff xml:id="m-962" n="3">
 								<layer xml:id="m-963" n="1">
-									<note xml:id="m-964" dur="long" dur.ges="4096p" layer="1" oct="3" pname="b" pnum="59" staff="3" stem.dir="up" stem.mod="2slash">
+									<note xml:id="m-964" dur="long" dur.ges="4096p" layer="1" oct="3" pname="b" pnum="59" staff="3" stem.dir="up">
 										<verse xml:id="m-972" n="1">
 											<syl xml:id="m-973" wordpos="t">unt</syl>
 										</verse>
@@ -1709,7 +1691,6 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									<note xml:id="m-977" dur="long" dur.ges="4096p" layer="1" oct="3" oct.ges="2" pname="e" pnum="40" staff="4" stem.dir="up" />
 								</layer>
 							</staff>
-							<fermata xml:id="m-965" form="norm" layer="1" shape="angular" staff="3" startid="#m-964" />
 							<line xml:id="m-976" dur.ges="12280p" layer="1" staff="4" tstamp="1" tstamp2="4.9922" type="bracket" vo="7.2734mm" />
 						</measure>
 						<measure xml:id="m-978" n="26">
@@ -1720,44 +1701,44 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 											<syl xml:id="m-987" wordpos="i">est</syl>
 										</verse>
 									</note>
-									<note xml:id="m-982" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up">
+									<note xml:id="m-982" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up">
 										<verse xml:id="m-1015" n="1">
-											<syl xml:id="m-1016" wordpos="i">re</syl>
+											<syl xml:id="m-1016" con="d" wordpos="i">re</syl>
 										</verse>
 									</note>
-									<note xml:id="m-984" artic="ten" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="1" stem.dir="up">
+									<note xml:id="m-984" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="1" stem.dir="up">
 										<verse xml:id="m-1017" n="1">
-											<syl xml:id="m-1018" wordpos="m">qui</syl>
+											<syl xml:id="m-1018" con="d" wordpos="m">qui</syl>
 										</verse>
 									</note>
 									<note xml:id="m-985" dur="1" dur.ges="1024p" layer="1" oct="4" pname="b" pnum="71" staff="1" stem.dir="down">
 										<verse xml:id="m-1019" n="1">
-											<syl xml:id="m-1020" wordpos="m">ren</syl>
+											<syl xml:id="m-1020" con="d" wordpos="m">ren</syl>
 										</verse>
 									</note>
 								</layer>
 							</staff>
 							<staff xml:id="m-988" n="2">
 								<layer xml:id="m-989" n="1">
-									<note xml:id="m-990" artic="ten" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="2" stem.dir="up">
+									<note xml:id="m-990" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="2" stem.dir="up">
 										<verse xml:id="m-999" n="1">
 											<syl xml:id="m-1000" wordpos="t">rent</syl>
 										</verse>
 									</note>
-									<note xml:id="m-991" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="2" stem.dir="up">
+									<note xml:id="m-991" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="2" stem.dir="up">
 										<verse xml:id="m-1026" n="1">
-											<syl xml:id="m-1027" wordpos="i">de</syl>
+											<syl xml:id="m-1027" con="d" wordpos="i">de</syl>
 										</verse>
 									</note>
-									<note xml:id="m-992" artic="ten" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="2" stem.dir="up">
+									<note xml:id="m-992" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="2" stem.dir="up">
 										<verse xml:id="m-1028" n="1">
-											<syl xml:id="m-1029" wordpos="m">pri</syl>
+											<syl xml:id="m-1029" con="d" wordpos="m">pri</syl>
 										</verse>
 									</note>
 									<note xml:id="m-993" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="2" stem.dir="up">
 										<accid xml:id="m-994" accid="s" />
 										<verse xml:id="m-1030" n="1">
-											<syl xml:id="m-1031" wordpos="m">me</syl>
+											<syl xml:id="m-1031" con="d" wordpos="m">me</syl>
 										</verse>
 									</note>
 								</layer>
@@ -1769,7 +1750,7 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 											<syl xml:id="m-1006" wordpos="i">sub</syl>
 										</verse>
 									</note>
-									<note xml:id="m-1004" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="e" pnum="64" staff="3" stem.dir="up" stem.mod="1slash">
+									<note xml:id="m-1004" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="e" pnum="64" staff="3" stem.dir="up">
 										<verse xml:id="m-1037" n="1">
 											<syl xml:id="m-1038" wordpos="i">cu</syl>
 										</verse>
@@ -1782,7 +1763,6 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									<note xml:id="m-1010" dur="breve" dur.ges="2048p" layer="1" oct="3" oct.ges="2" pname="a" pnum="45" staff="4" stem.dir="up" />
 								</layer>
 							</staff>
-							<fermata xml:id="m-983" form="norm" layer="1" shape="angular" staff="1" startid="#m-982" />
 						</measure>
 						<measure xml:id="m-1011" n="27">
 							<staff xml:id="m-1012" n="1">
@@ -1823,13 +1803,13 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 								<layer xml:id="m-1046" n="1">
 									<note xml:id="m-1047" dur="breve" dur.ges="2048p" layer="1" oct="5" pname="c" pnum="72" staff="1" stem.dir="down">
 										<verse xml:id="m-1080" n="1">
-											<syl xml:id="m-1081" wordpos="i">ma</syl>
+											<syl xml:id="m-1081" con="d" wordpos="i">ma</syl>
 										</verse>
 									</note>
 									<tuplet xml:id="m-1049" endid="#m-1051" num="3" num.format="count" numbase="2" startid="#m-1048">
 										<note xml:id="m-1048" dur="1" dur.ges="1024p" layer="1" oct="4" pname="b" pnum="71" staff="1" stem.dir="down">
 											<verse xml:id="m-1082" n="1">
-												<syl xml:id="m-1083" wordpos="m">ni</syl>
+												<syl xml:id="m-1083" con="d" wordpos="m">ni</syl>
 											</verse>
 										</note>
 										<note xml:id="m-1050" dur="1" dur.ges="1024p" layer="1" oct="5" pname="c" pnum="72" staff="1" stem.dir="down" />
@@ -1853,7 +1833,7 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 										<note xml:id="m-1059" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="3" stem.dir="up">
 											<accid xml:id="m-1060" accid="s" />
 										</note>
-										<note xml:id="m-1061" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="3" stem.dir="up" />
+										<note xml:id="m-1061" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="3" stem.dir="up" />
 									</tuplet>
 									<tuplet xml:id="m-1064" endid="#m-1066" num="3" num.format="count" numbase="2" startid="#m-1062">
 										<note xml:id="m-1062" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="3" stem.dir="up">
@@ -1887,9 +1867,9 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 							</staff>
 							<staff xml:id="m-1086" n="2">
 								<layer xml:id="m-1087" n="1">
-									<note xml:id="m-1089" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="a" pnum="69" staff="2" stem.dir="up" stem.mod="2slash">
+									<note xml:id="m-1089" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="a" pnum="69" staff="2" stem.dir="up">
 										<verse xml:id="m-1093" n="1">
-											<syl xml:id="m-1094" wordpos="i">prop</syl>
+											<syl xml:id="m-1094" con="d" wordpos="i">prop</syl>
 										</verse>
 									</note>
 									<note xml:id="m-1090" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="2" stem.dir="up" />
@@ -1903,15 +1883,15 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 							</staff>
 							<staff xml:id="m-1097" n="3">
 								<layer xml:id="m-1098" n="1">
-									<note xml:id="m-1099" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="e" pnum="64" staff="3" stem.dir="up" stem.mod="2slash">
+									<note xml:id="m-1099" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="e" pnum="64" staff="3" stem.dir="up">
 										<verse xml:id="m-1127" n="1">
-											<syl xml:id="m-1128" wordpos="i">o</syl>
+											<syl xml:id="m-1128" con="d" wordpos="i">o</syl>
 										</verse>
 									</note>
 									<tuplet xml:id="m-1101" endid="#m-1103" num="3" num.format="count" numbase="2" startid="#m-1100">
 										<note xml:id="m-1100" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="3" stem.dir="up">
 											<verse xml:id="m-1129" n="1">
-												<syl xml:id="m-1130" wordpos="m">cu</syl>
+												<syl xml:id="m-1130" con="d" wordpos="m">cu</syl>
 											</verse>
 										</note>
 										<note xml:id="m-1102" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="3" stem.dir="up" />
@@ -1936,9 +1916,9 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 							</staff>
 							<staff xml:id="m-1112" n="2">
 								<layer xml:id="m-1113" n="1">
-									<note xml:id="m-1114" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="g" pnum="67" staff="2" stem.dir="up" stem.mod="1slash">
+									<note xml:id="m-1114" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="g" pnum="67" staff="2" stem.dir="up">
 										<verse xml:id="m-1116" n="1">
-											<syl xml:id="m-1117" wordpos="i">uer</syl>
+											<syl xml:id="m-1117" con="d" wordpos="i">uer</syl>
 										</verse>
 									</note>
 									<note xml:id="m-1115" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="e" pnum="64" staff="2" stem.dir="up">
@@ -1996,7 +1976,7 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 							</staff>
 							<staff xml:id="m-1149" n="3">
 								<layer xml:id="m-1150" n="1">
-									<note xml:id="m-1151" dur="long" dur.ges="4096p" layer="1" oct="3" pname="b" pnum="59" staff="3" stem.dir="up" stem.mod="2slash">
+									<note xml:id="m-1151" dur="long" dur.ges="4096p" layer="1" oct="3" pname="b" pnum="59" staff="3" stem.dir="up">
 										<verse xml:id="m-1199" n="1">
 											<syl xml:id="m-1200" wordpos="i">a</syl>
 										</verse>
@@ -2008,7 +1988,6 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									<note xml:id="m-1154" dur="long" dur.ges="4096p" layer="1" oct="3" oct.ges="2" pname="b" pnum="47" staff="4" stem.dir="down" />
 								</layer>
 							</staff>
-							<fermata xml:id="m-1148" form="norm" layer="1" shape="angular" staff="2" startid="#m-1146" />
 						</measure>
 						<measure xml:id="m-1155" n="32">
 							<staff xml:id="m-1156" n="1">
@@ -2018,13 +1997,13 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 											<syl xml:id="m-1166" wordpos="t">rum</syl>
 										</verse>
 									</note>
-									<note xml:id="m-1159" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="1" stem.dir="up">
+									<note xml:id="m-1159" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="1" stem.dir="up">
 										<accid xml:id="m-1160" accid="s" />
 										<verse xml:id="m-1167" n="1">
-											<syl xml:id="m-1168" wordpos="i">i</syl>
+											<syl xml:id="m-1168" con="d" wordpos="i">i</syl>
 										</verse>
 									</note>
-									<note xml:id="m-1161" artic="ten" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up">
+									<note xml:id="m-1161" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up">
 										<verse xml:id="m-1169" n="1">
 											<syl xml:id="m-1170" wordpos="t">re</syl>
 										</verse>
@@ -2038,15 +2017,15 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 							</staff>
 							<staff xml:id="m-1171" n="2">
 								<layer xml:id="m-1172" n="1">
-									<note xml:id="m-1173" artic="ten" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="2" stem.dir="up">
+									<note xml:id="m-1173" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="2" stem.dir="up">
 										<verse xml:id="m-1179" n="1">
-											<syl xml:id="m-1180" wordpos="m">pli</syl>
+											<syl xml:id="m-1180" con="d" wordpos="m">pli</syl>
 										</verse>
 									</note>
 									<note xml:id="m-1174" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="2" stem.dir="up">
 										<accid xml:id="m-1175" accid="s" />
 										<verse xml:id="m-1181" n="1">
-											<syl xml:id="m-1182" wordpos="m">ci</syl>
+											<syl xml:id="m-1182" con="d" wordpos="m">ci</syl>
 										</verse>
 									</note>
 									<note xml:id="m-1176" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="g" pnum="67" staff="2" stem.dir="up">
@@ -2061,14 +2040,14 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									<tuplet xml:id="m-1188" endid="#m-1190" num="4" num.format="ratio" numbase="2" startid="#m-1187">
 										<note xml:id="m-1187" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="3" stem.dir="up">
 											<verse xml:id="m-1201" n="1">
-												<syl xml:id="m-1202" wordpos="m">ni</syl>
+												<syl xml:id="m-1202" con="d" wordpos="m">ni</syl>
 											</verse>
 										</note>
 										<note xml:id="m-1189" dur="1" dur.ges="1024p" layer="1" oct="4" pname="c" pnum="60" staff="3" stem.dir="up" />
 										<note xml:id="m-1190" dur="1" dur.ges="1024p" layer="1" oct="3" pname="b" pnum="59" staff="3" stem.dir="up" />
 									</tuplet>
 									<tuplet xml:id="m-1194" endid="#m-1197" num="4" num.format="ratio" numbase="2" startid="#m-1191">
-										<note xml:id="m-1191" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="c" pnum="61" staff="3" stem.dir="up">
+										<note xml:id="m-1191" dur="1" dur.ges="1024p" layer="1" oct="4" pname="c" pnum="61" staff="3" stem.dir="up">
 											<accid xml:id="m-1192" accid="s" />
 										</note>
 										<note xml:id="m-1195" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="3" stem.dir="up">
@@ -2089,21 +2068,20 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									<note xml:id="m-1209" dur="breve" dur.ges="2048p" layer="1" oct="3" oct.ges="2" pname="g" pnum="43" staff="4" stem.dir="up" />
 								</layer>
 							</staff>
-							<fermata xml:id="m-1193" form="norm" layer="1" shape="angular" staff="3" startid="#m-1191" />
 							<line xml:id="m-1207" dur.ges="4856p" layer="1" staff="4" tstamp="1" tstamp2="1.7422" type="bracket" vo="8.3672mm" />
 						</measure>
 						<measure xml:id="m-1210" n="33">
 							<staff xml:id="m-1211" n="1">
 								<layer xml:id="m-1212" n="1">
-									<note xml:id="m-1214" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="e" pnum="64" staff="1" stem.dir="up" stem.mod="2slash">
+									<note xml:id="m-1214" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="e" pnum="64" staff="1" stem.dir="up">
 										<verse xml:id="m-1237" n="1">
-											<syl xml:id="m-1238" wordpos="m">ca</syl>
+											<syl xml:id="m-1238" con="d" wordpos="m">ca</syl>
 										</verse>
 									</note>
-									<note xml:id="m-1215" artic="ten" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="1" stem.dir="up" />
+									<note xml:id="m-1215" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="1" stem.dir="up" />
 									<note xml:id="m-1216" dur="1" dur.ges="1024p" layer="1" oct="4" pname="c" pnum="60" staff="1" stem.dir="up">
 										<verse xml:id="m-1239" n="1">
-											<syl xml:id="m-1240" wordpos="m">ri</syl>
+											<syl xml:id="m-1240" con="d" wordpos="m">ri</syl>
 										</verse>
 									</note>
 								</layer>
@@ -2142,7 +2120,7 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 											<syl xml:id="m-1242" wordpos="t">um</syl>
 										</verse>
 									</note>
-									<note xml:id="m-1234" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="e" pnum="64" staff="1" stem.dir="up" stem.mod="2slash">
+									<note xml:id="m-1234" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="e" pnum="64" staff="1" stem.dir="up">
 										<verse xml:id="m-1283" n="1">
 											<syl xml:id="m-1284" wordpos="i">Chri</syl>
 										</verse>
@@ -2160,32 +2138,32 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 										</note>
 										<note xml:id="m-1248" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="2" stem.dir="up">
 											<verse xml:id="m-1258" n="1">
-												<syl xml:id="m-1259" wordpos="i">ab</syl>
+												<syl xml:id="m-1259" con="d" wordpos="i">ab</syl>
 											</verse>
 										</note>
 										<note xml:id="m-1249" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="2" stem.dir="up">
 											<accid xml:id="m-1250" accid="s" />
 											<verse xml:id="m-1260" n="1">
-												<syl xml:id="m-1261" wordpos="m">hor</syl>
+												<syl xml:id="m-1261" con="d" wordpos="m">hor</syl>
 											</verse>
 										</note>
 									</tuplet>
 									<tuplet xml:id="m-1252" num="4" num.format="ratio" numbase="2" startid="#m-1251">
-										<note xml:id="m-1251" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="2" stem.dir="up">
+										<note xml:id="m-1251" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="2" stem.dir="up">
 											<verse xml:id="m-1262" n="1">
 												<syl xml:id="m-1263" wordpos="t">rent</syl>
 											</verse>
 										</note>
 									</tuplet>
-									<note xml:id="m-1253" artic="ten" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="2" stem.dir="up">
+									<note xml:id="m-1253" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="2" stem.dir="up">
 										<verse xml:id="m-1290" n="1">
-											<syl xml:id="m-1291" wordpos="i">se</syl>
+											<syl xml:id="m-1291" con="d" wordpos="i">se</syl>
 										</verse>
 									</note>
 									<note xml:id="m-1254" dur="1" dur.ges="1024p" layer="1" oct="4" pname="c" pnum="61" staff="2" stem.dir="up">
 										<accid xml:id="m-1255" accid="s" />
 										<verse xml:id="m-1292" n="1">
-											<syl xml:id="m-1293" wordpos="m">re</syl>
+											<syl xml:id="m-1293" con="d" wordpos="m">re</syl>
 										</verse>
 									</note>
 								</layer>
@@ -2194,13 +2172,13 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 								<layer xml:id="m-1265" n="1">
 									<note xml:id="m-1266" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="d" pnum="62" staff="3" stem.dir="up">
 										<verse xml:id="m-1304" n="1">
-											<syl xml:id="m-1305" wordpos="m">i</syl>
+											<syl xml:id="m-1305" con="d" wordpos="m">i</syl>
 										</verse>
 									</note>
 									<tuplet xml:id="m-1268" endid="#m-1270" num="4" num.format="ratio" numbase="2" startid="#m-1267">
 										<note xml:id="m-1267" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="3" stem.dir="up">
 											<verse xml:id="m-1306" n="1">
-												<syl xml:id="m-1307" wordpos="m">ci</syl>
+												<syl xml:id="m-1307" con="d" wordpos="m">ci</syl>
 											</verse>
 										</note>
 										<note xml:id="m-1269" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="3" stem.dir="up" />
@@ -2219,7 +2197,6 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									<note xml:id="m-1278" dur="breve" dur.ges="2048p" layer="1" oct="3" oct.ges="2" pname="a" pnum="45" staff="4" stem.dir="up" />
 								</layer>
 							</staff>
-							<fermata xml:id="m-1233" form="norm" layer="1" shape="angular" staff="1" startid="#m-1232" />
 							<line xml:id="m-1276" dur.ges="6144p" layer="1" staff="4" tstamp="1" tstamp2="3" type="bracket" vo="7.8203mm" />
 						</measure>
 						<measure xml:id="m-1279" n="35">
@@ -2243,7 +2220,7 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 							</staff>
 							<staff xml:id="m-1296" n="3">
 								<layer xml:id="m-1297" n="1">
-									<note xml:id="m-1299" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="g" pnum="67" staff="3" stem.dir="up" stem.mod="2slash">
+									<note xml:id="m-1299" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="g" pnum="67" staff="3" stem.dir="up">
 										<verse xml:id="m-1308" n="1">
 											<syl xml:id="m-1309" con="u" wordpos="t">unt</syl>
 										</verse>
@@ -2269,15 +2246,15 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									<tuplet xml:id="m-1317" endid="#m-1319" num="3" num.format="count" numbase="2" startid="#m-1316">
 										<note xml:id="m-1316" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="1" stem.dir="up">
 											<verse xml:id="m-1323" n="1">
-												<syl xml:id="m-1324" wordpos="i">de</syl>
+												<syl xml:id="m-1324" con="d" wordpos="i">de</syl>
 											</verse>
 										</note>
 										<note xml:id="m-1318" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="1" stem.dir="up">
 											<verse xml:id="m-1325" n="1">
-												<syl xml:id="m-1326" wordpos="m">ce</syl>
+												<syl xml:id="m-1326" con="d" wordpos="m">ce</syl>
 											</verse>
 										</note>
-										<note xml:id="m-1319" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="1" stem.dir="up">
+										<note xml:id="m-1319" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="1" stem.dir="up">
 											<verse xml:id="m-1327" n="1">
 												<syl xml:id="m-1328" wordpos="t">ret</syl>
 											</verse>
@@ -2285,13 +2262,13 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									</tuplet>
 									<note xml:id="m-1320" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up">
 										<verse xml:id="m-1351" n="1">
-											<syl xml:id="m-1352" wordpos="i">pas</syl>
+											<syl xml:id="m-1352" con="d" wordpos="i">pas</syl>
 										</verse>
 									</note>
 									<note xml:id="m-1321" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="1" stem.dir="up">
 										<accid xml:id="m-1322" accid="s" />
 										<verse xml:id="m-1353" n="1">
-											<syl xml:id="m-1354" wordpos="m">si</syl>
+											<syl xml:id="m-1354" con="d" wordpos="m">si</syl>
 										</verse>
 									</note>
 								</layer>
@@ -2303,15 +2280,15 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 							</staff>
 							<staff xml:id="m-1332" n="3">
 								<layer xml:id="m-1333" n="1">
-									<note xml:id="m-1334" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="e" pnum="64" staff="3" stem.dir="up" stem.mod="1slash">
+									<note xml:id="m-1334" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="e" pnum="64" staff="3" stem.dir="up">
 										<verse xml:id="m-1368" n="1">
-											<syl xml:id="m-1369" wordpos="m">ui</syl>
+											<syl xml:id="m-1369" con="d" wordpos="m">ui</syl>
 										</verse>
 									</note>
 									<tuplet xml:id="m-1336" endid="#m-1338" num="4" num.format="ratio" numbase="2" startid="#m-1335">
 										<note xml:id="m-1335" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="3" stem.dir="up">
 											<verse xml:id="m-1370" n="1">
-												<syl xml:id="m-1371" wordpos="m">o</syl>
+												<syl xml:id="m-1371" con="d" wordpos="m">o</syl>
 											</verse>
 										</note>
 										<note xml:id="m-1337" dur="1" dur.ges="1024p" layer="1" oct="4" pname="c" pnum="60" staff="3" stem.dir="up" />
@@ -2365,8 +2342,6 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									<note xml:id="m-1376" dur="long" dur.ges="4096p" layer="1" oct="3" oct.ges="2" pname="g" pnum="43" staff="4" stem.dir="up" />
 								</layer>
 							</staff>
-							<fermata xml:id="m-1365" form="norm" layer="1" shape="angular" staff="3" startid="#m-1364" />
-							<fermata xml:id="m-1377" form="norm" layer="1" shape="angular" staff="4" startid="#m-1376" />
 						</measure>
 						<measure xml:id="m-1378" n="38">
 							<staff xml:id="m-1379" n="1">
@@ -2379,11 +2354,11 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									<tuplet xml:id="m-1385" endid="#m-1387" num="3" num.format="count" numbase="2" startid="#m-1384">
 										<note xml:id="m-1384" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="2" stem.dir="up" />
 										<note xml:id="m-1386" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="2" stem.dir="up" />
-										<note xml:id="m-1387" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="2" stem.dir="up">
+										<note xml:id="m-1387" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="2" stem.dir="up">
 											<accid xml:id="m-1388" accid="s" />
 										</note>
 									</tuplet>
-									<note xml:id="m-1390" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="g" pnum="67" staff="2" stem.dir="up" stem.mod="1slash">
+									<note xml:id="m-1390" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="g" pnum="67" staff="2" stem.dir="up">
 										<verse xml:id="m-1422" n="1">
 											<syl xml:id="m-1423" wordpos="i">sta</syl>
 										</verse>
@@ -2399,7 +2374,7 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 											</verse>
 										</note>
 										<note xml:id="m-1395" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="65" staff="3" stem.dir="up" />
-										<note xml:id="m-1396" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="3" stem.dir="up" />
+										<note xml:id="m-1396" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="3" stem.dir="up" />
 									</tuplet>
 									<tuplet xml:id="m-1398" endid="#m-1400" num="3" num.format="count" numbase="2" startid="#m-1397">
 										<note xml:id="m-1397" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="65" staff="3" stem.dir="up" />
@@ -2420,20 +2395,19 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									</note>
 								</layer>
 							</staff>
-							<fermata xml:id="m-1389" form="norm" layer="1" shape="angular" staff="2" startid="#m-1387" />
 						</measure>
 						<measure xml:id="m-1408" n="39">
 							<staff xml:id="m-1409" n="1">
 								<layer xml:id="m-1410" n="1">
 									<note xml:id="m-1411" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="e" pnum="64" staff="1" stem.dir="up">
 										<verse xml:id="m-1447" n="1">
-											<syl xml:id="m-1448" wordpos="i">Chri</syl>
+											<syl xml:id="m-1448" con="d" wordpos="i">Chri</syl>
 										</verse>
 									</note>
 									<note xml:id="m-1413" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="1" stem.dir="up">
 										<accid xml:id="m-1414" accid="s" />
 										<verse xml:id="m-1449" n="1">
-											<syl xml:id="m-1450" wordpos="m">sti</syl>
+											<syl xml:id="m-1450" con="d" wordpos="m">sti</syl>
 										</verse>
 									</note>
 									<note xml:id="m-1415" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up" />
@@ -2443,7 +2417,7 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 								<layer xml:id="m-1417" n="1">
 									<note xml:id="m-1418" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="e" pnum="64" staff="2" stem.dir="up">
 										<verse xml:id="m-1424" n="1">
-											<syl xml:id="m-1425" wordpos="m">bi</syl>
+											<syl xml:id="m-1425" con="d" wordpos="m">bi</syl>
 										</verse>
 									</note>
 									<note xml:id="m-1419" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="2" stem.dir="up">
@@ -2464,13 +2438,13 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									<note xml:id="m-1430" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="c" pnum="61" staff="3" stem.dir="up">
 										<accid xml:id="m-1431" accid="s" />
 										<verse xml:id="m-1465" n="1">
-											<syl xml:id="m-1466" wordpos="m">ri</syl>
+											<syl xml:id="m-1466" con="d" wordpos="m">ri</syl>
 										</verse>
 									</note>
 									<tuplet xml:id="m-1433" endid="#m-1435" num="4" num.format="ratio" numbase="2" startid="#m-1432">
 										<note xml:id="m-1432" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="3" stem.dir="up">
 											<verse xml:id="m-1467" n="1">
-												<syl xml:id="m-1468" wordpos="m">cu</syl>
+												<syl xml:id="m-1468" con="d" wordpos="m">cu</syl>
 											</verse>
 										</note>
 										<note xml:id="m-1434" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="3" stem.dir="up" />
@@ -2494,7 +2468,7 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 						<measure xml:id="m-1443" n="40">
 							<staff xml:id="m-1444" n="1">
 								<layer xml:id="m-1445" n="1">
-									<note xml:id="m-1446" dur="long" dur.ges="4096p" layer="1" oct="4" pname="a" pnum="69" staff="1" stem.dir="up" stem.mod="2slash">
+									<note xml:id="m-1446" dur="long" dur.ges="4096p" layer="1" oct="4" pname="a" pnum="69" staff="1" stem.dir="up">
 										<verse xml:id="m-1451" n="1">
 											<syl xml:id="m-1452" wordpos="t">que</syl>
 										</verse>
@@ -2505,14 +2479,14 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 								<layer xml:id="m-1454" n="1">
 									<note xml:id="m-1456" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="a" pnum="69" staff="2" stem.dir="up">
 										<verse xml:id="m-1490" n="1">
-											<syl xml:id="m-1491" wordpos="m">sti</syl>
+											<syl xml:id="m-1491" con="d" wordpos="m">sti</syl>
 										</verse>
 									</note>
 									<note xml:id="m-1457" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="2" stem.dir="up" />
 									<note xml:id="m-1458" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="2" stem.dir="up">
 										<accid xml:id="m-1459" accid="s" />
 										<verse xml:id="m-1492" n="1">
-											<syl xml:id="m-1493" wordpos="m">ci</syl>
+											<syl xml:id="m-1493" con="d" wordpos="m">ci</syl>
 										</verse>
 									</note>
 								</layer>
@@ -2536,24 +2510,24 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 						<measure xml:id="m-1474" n="41">
 							<staff xml:id="m-1475" n="1">
 								<layer xml:id="m-1476" n="1">
-									<note xml:id="m-1477" artic="ten" dur="1" dur.ges="1024p" layer="1" oct="5" pname="c" pnum="72" staff="1" stem.dir="down">
+									<note xml:id="m-1477" dur="1" dur.ges="1024p" layer="1" oct="5" pname="c" pnum="72" staff="1" stem.dir="down">
 										<verse xml:id="m-1511" n="1">
-											<syl xml:id="m-1512" wordpos="i">pa</syl>
+											<syl xml:id="m-1512" con="d" wordpos="i">pa</syl>
 										</verse>
 									</note>
-									<note xml:id="m-1478" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="1" stem.dir="up">
+									<note xml:id="m-1478" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="1" stem.dir="up">
 										<verse xml:id="m-1513" n="1">
-											<syl xml:id="m-1514" wordpos="m">tri</syl>
+											<syl xml:id="m-1514" con="d" wordpos="m">tri</syl>
 										</verse>
 									</note>
 									<note xml:id="m-1479" dur="1" dur.ges="1024p" layer="1" oct="4" pname="b" pnum="71" staff="1" stem.dir="down">
 										<verse xml:id="m-1515" n="1">
-											<syl xml:id="m-1516" wordpos="m">mo</syl>
+											<syl xml:id="m-1516" con="d" wordpos="m">mo</syl>
 										</verse>
 									</note>
 									<note xml:id="m-1480" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up">
 										<verse xml:id="m-1517" n="1">
-											<syl xml:id="m-1518" wordpos="m">ni</syl>
+											<syl xml:id="m-1518" con="d" wordpos="m">ni</syl>
 										</verse>
 									</note>
 								</layer>
@@ -2600,7 +2574,7 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 							</staff>
 							<staff xml:id="m-1521" n="2">
 								<layer xml:id="m-1522" n="1">
-									<note xml:id="m-1523" dur="long" dur.ges="4096p" layer="1" oct="4" pname="a" pnum="69" staff="2" stem.dir="up" stem.mod="1slash">
+									<note xml:id="m-1523" dur="long" dur.ges="4096p" layer="1" oct="4" pname="a" pnum="69" staff="2" stem.dir="up">
 										<verse xml:id="m-1524" n="1">
 											<syl xml:id="m-1525" wordpos="i">non</syl>
 										</verse>
@@ -2621,25 +2595,24 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									<note xml:id="m-1531" dur="long" dur.ges="4096p" layer="1" oct="3" oct.ges="2" pname="a" pnum="45" staff="4" stem.dir="up" />
 								</layer>
 							</staff>
-							<fermata xml:id="m-1510" form="norm" layer="1" shape="angular" staff="1" startid="#m-1509" />
 						</measure>
 						<pb xml:id="m-1533" n="6" />
 						<measure xml:id="m-1532" n="43">
 							<staff xml:id="m-1534" n="1">
 								<layer xml:id="m-1535" n="1">
-									<note xml:id="m-1536" artic="ten" dur="1" dur.ges="1024p" layer="1" oct="4" pname="b" pnum="71" staff="1" stem.dir="down">
+									<note xml:id="m-1536" dur="1" dur.ges="1024p" layer="1" oct="4" pname="b" pnum="71" staff="1" stem.dir="down">
 										<verse xml:id="m-1540" n="1">
-											<syl xml:id="m-1541" wordpos="i">su</syl>
+											<syl xml:id="m-1541" con="d" wordpos="i">su</syl>
 										</verse>
 									</note>
-									<note xml:id="m-1537" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="b" pnum="71" staff="1" stem.dir="down">
+									<note xml:id="m-1537" dur="1" dur.ges="1024p" layer="1" oct="4" pname="b" pnum="71" staff="1" stem.dir="down">
 										<verse xml:id="m-1542" n="1">
 											<syl xml:id="m-1543" wordpos="t">is</syl>
 										</verse>
 									</note>
-									<note xml:id="m-1538" artic="ten" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="1" stem.dir="up">
+									<note xml:id="m-1538" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="1" stem.dir="up">
 										<verse xml:id="m-1544" n="1">
-											<syl xml:id="m-1545" wordpos="i">da</syl>
+											<syl xml:id="m-1545" con="d" wordpos="i">da</syl>
 										</verse>
 									</note>
 									<note xml:id="m-1539" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="1" stem.dir="up">
@@ -2655,7 +2628,7 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 										<note xml:id="m-1550" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="2" stem.dir="up">
 											<accid xml:id="m-1551" accid="s" />
 											<verse xml:id="m-1559" n="1">
-												<syl xml:id="m-1560" wordpos="i">ces</syl>
+												<syl xml:id="m-1560" con="d" wordpos="i">ces</syl>
 											</verse>
 										</note>
 										<note xml:id="m-1553" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="2" stem.dir="up">
@@ -2664,20 +2637,20 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 												<syl xml:id="m-1562" wordpos="t">sant</syl>
 											</verse>
 										</note>
-										<note xml:id="m-1555" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="2" stem.dir="up">
+										<note xml:id="m-1555" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="2" stem.dir="up">
 											<verse xml:id="m-1590" n="1">
-												<syl xml:id="m-1591" wordpos="i">de</syl>
+												<syl xml:id="m-1591" con="d" wordpos="i">de</syl>
 											</verse>
 										</note>
 									</tuplet>
 									<note xml:id="m-1557" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="2" stem.dir="up">
 										<verse xml:id="m-1592" n="1">
-											<syl xml:id="m-1593" wordpos="m">pel</syl>
+											<syl xml:id="m-1593" con="d" wordpos="m">pel</syl>
 										</verse>
 									</note>
 									<note xml:id="m-1558" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="2" stem.dir="up">
 										<verse xml:id="m-1594" n="1">
-											<syl xml:id="m-1595" wordpos="m">le</syl>
+											<syl xml:id="m-1595" con="d" wordpos="m">le</syl>
 										</verse>
 									</note>
 								</layer>
@@ -2708,7 +2681,6 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									<note xml:id="m-1581" dur="breve" dur.ges="2048p" layer="1" oct="3" oct.ges="2" pname="a" pnum="45" staff="4" stem.dir="up" />
 								</layer>
 							</staff>
-							<fermata xml:id="m-1556" form="norm" layer="1" shape="angular" staff="2" startid="#m-1555" />
 							<line xml:id="m-1579" dur.ges="6144p" layer="1" staff="4" tstamp="1" tstamp2="3" type="bracket" vo="7.6562mm" />
 						</measure>
 						<measure xml:id="m-1582" n="44">
@@ -2733,7 +2705,7 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 							</staff>
 							<staff xml:id="m-1598" n="3">
 								<layer xml:id="m-1599" n="1">
-									<note xml:id="m-1601" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="f" pnum="66" staff="3" stem.dir="up" stem.mod="2slash">
+									<note xml:id="m-1601" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="f" pnum="66" staff="3" stem.dir="up">
 										<accid xml:id="m-1602" accid="s" />
 										<verse xml:id="m-1609" n="1">
 											<syl xml:id="m-1610" wordpos="i">uo</syl>
@@ -2758,7 +2730,6 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 								</layer>
 							</staff>
 							<slur xml:id="m-1600" layer="1" lform="dashed" staff="3" tstamp="1" tstamp2="3" />
-							<fermata xml:id="m-1608" form="norm" layer="1" shape="angular" staff="3" startid="#m-1607" />
 						</measure>
 						<measure xml:id="m-1616" n="45">
 							<staff xml:id="m-1617" n="1">
@@ -2766,7 +2737,7 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									<tuplet xml:id="m-1620" endid="#m-1623" num="3" num.format="count" numbase="2" startid="#m-1619">
 										<note xml:id="m-1619" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up">
 											<verse xml:id="m-1646" n="1">
-												<syl xml:id="m-1647" wordpos="m">pe</syl>
+												<syl xml:id="m-1647" con="d" wordpos="m">pe</syl>
 											</verse>
 										</note>
 										<note xml:id="m-1621" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="1" stem.dir="up">
@@ -2776,7 +2747,7 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									</tuplet>
 									<note xml:id="m-1624" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="d" pnum="62" staff="1" stem.dir="up">
 										<verse xml:id="m-1648" n="1">
-											<syl xml:id="m-1649" wordpos="m">ri</syl>
+											<syl xml:id="m-1649" con="d" wordpos="m">ri</syl>
 										</verse>
 									</note>
 								</layer>
@@ -2790,15 +2761,15 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 								<layer xml:id="m-1629" n="1">
 									<note xml:id="m-1631" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="3" stem.dir="up">
 										<verse xml:id="m-1668" n="1">
-											<syl xml:id="m-1669" wordpos="i">im</syl>
+											<syl xml:id="m-1669" con="d" wordpos="i">im</syl>
 										</verse>
 									</note>
 									<note xml:id="m-1632" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="3" stem.dir="up">
 										<accid xml:id="m-1633" accid="s" />
 									</note>
-									<note xml:id="m-1634" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="g" pnum="67" staff="3" stem.dir="up" stem.mod="1slash">
+									<note xml:id="m-1634" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="g" pnum="67" staff="3" stem.dir="up">
 										<verse xml:id="m-1670" n="1">
-											<syl xml:id="m-1671" wordpos="m">po</syl>
+											<syl xml:id="m-1671" con="d" wordpos="m">po</syl>
 										</verse>
 									</note>
 								</layer>
@@ -2824,13 +2795,13 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 							</staff>
 							<staff xml:id="m-1652" n="2">
 								<layer xml:id="m-1653" n="1">
-									<note xml:id="m-1655" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="a" pnum="69" staff="2" stem.dir="up" stem.mod="2slash">
+									<note xml:id="m-1655" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="a" pnum="69" staff="2" stem.dir="up">
 										<verse xml:id="m-1658" n="1">
 											<syl xml:id="m-1659" wordpos="i">et</syl>
 										</verse>
 									</note>
 									<note xml:id="m-1656" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="2" stem.dir="up" />
-									<note xml:id="m-1657" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="2" stem.dir="up">
+									<note xml:id="m-1657" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="2" stem.dir="up">
 										<verse xml:id="m-1660" n="1">
 											<syl xml:id="m-1661" wordpos="i">qui</syl>
 										</verse>
@@ -2839,7 +2810,7 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 							</staff>
 							<staff xml:id="m-1662" n="3">
 								<layer xml:id="m-1663" n="1">
-									<note xml:id="m-1665" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="e" pnum="64" staff="3" stem.dir="up" stem.mod="2slash">
+									<note xml:id="m-1665" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="e" pnum="64" staff="3" stem.dir="up">
 										<verse xml:id="m-1672" n="1">
 											<syl xml:id="m-1673" con="u" wordpos="t">nunt</syl>
 										</verse>
@@ -2869,9 +2840,9 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 							<staff xml:id="m-1681" n="2">
 								<layer xml:id="m-1682" n="1">
 									<tuplet xml:id="m-1684" endid="#m-1686" num="3" num.format="count" numbase="2" startid="#m-1683">
-										<note xml:id="m-1683" artic="ten" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="2" stem.dir="up">
+										<note xml:id="m-1683" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="2" stem.dir="up">
 											<verse xml:id="m-1689" n="1">
-												<syl xml:id="m-1690" wordpos="i">ma</syl>
+												<syl xml:id="m-1690" con="d" wordpos="i">ma</syl>
 											</verse>
 										</note>
 										<note xml:id="m-1685" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="65" staff="2" stem.dir="up">
@@ -2879,27 +2850,27 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 												<syl xml:id="m-1692" wordpos="t">lunt</syl>
 											</verse>
 										</note>
-										<note xml:id="m-1686" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="2" stem.dir="up">
+										<note xml:id="m-1686" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="2" stem.dir="up">
 											<verse xml:id="m-1724" n="1">
-												<syl xml:id="m-1725" wordpos="i">sup</syl>
+												<syl xml:id="m-1725" con="d" wordpos="i">sup</syl>
 											</verse>
 										</note>
 									</tuplet>
 									<note xml:id="m-1687" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="2" stem.dir="up">
 										<verse xml:id="m-1726" n="1">
-											<syl xml:id="m-1727" wordpos="m">pli</syl>
+											<syl xml:id="m-1727" con="d" wordpos="m">pli</syl>
 										</verse>
 									</note>
 									<note xml:id="m-1688" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="2" stem.dir="up">
 										<verse xml:id="m-1728" n="1">
-											<syl xml:id="m-1729" wordpos="m">ci</syl>
+											<syl xml:id="m-1729" con="d" wordpos="m">ci</syl>
 										</verse>
 									</note>
 								</layer>
 							</staff>
 							<staff xml:id="m-1693" n="3">
 								<layer xml:id="m-1694" n="1">
-									<note xml:id="m-1695" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="c" pnum="60" staff="3" stem.dir="up" stem.mod="2slash">
+									<note xml:id="m-1695" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="c" pnum="60" staff="3" stem.dir="up">
 										<verse xml:id="m-1702" n="1">
 											<syl xml:id="m-1703" wordpos="t">lunt</syl>
 										</verse>
@@ -2942,7 +2913,7 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 											<syl xml:id="m-1731" wordpos="t">a</syl>
 										</verse>
 									</note>
-									<note xml:id="m-1721" artic="ten" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="2" stem.dir="up">
+									<note xml:id="m-1721" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="2" stem.dir="up">
 										<accid xml:id="m-1722" accid="s" />
 									</note>
 									<note xml:id="m-1723" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="2" stem.dir="up">
@@ -2956,11 +2927,11 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 								<layer xml:id="m-1733" n="1">
 									<note xml:id="m-1735" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="d" pnum="62" staff="3" stem.dir="up">
 										<verse xml:id="m-1741" n="1">
-											<syl xml:id="m-1742" wordpos="m">ue</syl>
+											<syl xml:id="m-1742" con="d" wordpos="m">ue</syl>
 										</verse>
 									</note>
 									<note xml:id="m-1736" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="3" stem.dir="up" />
-									<note xml:id="m-1737" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="3" stem.dir="up">
+									<note xml:id="m-1737" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="3" stem.dir="up">
 										<verse xml:id="m-1743" n="1">
 											<syl xml:id="m-1744" con="u" wordpos="t">re</syl>
 										</verse>
@@ -2974,20 +2945,19 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 							</staff>
 							<slur xml:id="m-1718" layer="1" lform="dashed" staff="2" tstamp="1" tstamp2="3" />
 							<slur xml:id="m-1734" layer="1" lform="dashed" staff="3" tstamp="1" tstamp2="3" />
-							<fermata xml:id="m-1738" form="norm" layer="1" shape="angular" staff="3" startid="#m-1737" />
 						</measure>
 						<measure xml:id="m-1748" n="49">
 							<staff xml:id="m-1749" n="1">
 								<layer xml:id="m-1750" n="1">
-									<note xml:id="m-1751" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="e" pnum="64" staff="1" stem.dir="up" stem.mod="2slash">
+									<note xml:id="m-1751" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="e" pnum="64" staff="1" stem.dir="up">
 										<verse xml:id="m-1793" n="1">
-											<syl xml:id="m-1794" wordpos="i">ig</syl>
+											<syl xml:id="m-1794" con="d" wordpos="i">ig</syl>
 										</verse>
 									</note>
 									<tuplet xml:id="m-1753" endid="#m-1755" num="3" num.format="count" numbase="2" startid="#m-1752">
 										<note xml:id="m-1752" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="1" stem.dir="up">
 											<verse xml:id="m-1795" n="1">
-												<syl xml:id="m-1796" wordpos="m">na</syl>
+												<syl xml:id="m-1796" con="d" wordpos="m">na</syl>
 											</verse>
 										</note>
 										<note xml:id="m-1754" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="1" stem.dir="up" />
@@ -3019,7 +2989,7 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									<tuplet xml:id="m-1774" endid="#m-1776" num="3" num.format="count" numbase="2" startid="#m-1773">
 										<note xml:id="m-1773" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="3" stem.dir="up">
 											<verse xml:id="m-1805" n="1">
-												<syl xml:id="m-1806" wordpos="i">di</syl>
+												<syl xml:id="m-1806" con="d" wordpos="i">di</syl>
 											</verse>
 										</note>
 										<note xml:id="m-1775" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="3" stem.dir="up" />
@@ -3027,7 +2997,7 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									</tuplet>
 									<note xml:id="m-1778" dur="1" dur.ges="1024p" layer="1" oct="3" pname="b" pnum="59" staff="3" stem.dir="up">
 										<verse xml:id="m-1807" n="1">
-											<syl xml:id="m-1808" wordpos="m">gi</syl>
+											<syl xml:id="m-1808" con="d" wordpos="m">gi</syl>
 										</verse>
 									</note>
 									<note xml:id="m-1779" dur="1" dur.ges="1024p" layer="1" oct="4" pname="c" pnum="61" staff="3" stem.dir="up">
@@ -3041,7 +3011,6 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									<note xml:id="m-1785" dur="breve" dur.ges="2048p" layer="1" oct="3" oct.ges="2" pname="e" pnum="40" staff="4" stem.dir="up" />
 								</layer>
 							</staff>
-							<fermata xml:id="m-1760" form="norm" layer="1" shape="angular" staff="2" startid="#m-1759" />
 							<line xml:id="m-1761" dur.ges="1706p" layer="1" staff="2" tstamp="3" tstamp2="4.666" type="bracket" vo="7mm" />
 							<line xml:id="m-1777" dur.ges="1706p" ho="0.6016mm" layer="1" staff="3" tstamp="3" tstamp2="4.666" type="bracket" vo="12.1406mm" />
 							<line xml:id="m-1784" dur.ges="3186p" layer="1" staff="4" tstamp="3" tstamp2="2.1113" type="bracket" vo="6.6719mm" />
@@ -3049,12 +3018,12 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 						<measure xml:id="m-1786" n="50">
 							<staff xml:id="m-1787" n="1">
 								<layer xml:id="m-1788" n="1">
-									<note xml:id="m-1790" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="d" pnum="62" staff="1" stem.dir="up" stem.mod="2slash">
+									<note xml:id="m-1790" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="d" pnum="62" staff="1" stem.dir="up">
 										<verse xml:id="m-1797" n="1">
 											<syl xml:id="m-1798" con="u" wordpos="t">uis</syl>
 										</verse>
 									</note>
-									<note xml:id="m-1791" artic="ten" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="1" stem.dir="up" />
+									<note xml:id="m-1791" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="1" stem.dir="up" />
 									<note xml:id="m-1792" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="1" stem.dir="up">
 										<verse xml:id="m-1844" n="1">
 											<syl xml:id="m-1845" wordpos="i">pa</syl>
@@ -3093,12 +3062,12 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 								<layer xml:id="m-1817" n="1">
 									<note xml:id="m-1818" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up">
 										<verse xml:id="m-1846" n="1">
-											<syl xml:id="m-1847" wordpos="m">ren</syl>
+											<syl xml:id="m-1847" con="d" wordpos="m">ren</syl>
 										</verse>
 									</note>
 									<note xml:id="m-1819" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="a" pnum="69" staff="1" stem.dir="up">
 										<verse xml:id="m-1848" n="1">
-											<syl xml:id="m-1849" wordpos="m">ti</syl>
+											<syl xml:id="m-1849" con="d" wordpos="m">ti</syl>
 										</verse>
 									</note>
 								</layer>
@@ -3111,14 +3080,14 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 										</verse>
 									</note>
 									<note xml:id="m-1825" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="65" staff="2" stem.dir="up" />
-									<note xml:id="m-1826" artic="ten" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="2" stem.dir="up">
+									<note xml:id="m-1826" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="2" stem.dir="up">
 										<verse xml:id="m-1857" n="1">
-											<syl xml:id="m-1858" wordpos="i">di</syl>
+											<syl xml:id="m-1858" con="d" wordpos="i">di</syl>
 										</verse>
 									</note>
 									<note xml:id="m-1827" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="2" stem.dir="up">
 										<verse xml:id="m-1859" n="1">
-											<syl xml:id="m-1860" wordpos="m">ce</syl>
+											<syl xml:id="m-1860" con="d" wordpos="m">ce</syl>
 										</verse>
 									</note>
 								</layer>
@@ -3134,7 +3103,6 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									<note xml:id="m-1839" dur="breve" dur.ges="2048p" layer="1" oct="3" oct.ges="2" pname="a" pnum="45" staff="4" stem.dir="up" />
 								</layer>
 							</staff>
-							<fermata xml:id="m-1820" form="norm" layer="1" shape="angular" staff="1" startid="#m-1819" />
 							<line xml:id="m-1823" dur.ges="1456p" layer="1" staff="2" tstamp="1" tstamp2="2.4219" type="bracket" vo="7mm" />
 							<line xml:id="m-1837" dur.ges="2672p" layer="1" staff="4" tstamp="1" tstamp2="3.6094" type="bracket" vo="7.8203mm" />
 						</measure>
@@ -3155,7 +3123,7 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 											<syl xml:id="m-1862" wordpos="t">re</syl>
 										</verse>
 									</note>
-									<note xml:id="m-1855" artic="ten" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="2" stem.dir="up" />
+									<note xml:id="m-1855" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="2" stem.dir="up" />
 									<note xml:id="m-1856" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="2" stem.dir="up">
 										<verse xml:id="m-1863" n="1">
 											<syl xml:id="m-1864" wordpos="i">quam</syl>
@@ -3190,7 +3158,7 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									<note xml:id="m-1880" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="f" pnum="66" staff="2" stem.dir="up">
 										<accid xml:id="m-1881" accid="s" />
 										<verse xml:id="m-1883" n="1">
-											<syl xml:id="m-1884" wordpos="i">fer</syl>
+											<syl xml:id="m-1884" con="d" wordpos="i">fer</syl>
 										</verse>
 									</note>
 									<note xml:id="m-1882" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="g" pnum="67" staff="2" stem.dir="up">
@@ -3238,7 +3206,7 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									<note xml:id="m-1909" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="1" stem.dir="up">
 										<accid xml:id="m-1910" accid="s" />
 									</note>
-									<note xml:id="m-1911" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up">
+									<note xml:id="m-1911" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up">
 										<verse xml:id="m-1914" n="1">
 											<syl xml:id="m-1915" wordpos="i">in</syl>
 										</verse>
@@ -3250,7 +3218,7 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									<note xml:id="m-1919" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="f" pnum="66" staff="2" stem.dir="up">
 										<accid xml:id="m-1920" accid="s" />
 										<verse xml:id="m-1986" n="1">
-											<syl xml:id="m-1987" wordpos="i">be</syl>
+											<syl xml:id="m-1987" con="d" wordpos="i">be</syl>
 										</verse>
 									</note>
 									<note xml:id="m-1921" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="2" stem.dir="up">
@@ -3258,14 +3226,14 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									</note>
 									<note xml:id="m-1923" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="2" stem.dir="up">
 										<verse xml:id="m-1988" n="1">
-											<syl xml:id="m-1989" wordpos="m">ne</syl>
+											<syl xml:id="m-1989" con="d" wordpos="m">ne</syl>
 										</verse>
 									</note>
 								</layer>
 							</staff>
 							<staff xml:id="m-1924" n="3">
 								<layer xml:id="m-1925" n="1">
-									<note xml:id="m-1926" dur="long" dur.ges="4096p" layer="1" oct="4" pname="d" pnum="62" staff="3" stem.dir="up" stem.mod="2slash">
+									<note xml:id="m-1926" dur="long" dur.ges="4096p" layer="1" oct="4" pname="d" pnum="62" staff="3" stem.dir="up">
 										<verse xml:id="m-1968" n="1">
 											<syl xml:id="m-1969" wordpos="i">e</syl>
 										</verse>
@@ -3286,15 +3254,15 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									<tuplet xml:id="m-1934" endid="#m-1936" num="3" num.format="count" numbase="2" startid="#m-1933">
 										<note xml:id="m-1933" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="1" stem.dir="up">
 											<verse xml:id="m-1939" n="1">
-												<syl xml:id="m-1940" wordpos="i">o</syl>
+												<syl xml:id="m-1940" con="d" wordpos="i">o</syl>
 											</verse>
 										</note>
 										<note xml:id="m-1935" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up">
 											<verse xml:id="m-1941" n="1">
-												<syl xml:id="m-1942" wordpos="m">uil</syl>
+												<syl xml:id="m-1942" con="d" wordpos="m">uil</syl>
 											</verse>
 										</note>
-										<note xml:id="m-1936" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="1" stem.dir="up">
+										<note xml:id="m-1936" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="1" stem.dir="up">
 											<verse xml:id="m-1943" n="1">
 												<syl xml:id="m-1944" wordpos="t">le</syl>
 											</verse>
@@ -3302,7 +3270,7 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									</tuplet>
 									<note xml:id="m-1937" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up">
 										<verse xml:id="m-1945" n="1">
-											<syl xml:id="m-1946" wordpos="i">o</syl>
+											<syl xml:id="m-1946" con="d" wordpos="i">o</syl>
 										</verse>
 									</note>
 									<note xml:id="m-1938" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="1" stem.dir="up">
@@ -3316,13 +3284,13 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 								<layer xml:id="m-1950" n="1">
 									<note xml:id="m-1951" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="e" pnum="64" staff="2" stem.dir="up">
 										<verse xml:id="m-1990" n="1">
-											<syl xml:id="m-1991" wordpos="m">fi</syl>
+											<syl xml:id="m-1991" con="d" wordpos="m">fi</syl>
 										</verse>
 									</note>
 									<tuplet xml:id="m-1953" endid="#m-1955" num="4" num.format="ratio" numbase="2" startid="#m-1952">
 										<note xml:id="m-1952" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="2" stem.dir="up">
 											<verse xml:id="m-1992" n="1">
-												<syl xml:id="m-1993" wordpos="m">ci</syl>
+												<syl xml:id="m-1993" con="d" wordpos="m">ci</syl>
 											</verse>
 										</note>
 										<note xml:id="m-1954" dur="1" dur.ges="1024p" layer="1" oct="4" pname="c" pnum="60" staff="2" stem.dir="up" />
@@ -3347,7 +3315,7 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									<tuplet xml:id="m-1965" num="4" num.format="ratio" numbase="2" startid="#m-1964">
 										<note xml:id="m-1964" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="65" staff="3" stem.dir="up" />
 									</tuplet>
-									<note xml:id="m-1966" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="g" pnum="67" staff="3" stem.dir="up" stem.mod="2slash">
+									<note xml:id="m-1966" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="g" pnum="67" staff="3" stem.dir="up">
 										<verse xml:id="m-2023" n="1">
 											<syl xml:id="m-2024" wordpos="i">di</syl>
 										</verse>
@@ -3386,7 +3354,7 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 								<layer xml:id="m-1997" n="1">
 									<note xml:id="m-1998" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="g" pnum="67" staff="3" stem.dir="up">
 										<verse xml:id="m-2025" n="1">
-											<syl xml:id="m-2026" wordpos="m">li</syl>
+											<syl xml:id="m-2026" con="d" wordpos="m">li</syl>
 										</verse>
 									</note>
 									<note xml:id="m-1999" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="f" pnum="65" staff="3" stem.dir="up" />
@@ -3397,7 +3365,6 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									<note xml:id="m-2004" dur="long" dur.ges="4096p" layer="1" oct="3" oct.ges="2" pname="g" pnum="43" staff="4" stem.dir="up" />
 								</layer>
 							</staff>
-							<fermata xml:id="m-2000" form="norm" layer="1" shape="angular" staff="3" startid="#m-1999" />
 							<line xml:id="m-2003" dur.ges="10240p" layer="1" staff="4" tstamp="1" tstamp2="3" type="bracket" vo="0.875mm" />
 						</measure>
 						<measure xml:id="m-2005" n="57">
@@ -3444,14 +3411,13 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									<note xml:id="m-2034" dur="breve" dur.ges="2048p" layer="1" oct="3" oct.ges="2" pname="b" pnum="47" staff="4" stem.dir="down" />
 								</layer>
 							</staff>
-							<fermata xml:id="m-2015" form="norm" layer="1" shape="angular" staff="2" startid="#m-2014" />
 						</measure>
 						<measure xml:id="m-2035" n="58">
 							<staff xml:id="m-2036" n="1">
 								<layer xml:id="m-2037" n="1">
 									<note xml:id="m-2038" dur="long" dur.ges="4096p" layer="1" oct="4" pname="a" pnum="69" staff="1" stem.dir="up">
 										<verse xml:id="m-2065" n="1">
-											<syl xml:id="m-2066" wordpos="m">gres</syl>
+											<syl xml:id="m-2066" con="d" wordpos="m">gres</syl>
 										</verse>
 									</note>
 								</layer>
@@ -3464,16 +3430,16 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 											<syl xml:id="m-2048" wordpos="i">et</syl>
 										</verse>
 									</note>
-									<note xml:id="m-2043" artic="ten" dur="1" dur.ges="1024p" layer="1" oct="4" pname="c" pnum="61" staff="2" stem.dir="up">
+									<note xml:id="m-2043" dur="1" dur.ges="1024p" layer="1" oct="4" pname="c" pnum="61" staff="2" stem.dir="up">
 										<accid xml:id="m-2044" accid="s" />
 										<verse xml:id="m-2079" n="1">
-											<syl xml:id="m-2080" wordpos="i">ue</syl>
+											<syl xml:id="m-2080" con="d" wordpos="i">ue</syl>
 										</verse>
 									</note>
-									<note xml:id="m-2045" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="c" pnum="61" staff="2" stem.dir="up">
+									<note xml:id="m-2045" dur="1" dur.ges="1024p" layer="1" oct="4" pname="c" pnum="61" staff="2" stem.dir="up">
 										<accid xml:id="m-2046" accid="s" />
 										<verse xml:id="m-2081" n="1">
-											<syl xml:id="m-2082" wordpos="m">ri</syl>
+											<syl xml:id="m-2082" con="d" wordpos="m">ri</syl>
 										</verse>
 									</note>
 								</layer>
@@ -3501,28 +3467,28 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 											<syl xml:id="m-2068" wordpos="t">si</syl>
 										</verse>
 									</note>
-									<note xml:id="m-2059" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up">
+									<note xml:id="m-2059" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up">
 										<verse xml:id="m-2069" n="1">
 											<syl xml:id="m-2070" wordpos="i">per</syl>
 										</verse>
 									</note>
 									<note xml:id="m-2060" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="65" staff="1" stem.dir="up">
 										<verse xml:id="m-2111" n="1">
-											<syl xml:id="m-2112" wordpos="i">o</syl>
+											<syl xml:id="m-2112" con="d" wordpos="i">o</syl>
 										</verse>
 									</note>
 									<note xml:id="m-2061" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="1" stem.dir="up">
 										<verse xml:id="m-2113" n="1">
-											<syl xml:id="m-2114" wordpos="m">sti</syl>
+											<syl xml:id="m-2114" con="d" wordpos="m">sti</syl>
 										</verse>
 									</note>
 								</layer>
 							</staff>
 							<staff xml:id="m-2071" n="2">
 								<layer xml:id="m-2072" n="1">
-									<note xml:id="m-2073" artic="ten" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="2" stem.dir="up">
+									<note xml:id="m-2073" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="2" stem.dir="up">
 										<verse xml:id="m-2083" n="1">
-											<syl xml:id="m-2084" wordpos="m">ta</syl>
+											<syl xml:id="m-2084" con="d" wordpos="m">ta</syl>
 										</verse>
 									</note>
 									<tuplet xml:id="m-2075" endid="#m-2076" num="2" num.format="ratio" numbase="1" startid="#m-2074">
@@ -3531,16 +3497,16 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 												<syl xml:id="m-2086" con="u" wordpos="t">tem</syl>
 											</verse>
 										</note>
-										<note xml:id="m-2076" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="2" stem.dir="up" />
+										<note xml:id="m-2076" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="2" stem.dir="up" />
 									</tuplet>
 									<note xml:id="m-2077" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="65" staff="2" stem.dir="up">
 										<verse xml:id="m-2124" n="1">
-											<syl xml:id="m-2125" wordpos="i">te</syl>
+											<syl xml:id="m-2125" con="d" wordpos="i">te</syl>
 										</verse>
 									</note>
 									<note xml:id="m-2078" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="65" staff="2" stem.dir="up">
 										<verse xml:id="m-2126" n="1">
-											<syl xml:id="m-2127" wordpos="m">ge</syl>
+											<syl xml:id="m-2127" con="d" wordpos="m">ge</syl>
 										</verse>
 									</note>
 								</layer>
@@ -3570,7 +3536,6 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									<note xml:id="m-2106" dur="breve" dur.ges="2048p" layer="1" oct="3" oct.ges="2" pname="f" pnum="41" staff="4" stem.dir="up" />
 								</layer>
 							</staff>
-							<fermata xml:id="m-2062" form="norm" layer="1" shape="angular" staff="1" startid="#m-2061" />
 							<line xml:id="m-2089" dur.ges="1370p" layer="1" staff="3" tstamp="1" tstamp2="2.3379" type="bracket" vo="11.5391mm" />
 							<line xml:id="m-2104" dur.ges="6144p" layer="1" staff="4" tstamp="1" tstamp2="3" type="bracket" vo="0.875mm" />
 						</measure>
@@ -3586,13 +3551,13 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 							</staff>
 							<staff xml:id="m-2117" n="2">
 								<layer xml:id="m-2118" n="1">
-									<note xml:id="m-2120" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="e" pnum="64" staff="2" stem.dir="up" stem.mod="2slash">
+									<note xml:id="m-2120" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="e" pnum="64" staff="2" stem.dir="up">
 										<verse xml:id="m-2128" n="1">
 											<syl xml:id="m-2129" con="u" wordpos="t">re.</syl>
 										</verse>
 									</note>
 									<note xml:id="m-2121" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="2" stem.dir="up" />
-									<note xml:id="m-2122" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="c" pnum="61" staff="2" stem.dir="up">
+									<note xml:id="m-2122" dur="1" dur.ges="1024p" layer="1" oct="4" pname="c" pnum="61" staff="2" stem.dir="up">
 										<accid xml:id="m-2123" accid="s" />
 										<verse xml:id="m-2130" n="1">
 											<syl xml:id="m-2131" wordpos="i">sic</syl>
@@ -3626,12 +3591,12 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 							</staff>
 							<staff xml:id="m-2144" n="2">
 								<layer xml:id="m-2145" n="1">
-									<note xml:id="m-2146" artic="ten" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="2" stem.dir="up">
+									<note xml:id="m-2146" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="2" stem.dir="up">
 										<verse xml:id="m-2155" n="1">
-											<syl xml:id="m-2156" wordpos="i">iu</syl>
+											<syl xml:id="m-2156" con="d" wordpos="i">iu</syl>
 										</verse>
 									</note>
-									<note xml:id="m-2147" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="2" stem.dir="up">
+									<note xml:id="m-2147" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="2" stem.dir="up">
 										<verse xml:id="m-2157" n="1">
 											<syl xml:id="m-2158" wordpos="t">re</syl>
 										</verse>
@@ -3639,17 +3604,17 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									<tuplet xml:id="m-2149" endid="#m-2151" num="4" num.format="ratio" numbase="2" startid="#m-2148">
 										<note xml:id="m-2148" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="2" stem.dir="up">
 											<verse xml:id="m-2183" n="1">
-												<syl xml:id="m-2184" wordpos="i">pri</syl>
+												<syl xml:id="m-2184" con="d" wordpos="i">pri</syl>
 											</verse>
 										</note>
 										<note xml:id="m-2150" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="2" stem.dir="up">
 											<verse xml:id="m-2185" n="1">
-												<syl xml:id="m-2186" wordpos="m">vi</syl>
+												<syl xml:id="m-2186" con="d" wordpos="m">vi</syl>
 											</verse>
 										</note>
 										<note xml:id="m-2151" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="2" stem.dir="up">
 											<verse xml:id="m-2187" n="1">
-												<syl xml:id="m-2188" wordpos="m">le</syl>
+												<syl xml:id="m-2188" con="d" wordpos="m">le</syl>
 											</verse>
 										</note>
 									</tuplet>
@@ -3657,7 +3622,7 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 										<note xml:id="m-2152" dur="1" dur.ges="1024p" layer="1" oct="4" pname="c" pnum="61" staff="2" stem.dir="up">
 											<accid xml:id="m-2153" accid="s" />
 											<verse xml:id="m-2189" n="1">
-												<syl xml:id="m-2190" wordpos="m">gi</syl>
+												<syl xml:id="m-2190" con="d" wordpos="m">gi</syl>
 											</verse>
 										</note>
 									</tuplet>
@@ -3667,20 +3632,20 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 								<layer xml:id="m-2160" n="1">
 									<note xml:id="m-2161" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="d" pnum="62" staff="3" stem.dir="up">
 										<verse xml:id="m-2198" n="1">
-											<syl xml:id="m-2199" wordpos="m">scon</syl>
+											<syl xml:id="m-2199" con="d" wordpos="m">scon</syl>
 										</verse>
 									</note>
 									<tuplet xml:id="m-2163" endid="#m-2165" num="4" num.format="ratio" numbase="2" startid="#m-2162">
 										<note xml:id="m-2162" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="3" stem.dir="up">
 											<verse xml:id="m-2200" n="1">
-												<syl xml:id="m-2201" wordpos="m">di</syl>
+												<syl xml:id="m-2201" con="d" wordpos="m">di</syl>
 											</verse>
 										</note>
 										<note xml:id="m-2164" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="3" stem.dir="up" />
 										<note xml:id="m-2165" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="3" stem.dir="up" />
 									</tuplet>
 									<tuplet xml:id="m-2168" num="4" num.format="ratio" numbase="2" startid="#m-2166">
-										<note xml:id="m-2166" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="65" staff="3" stem.dir="up" />
+										<note xml:id="m-2166" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="65" staff="3" stem.dir="up" />
 									</tuplet>
 								</layer>
 							</staff>
@@ -3690,13 +3655,12 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									<note xml:id="m-2173" dur="breve" dur.ges="2048p" layer="1" oct="3" oct.ges="2" pname="e" pnum="40" staff="4" stem.dir="up" />
 								</layer>
 							</staff>
-							<fermata xml:id="m-2167" form="norm" layer="1" shape="angular" staff="3" startid="#m-2166" />
 							<line xml:id="m-2171" dur.ges="2560p" layer="1" staff="4" tstamp="1" tstamp2="3.5" type="bracket" vo="9.7891mm" />
 						</measure>
 						<measure xml:id="m-2174" n="62">
 							<staff xml:id="m-2175" n="1">
 								<layer xml:id="m-2176" n="1">
-									<note xml:id="m-2177" dur="long" dur.ges="4096p" layer="1" oct="4" pname="e" pnum="64" staff="1" stem.dir="up" stem.mod="2slash">
+									<note xml:id="m-2177" dur="long" dur.ges="4096p" layer="1" oct="4" pname="e" pnum="64" staff="1" stem.dir="up">
 										<verse xml:id="m-2178" n="1">
 											<syl xml:id="m-2179" wordpos="i">Sed</syl>
 										</verse>
@@ -3705,7 +3669,7 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 							</staff>
 							<staff xml:id="m-2180" n="2">
 								<layer xml:id="m-2181" n="1">
-									<note xml:id="m-2182" dur="long" dur.ges="4096p" layer="1" oct="3" pname="b" pnum="59" staff="2" stem.dir="up" stem.mod="2slash">
+									<note xml:id="m-2182" dur="long" dur.ges="4096p" layer="1" oct="3" pname="b" pnum="59" staff="2" stem.dir="up">
 										<verse xml:id="m-2191" n="1">
 											<syl xml:id="m-2192" wordpos="t">a</syl>
 										</verse>
@@ -3741,7 +3705,7 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 											<syl xml:id="m-2217" wordpos="i">uj</syl>
 										</verse>
 									</note>
-									<note xml:id="m-2213" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="a" pnum="69" staff="1" stem.dir="up" stem.mod="2slash">
+									<note xml:id="m-2213" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="a" pnum="69" staff="1" stem.dir="up">
 										<verse xml:id="m-2218" n="1">
 											<syl xml:id="m-2219" wordpos="i">uel</syl>
 										</verse>
@@ -3752,12 +3716,12 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 								<layer xml:id="m-2221" n="1">
 									<note xml:id="m-2222" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="d" pnum="62" staff="2" stem.dir="up">
 										<verse xml:id="m-2273" n="1">
-											<syl xml:id="m-2274" wordpos="i">pro</syl>
+											<syl xml:id="m-2274" con="d" wordpos="i">pro</syl>
 										</verse>
 									</note>
 									<note xml:id="m-2225" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="2" stem.dir="up">
 										<verse xml:id="m-2275" n="1">
-											<syl xml:id="m-2276" wordpos="m">me</syl>
+											<syl xml:id="m-2276" con="d" wordpos="m">me</syl>
 										</verse>
 									</note>
 									<note xml:id="m-2226" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="2" stem.dir="up" />
@@ -3774,13 +3738,12 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									<note xml:id="m-2233" dur="breve" dur.ges="2048p" layer="1" oct="3" oct.ges="2" pname="a" pnum="45" staff="4" stem.dir="up" />
 								</layer>
 							</staff>
-							<fermata xml:id="m-2223" form="norm" layer="1" shape="angular" staff="2" startid="#m-2222" />
 							<line xml:id="m-2224" dur.ges="1462p" layer="1" staff="2" tstamp="3" tstamp2="4.4277" type="bracket" vo="7mm" />
 						</measure>
 						<measure xml:id="m-2234" n="64">
 							<staff xml:id="m-2235" n="1">
 								<layer xml:id="m-2236" n="1">
-									<note xml:id="m-2237" dur="long" dur.ges="4096p" layer="1" oct="5" pname="c" pnum="72" staff="1" stem.dir="down" stem.mod="1slash">
+									<note xml:id="m-2237" dur="long" dur.ges="4096p" layer="1" oct="5" pname="c" pnum="72" staff="1" stem.dir="down">
 										<verse xml:id="m-2256" n="1">
 											<syl xml:id="m-2257" wordpos="i">mu</syl>
 										</verse>
@@ -3789,9 +3752,9 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 							</staff>
 							<staff xml:id="m-2238" n="2">
 								<layer xml:id="m-2239" n="1">
-									<note xml:id="m-2240" dur="long" dur.ges="4096p" layer="1" oct="4" pname="c" pnum="60" staff="2" stem.dir="up" stem.mod="2slash">
+									<note xml:id="m-2240" dur="long" dur.ges="4096p" layer="1" oct="4" pname="c" pnum="60" staff="2" stem.dir="up">
 										<verse xml:id="m-2277" n="1">
-											<syl xml:id="m-2278" wordpos="m">ren</syl>
+											<syl xml:id="m-2278" con="d" wordpos="m">ren</syl>
 										</verse>
 									</note>
 								</layer>
@@ -3816,12 +3779,12 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 								<layer xml:id="m-2251" n="1">
 									<note xml:id="m-2252" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up">
 										<verse xml:id="m-2258" n="1">
-											<syl xml:id="m-2259" wordpos="m">ne</syl>
+											<syl xml:id="m-2259" con="d" wordpos="m">ne</syl>
 										</verse>
 									</note>
 									<note xml:id="m-2253" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up">
 										<verse xml:id="m-2260" n="1">
-											<syl xml:id="m-2261" wordpos="m">ri</syl>
+											<syl xml:id="m-2261" con="d" wordpos="m">ri</syl>
 										</verse>
 									</note>
 									<note xml:id="m-2254" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="f" pnum="66" staff="1" stem.dir="up">
@@ -3843,18 +3806,18 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 										<note xml:id="m-2267" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="2" stem.dir="up">
 											<accid xml:id="m-2268" accid="s" />
 											<verse xml:id="m-2302" n="1">
-												<syl xml:id="m-2303" wordpos="i">ad</syl>
+												<syl xml:id="m-2303" con="d" wordpos="i">ad</syl>
 											</verse>
 										</note>
 										<note xml:id="m-2270" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="2" stem.dir="up">
 											<accid xml:id="m-2271" accid="s" />
 											<verse xml:id="m-2304" n="1">
-												<syl xml:id="m-2305" wordpos="m">mit</syl>
+												<syl xml:id="m-2305" con="d" wordpos="m">mit</syl>
 											</verse>
 										</note>
 										<note xml:id="m-2272" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="2" stem.dir="up">
 											<verse xml:id="m-2306" n="1">
-												<syl xml:id="m-2307" wordpos="m">te</syl>
+												<syl xml:id="m-2307" con="d" wordpos="m">te</syl>
 											</verse>
 										</note>
 									</tuplet>
@@ -3907,9 +3870,9 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 							</staff>
 							<staff xml:id="m-2310" n="3">
 								<layer xml:id="m-2311" n="1">
-									<note xml:id="m-2312" dur="long" dur.ges="4096p" layer="1" oct="4" pname="e" pnum="64" staff="3" stem.dir="up" stem.mod="2slash">
+									<note xml:id="m-2312" dur="long" dur.ges="4096p" layer="1" oct="4" pname="e" pnum="64" staff="3" stem.dir="up">
 										<verse xml:id="m-2338" n="1">
-											<syl xml:id="m-2339" wordpos="m">cre</syl>
+											<syl xml:id="m-2339" con="d" wordpos="m">cre</syl>
 										</verse>
 									</note>
 								</layer>
@@ -3925,10 +3888,10 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 								<layer xml:id="m-2318" n="1">
 									<note xml:id="m-2319" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="d" pnum="62" staff="1" stem.dir="up">
 										<verse xml:id="m-2324" n="1">
-											<syl xml:id="m-2325" wordpos="m">sti</syl>
+											<syl xml:id="m-2325" con="d" wordpos="m">sti</syl>
 										</verse>
 									</note>
-									<note xml:id="m-2320" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="a" pnum="69" staff="1" stem.dir="up" stem.mod="1slash">
+									<note xml:id="m-2320" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="a" pnum="69" staff="1" stem.dir="up">
 										<verse xml:id="m-2326" n="1">
 											<syl xml:id="m-2327" wordpos="t">tis</syl>
 										</verse>
@@ -3956,7 +3919,6 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									<note xml:id="m-2346" dur="breve" dur.ges="2048p" layer="1" oct="3" oct.ges="2" pname="a" pnum="45" staff="4" stem.dir="up" />
 								</layer>
 							</staff>
-							<fermata xml:id="m-2321" form="norm" layer="1" shape="angular" staff="1" startid="#m-2320" />
 							<line xml:id="m-2333" dur.ges="5960p" layer="1" staff="3" tstamp="1" tstamp2="2.8203" type="bracket" vo="13.125mm" />
 							<line xml:id="m-2344" dur.ges="5784p" layer="1" staff="4" tstamp="1" tstamp2="2.6484" type="bracket" vo="5.8516mm" />
 						</measure>
@@ -3998,17 +3960,17 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 								<layer xml:id="m-2368" n="1">
 									<note xml:id="m-2369" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="e" pnum="64" staff="1" stem.dir="up">
 										<verse xml:id="m-2407" n="1">
-											<syl xml:id="m-2408" wordpos="i">fla</syl>
+											<syl xml:id="m-2408" con="d" wordpos="i">fla</syl>
 										</verse>
 									</note>
 									<note xml:id="m-2370" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="1" stem.dir="up">
 										<verse xml:id="m-2409" n="1">
-											<syl xml:id="m-2410" wordpos="m">gi</syl>
+											<syl xml:id="m-2410" con="d" wordpos="m">gi</syl>
 										</verse>
 									</note>
 									<note xml:id="m-2371" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="1" stem.dir="up">
 										<verse xml:id="m-2411" n="1">
-											<syl xml:id="m-2412" wordpos="m">ci</syl>
+											<syl xml:id="m-2412" con="d" wordpos="m">ci</syl>
 										</verse>
 									</note>
 								</layer>
@@ -4017,10 +3979,10 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 								<layer xml:id="m-2373" n="1">
 									<note xml:id="m-2374" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="2" stem.dir="up">
 										<verse xml:id="m-2379" n="1">
-											<syl xml:id="m-2380" wordpos="i">pre</syl>
+											<syl xml:id="m-2380" con="d" wordpos="i">pre</syl>
 										</verse>
 									</note>
-									<note xml:id="m-2375" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="2" stem.dir="up">
+									<note xml:id="m-2375" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="2" stem.dir="up">
 										<accid xml:id="m-2376" accid="s" />
 										<verse xml:id="m-2381" n="1">
 											<syl xml:id="m-2382" wordpos="t">sunt</syl>
@@ -4031,7 +3993,7 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 											<syl xml:id="m-2384" wordpos="i">in</syl>
 										</verse>
 									</note>
-									<note xml:id="m-2378" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="2" stem.dir="up">
+									<note xml:id="m-2378" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="2" stem.dir="up">
 										<verse xml:id="m-2420" n="1">
 											<syl xml:id="m-2421" wordpos="i">ec</syl>
 										</verse>
@@ -4040,18 +4002,18 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 							</staff>
 							<staff xml:id="m-2385" n="3">
 								<layer xml:id="m-2386" n="1">
-									<note xml:id="m-2387" artic="ten" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="3" stem.dir="up">
+									<note xml:id="m-2387" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="3" stem.dir="up">
 										<verse xml:id="m-2392" n="1">
-											<syl xml:id="m-2393" wordpos="i">a</syl>
+											<syl xml:id="m-2393" con="d" wordpos="i">a</syl>
 										</verse>
 									</note>
 									<note xml:id="m-2388" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="3" stem.dir="up">
 										<accid xml:id="m-2389" accid="s" />
 										<verse xml:id="m-2394" n="1">
-											<syl xml:id="m-2395" wordpos="m">bi</syl>
+											<syl xml:id="m-2395" con="d" wordpos="m">bi</syl>
 										</verse>
 									</note>
-									<note xml:id="m-2390" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="g" pnum="67" staff="3" stem.dir="up" stem.mod="1slash">
+									<note xml:id="m-2390" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="g" pnum="67" staff="3" stem.dir="up">
 										<verse xml:id="m-2396" n="1">
 											<syl xml:id="m-2397" wordpos="t">gunt</syl>
 										</verse>
@@ -4064,7 +4026,6 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									<note xml:id="m-2402" dur="breve" dur.ges="2048p" layer="1" oct="3" oct.ges="2" pname="g" pnum="43" staff="4" stem.dir="up" />
 								</layer>
 							</staff>
-							<fermata xml:id="m-2391" form="norm" layer="1" shape="angular" staff="3" startid="#m-2390" />
 							<line xml:id="m-2400" dur.ges="5120p" layer="1" staff="4" tstamp="1" tstamp2="2" type="bracket" vo="6.9453mm" />
 						</measure>
 						<measure xml:id="m-2403" n="70">
@@ -4079,17 +4040,17 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 							</staff>
 							<staff xml:id="m-2415" n="2">
 								<layer xml:id="m-2416" n="1">
-									<note xml:id="m-2417" artic="ten" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="2" stem.dir="up">
+									<note xml:id="m-2417" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="2" stem.dir="up">
 										<verse xml:id="m-2422" n="1">
-											<syl xml:id="m-2423" wordpos="m">cle</syl>
+											<syl xml:id="m-2423" con="d" wordpos="m">cle</syl>
 										</verse>
 									</note>
 									<note xml:id="m-2418" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="2" stem.dir="up">
 										<verse xml:id="m-2424" n="1">
-											<syl xml:id="m-2425" wordpos="m">si</syl>
+											<syl xml:id="m-2425" con="d" wordpos="m">si</syl>
 										</verse>
 									</note>
-									<note xml:id="m-2419" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="a" pnum="69" staff="2" stem.dir="up" stem.mod="1slash">
+									<note xml:id="m-2419" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="a" pnum="69" staff="2" stem.dir="up">
 										<verse xml:id="m-2426" n="1">
 											<syl xml:id="m-2427" wordpos="t">a</syl>
 										</verse>
@@ -4143,7 +4104,7 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 								<layer xml:id="m-2453" n="1">
 									<note xml:id="m-2454" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="d" pnum="62" staff="3" stem.dir="up">
 										<verse xml:id="m-2462" n="1">
-											<syl xml:id="m-2463" wordpos="i">ue</syl>
+											<syl xml:id="m-2463" con="d" wordpos="i">ue</syl>
 										</verse>
 									</note>
 									<tuplet xml:id="m-2456" endid="#m-2458" num="4" num.format="ratio" numbase="2" startid="#m-2455">
@@ -4175,22 +4136,22 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 								<layer xml:id="m-2473" n="1">
 									<note xml:id="m-2474" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up">
 										<verse xml:id="m-2507" n="1">
-											<syl xml:id="m-2508" wordpos="i">a</syl>
+											<syl xml:id="m-2508" con="d" wordpos="i">a</syl>
 										</verse>
 									</note>
 									<tuplet xml:id="m-2476" endid="#m-2479" num="3" num.format="count" numbase="2" startid="#m-2475">
 										<note xml:id="m-2475" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up">
 											<verse xml:id="m-2509" n="1">
-												<syl xml:id="m-2510" wordpos="m">bu</syl>
+												<syl xml:id="m-2510" con="d" wordpos="m">bu</syl>
 											</verse>
 										</note>
 										<note xml:id="m-2477" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="1" stem.dir="up">
 											<accid xml:id="m-2478" accid="s" />
 											<verse xml:id="m-2511" n="1">
-												<syl xml:id="m-2512" wordpos="m">tun</syl>
+												<syl xml:id="m-2512" con="d" wordpos="m">tun</syl>
 											</verse>
 										</note>
-										<note xml:id="m-2479" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up" />
+										<note xml:id="m-2479" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up" />
 									</tuplet>
 								</layer>
 							</staff>
@@ -4198,23 +4159,23 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 								<layer xml:id="m-2481" n="1">
 									<note xml:id="m-2483" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="d" pnum="62" staff="2" stem.dir="up">
 										<verse xml:id="m-2526" n="1">
-											<syl xml:id="m-2527" wordpos="m">bu</syl>
+											<syl xml:id="m-2527" con="d" wordpos="m">bu</syl>
 										</verse>
 									</note>
 									<note xml:id="m-2484" dur="1" dur.ges="1024p" layer="1" oct="4" pname="d" pnum="62" staff="2" stem.dir="up" />
 									<note xml:id="m-2485" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="2" stem.dir="up">
 										<accid xml:id="m-2486" accid="s" />
 										<verse xml:id="m-2528" n="1">
-											<syl xml:id="m-2529" wordpos="m">ten</syl>
+											<syl xml:id="m-2529" con="d" wordpos="m">ten</syl>
 										</verse>
 									</note>
 								</layer>
 							</staff>
 							<staff xml:id="m-2487" n="3">
 								<layer xml:id="m-2488" n="1">
-									<note xml:id="m-2489" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="g" pnum="67" staff="3" stem.dir="up" stem.mod="2slash">
+									<note xml:id="m-2489" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="g" pnum="67" staff="3" stem.dir="up">
 										<verse xml:id="m-2493" n="1">
-											<syl xml:id="m-2494" wordpos="i">di</syl>
+											<syl xml:id="m-2494" con="d" wordpos="i">di</syl>
 										</verse>
 									</note>
 									<note xml:id="m-2490" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="3" stem.dir="up" />
@@ -4236,24 +4197,24 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 						<measure xml:id="m-2500" n="73">
 							<staff xml:id="m-2501" n="1">
 								<layer xml:id="m-2502" n="1">
-									<note xml:id="m-2503" artic="ten" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="1" stem.dir="up">
+									<note xml:id="m-2503" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="1" stem.dir="up">
 										<verse xml:id="m-2513" n="1">
 											<syl xml:id="m-2514" wordpos="t">tur</syl>
 										</verse>
 									</note>
-									<note xml:id="m-2504" artic="stacc" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="1" stem.dir="up">
+									<note xml:id="m-2504" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="1" stem.dir="up">
 										<verse xml:id="m-2546" n="1">
-											<syl xml:id="m-2547" wordpos="i">ho</syl>
+											<syl xml:id="m-2547" con="d" wordpos="i">ho</syl>
 										</verse>
 									</note>
 									<note xml:id="m-2505" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="1" stem.dir="up">
 										<verse xml:id="m-2548" n="1">
-											<syl xml:id="m-2549" wordpos="m">no</syl>
+											<syl xml:id="m-2549" con="d" wordpos="m">no</syl>
 										</verse>
 									</note>
 									<note xml:id="m-2506" dur="1" dur.ges="1024p" layer="1" oct="4" pname="a" pnum="69" staff="1" stem.dir="up">
 										<verse xml:id="m-2550" n="1">
-											<syl xml:id="m-2551" wordpos="m">ri</syl>
+											<syl xml:id="m-2551" con="d" wordpos="m">ri</syl>
 										</verse>
 									</note>
 								</layer>
@@ -4268,13 +4229,13 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									<tuplet xml:id="m-2520" endid="#m-2523" num="3" num.format="count" numbase="2" startid="#m-2519">
 										<note xml:id="m-2519" dur="1" dur.ges="1024p" layer="1" oct="4" pname="g" pnum="67" staff="2" stem.dir="up">
 											<verse xml:id="m-2557" n="1">
-												<syl xml:id="m-2558" wordpos="i">per</syl>
+												<syl xml:id="m-2558" con="d" wordpos="i">per</syl>
 											</verse>
 										</note>
 										<note xml:id="m-2521" dur="1" dur.ges="1024p" layer="1" oct="4" pname="f" pnum="66" staff="2" stem.dir="up">
 											<accid xml:id="m-2522" accid="s" />
 											<verse xml:id="m-2559" n="1">
-												<syl xml:id="m-2560" wordpos="m">pe</syl>
+												<syl xml:id="m-2560" con="d" wordpos="m">pe</syl>
 											</verse>
 										</note>
 										<note xml:id="m-2523" dur="1" dur.ges="1024p" layer="1" oct="4" pname="e" pnum="64" staff="2" stem.dir="up" />
@@ -4283,15 +4244,15 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 							</staff>
 							<staff xml:id="m-2532" n="3">
 								<layer xml:id="m-2533" n="1">
-									<note xml:id="m-2534" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="e" pnum="64" staff="3" stem.dir="up" stem.mod="1slash">
+									<note xml:id="m-2534" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="e" pnum="64" staff="3" stem.dir="up">
 										<verse xml:id="m-2566" n="1">
-											<syl xml:id="m-2567" wordpos="i">su</syl>
+											<syl xml:id="m-2567" con="d" wordpos="i">su</syl>
 										</verse>
 									</note>
 									<note xml:id="m-2535" dur="breve" dur.ges="2048p" layer="1" oct="4" pname="c" pnum="61" staff="3" stem.dir="up">
 										<accid xml:id="m-2536" accid="s" />
 										<verse xml:id="m-2568" n="1">
-											<syl xml:id="m-2569" wordpos="m">bi</syl>
+											<syl xml:id="m-2569" con="d" wordpos="m">bi</syl>
 										</verse>
 									</note>
 								</layer>
@@ -4302,7 +4263,6 @@ Quad 17, pensat in MS, Schrade Pensant / Tr 9 decent in MS, but docent in Br and
 									<note xml:id="m-2541" dur="breve" dur.ges="2048p" layer="1" oct="3" oct.ges="2" pname="a" pnum="45" staff="4" stem.dir="up" />
 								</layer>
 							</staff>
-							<fermata xml:id="m-2518" form="norm" layer="1" shape="angular" staff="2" startid="#m-2517" />
 							<line xml:id="m-2539" dur.ges="5408p" layer="1" staff="4" tstamp="1" tstamp2="2.2812" type="bracket" vo="7.7656mm" />
 						</measure>
 						<measure xml:id="m-2542" n="74" right="end">
