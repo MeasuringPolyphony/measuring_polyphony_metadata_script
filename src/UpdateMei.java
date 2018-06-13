@@ -78,6 +78,7 @@ public class UpdateMei {
 		BufferedReader br = null;
 		int BUFFER_SIZE = 0;
 		FileReader reader = null;
+		String secondPart = "";
 		boolean alreadyFound=false; //only inserts it in first one
 		int  j= findFile(file);
 		if (j!=0) {
@@ -124,6 +125,9 @@ public class UpdateMei {
 							if (line.contains("&amp;amp;amp;apos;")) {
 								line =  line.replace("&amp;amp;amp;apos;", "'");
 							}
+							if (line.contains("barLine")) {
+								line =  line.replace("barLine", "barLine form=\"dashed\"");
+							}
 							if (file.getPath().contains("MENSURAL.mei")) {
 								if (line.contains("dur.ges")) {
 									line =  removeType(line, "dur.ges");
@@ -146,27 +150,49 @@ public class UpdateMei {
 								line = line + "\n\t\t\t\t\t\t\t\t\t<label>" + label + "</label>";
 								
 							}
-							
+							if (line.contains("<syl")&& line.contains("wordpos=\"m\"")) {
+								line=addCon(line);
+							}
 							if (!line.contains("<!--") && !line.contains("<instrDef") && !line.contains("<fermata")) { 
+							String findnextsyl = "";
 							String nextline = "";
 							BUFFER_SIZE = 1000;
 					    	br.mark(BUFFER_SIZE);
-							if ((nextline = br.readLine()) != null && BUFFER_SIZE !=0) {
-								
-								br.reset();     
-								
+					    	int counter=0;
+					    	boolean cont=true;
+					    	while (cont==true) {
+					    		if ((findnextsyl = br.readLine()) != null && BUFFER_SIZE !=0){
+					    			counter++;
+					    			if (counter==1) {
+					    				nextline=findnextsyl;
+					    			}
+									if ( findnextsyl.contains("<syl") || counter==8) {
+										br.reset();
+										cont=false;
+									}
+					    		} else {
+					    			br.reset();
+									cont=false;
+					    		}
 							}
 							if (nextline != null && nextline.contains("</layer>")) {
 								if (line.contains("barLine form=\"dashed\"")) {
 									line =  line.replace("barLine form=\"dashed\"", "barLine form=\"dbl\"");
 								}
 							}
+							
+							if (line.contains("<syl") && line.contains("wordpos=\"i\"")) {
+								
+								 
+								if (findnextsyl != null && findnextsyl.contains("<syl") && !findnextsyl.contains("wordpos=\"i\"")) {
+								line=addCon(line);
+							}
+							}
 							writer.println(line);
 							}
 						}
 				    	
 		    		}
-		
 		    writer.close();
 
 		} catch (FileNotFoundException e) {
@@ -186,52 +212,11 @@ public class UpdateMei {
 		}
 	}
 	
-	/*public static void replaceSyllables(File file) throws IOException {
-		// Open a temporary file to write to.
-		PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter("temp.mei")));
-		BufferedReader br = null;
-		int BUFFER_SIZE = 0;
-		FileReader reader = null;
-		boolean alreadyFound=false; //only inserts it in first one
-		int  j= findFile(file);
-		String allmusic="";
-		if (j!=0) {
-		try {
-		    reader = new FileReader(file.getPath());
-		    br = new BufferedReader(reader);
-		    String line;
-		    while ((line = br.readLine()) != null) {
-				    	if (line.contains("<meiHead")){ //insert the data in meihead
-				    	
-				    			alreadyFound=true;
-				    		
-						} else if (alreadyFound && line.contains("</meiHead>")) {
-							alreadyFound=false;
-						} else if (!alreadyFound) {
-							
-							allmusic=allmusic+"";
-							}
-						}
-				    	
-		    		
-		}
-
-		} catch (FileNotFoundException e) {
-		    e.printStackTrace();
-		}finally{
-		    reader.close();
-
-		}
-
-		// ... and finally ...
-		String path =file.getPath();
-		String newpath = "newfiles/" + path.substring(9, path.length());
-		
-		File realName = new File(newpath);
-		realName.delete();
-		new File("temp.mei").renameTo(realName); // Rename temp file
-		}
-	} */
+	
+	
+	public static String addCon(String line) {
+		return line.replace("wordpos", "con=\"d\" wordpos");
+	}
 	
 	public static String getType(String line, String type) {
 		String[] splitline = line.split(type);
