@@ -369,7 +369,7 @@ public class UpdateMei {
 				+ "\n<identifier type=\"catalogue_number\">"+alldata[j][9]+"</identifier>\n</identifier>\n<title>" + alldata[j][0]+"</title>\n"
 				+ "<composer>" + alldata[j][1] + "</composer>\n"
 				+ makeParts(j)
-				+ "<otherChar>Original clefs " + clefFormat(alldata[j][6]) + "</otherChar>\n<classification>\n<termList>\n<term>" + alldata[j][2] + "</term>\n<termList>\n</classification>\n</work>\n"
+				+ "<otherChar>Original clefs " + clefFormat(alldata[j][6]) + "</otherChar>\n<classification>\n<termList>\n<term>" + alldata[j][2] + "</term>\n</termList>\n</classification>\n</work>\n"
 						+ "</workDesc>\n<revisionDesc>\n" + 
 						"<change resp=\"#KD\" isodate=\"2018-05-31\">\n" + 
 						"<changeDesc>\n" + 
