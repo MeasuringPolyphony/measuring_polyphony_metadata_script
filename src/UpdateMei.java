@@ -229,7 +229,7 @@ public class UpdateMei {
 		String[] splitversion = splitline[1].split("\"");
 		splitversion[1]= replacement;
 		String updatedversion = String.join("\"", splitversion);
-		splitline[1]=updatedversion+"\">";
+		splitline[1]=updatedversion;
 		return String.join(type, splitline);
 	}
 	
@@ -238,7 +238,7 @@ public class UpdateMei {
 		String[] splitversion = splitline[1].split("\"");
 		String updatedversion;
 		if (splitversion.length>3) {
-			String subsplitversion[] = Arrays.copyOfRange(splitversion,  2, splitversion.length-1);
+			String subsplitversion[] = Arrays.copyOfRange(splitversion,  2, splitversion.length);
 			
 			updatedversion = String.join("\"", subsplitversion);
 		} else {
