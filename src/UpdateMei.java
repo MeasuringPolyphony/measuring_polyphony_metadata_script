@@ -140,7 +140,7 @@ public class UpdateMei {
 								line = line + "\n\t\t\t\t\t\t\t\t\t<label>" + label + "</label>";
 								
 							}
-							if (line.contains("<syl")&& line.contains("wordpos=\"m\"")) {
+							if (line.contains("<syl")&& line.contains("wordpos=\"m\"")&& !line.contains("con=\"d\"")) {
 								line=addCon(line);
 							}
 							if (!line.contains("<!--") && !line.contains("<instrDef") && !line.contains("<fermata")) { 
@@ -171,9 +171,7 @@ public class UpdateMei {
 								}
 							}
 							
-							if (line.contains("<syl") && line.contains("wordpos=\"i\"")) {
-								
-								 
+							if (line.contains("<syl") && line.contains("wordpos=\"i\"") && !line.contains("con=\"d\"")) {
 								if (findnextsyl != null && findnextsyl.contains("<syl") && !findnextsyl.contains("wordpos=\"i\"")) {
 								line=addCon(line);
 							}
