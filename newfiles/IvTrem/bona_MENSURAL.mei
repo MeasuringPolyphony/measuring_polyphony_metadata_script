@@ -20,9 +20,10 @@
 				 <respStmt> 
 					<persName role="project director" auth="VIAF" auth.uri="http://viaf.org/viaf/" codedval="316001213">Karen Desmond</persName>
 					<persName role="encoder" isodate="2016-4-25" xml:id="KD">Karen Desmond</persName> 
-					<persName role="proofreader" isodate="2016-10-9" xml:id="EH">Emily Hopkins</persName> 
-					<persName role="proofreader" isodate="2016-10-9" xml:id="SH">Sam Howes</persName> 
-					<persName role="proofreader" isodate="2016-10-9" xml:id="KD">Karen Desmond</persName> 
+					<persName role="proofreader" isodate="2018-6-10" xml:id="EH">Emily Hopkins</persName> 
+					<persName role="proofreader" isodate="2018-6-10" xml:id="SH">Sam Howes</persName> 
+					<persName role="proofreader" isodate="2018-6-10" xml:id="KD">Karen Desmond</persName> 
+					<persName role="proofreader" isodate="2018-6-10" xml:id="DS">Daniel Shapiro</persName> 
 				</respStmt>
 			</titleStmt>
 			<pubStmt>
@@ -54,7 +55,7 @@
 						<notesStmt>
 							<annot>Primary manuscript source for this encoding.</annot>
 							<annot label="original_clefs">Original clefs for this source: c1 c3 c4</annot>
-							<annot label="commentary"></annot>
+							<annot label="commentary">The copy text for this transcription is the version found in Trem. Variants in other sources not yet noted. Tr 27 c2 clef / 30 c1 clef /  Tr 54.4 a (semibreve) g (minim) in PMFC edition / several plicas in PMFC edition that are not in Trem: Tr 18.1, 28.1, 29.4, 30.1, 58.1 and Mot 1.2 /</annot>
 						</notesStmt>
 						<itemList>
 							<item targettype="IIIF" target="http://gallica.bnf.fr/iiif/ark:/12148/btv1b8451108d/manifest.json" codedval="2v"></item>
@@ -83,7 +84,7 @@
 			</appInfo>
 			<editorialDecl>
 				<p>
-					Original MusicXML file from Cuthbert (which was transcribed from PMFC). Rhythmic durations augmented following our project’s transcription conventions. Pitches, rhythms and mensural notation features checked and corrected against manuscript source. Initial proofreading complete. Final proofreading needed. Coding of editorial accidentals needs to be fixed. Text corrected against David Howlett edition in Wathey, EMH 1993, 137-8, differences in Trem noted below.</p>
+					Original MusicXML file from Cuthbert (which was transcribed from PMFC). Rhythmic durations augmented following our project’s transcription conventions. Pitches, rhythms and mensural notation features checked and corrected against Trem. Text corrected against David Howlett edition in Wathey, EMH 1993, 137-8.</p>
 				</editorialDecl>
 				<projectDesc>
 					<p>"Measuring Polyphony" presents digitised versions of polyphonic compositions written during the thirteenth and fourteenth centuries, offering new possibilities for mediating the scholarly and public experience of this richly evocative music within its original manuscript context. The project began at the Schulich School of Music at McGill University, and now continues at Brandeis University. It leverages the potential of the rich digital image repositories of music manuscripts and the community-based standards for encoding music notation of the Music Encoding Initiative (MEI).</p>

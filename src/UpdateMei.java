@@ -44,7 +44,7 @@ public class UpdateMei {
 	     //String folder = four.next();
 		mainLoop("oldfiles/Fauv/"); 
 		mainLoop("oldfiles/IvTrem/");
-	     mainLoop("oldfiles/Montpellier/");
+	     mainLoop("oldoldfiles/Montpellier/");
 	}
 	
 	public static void mainLoop(String folder) throws IOException {
@@ -104,7 +104,7 @@ public class UpdateMei {
 								line =  line.substring(0, 28) + " midi.bpm=\"" + alldata[j][31] + "\"" + line.substring(28, line.length());
 							}
 							if (line.contains("<staffDef xml") && !line.contains("notationtype") && file.getPath().contains("MENSURAL.mei")) {
-								line =  line.substring(0, 30) + " notationtype=\"mensural.black\"" + line.substring(30, line.length());
+								line =  line.replace("notationtype=\"mensural\"", "notationtype=\"mensural.black\"");
 							}
 							if (line.contains("&amp;apos;")) {
 								line =  line.replace("&amp;apos;", "'");
@@ -140,9 +140,9 @@ public class UpdateMei {
 								line = line + "\n\t\t\t\t\t\t\t\t\t<label>" + label + "</label>";
 								
 							}
-							if (line.contains("<syl")&& line.contains("wordpos=\"m\"")&& !line.contains("con=\"d\"")) {
+					/*		if (line.contains("<syl")&& line.contains("wordpos=\"m\"")&& !line.contains("con=\"d\"")) {
 								line=addCon(line);
-							}
+							}*/
 							if (!line.contains("<!--") && !line.contains("<instrDef") && !line.contains("<fermata")) { 
 							String findnextsyl = "";
 							String nextline = "";
@@ -154,14 +154,15 @@ public class UpdateMei {
 					    		if ((findnextsyl = br.readLine()) != null && BUFFER_SIZE !=0){
 					    			counter++;
 					    			if (counter==1) {
-					    				nextline=findnextsyl;
+					    				nextline=findnextsyl;	
+					    				br.reset();
 					    			}
-									if ( findnextsyl.contains("<syl") || counter==8) {
-										br.reset();
+							/*		if ( findnextsyl.contains("<syl") || counter==8) {
+										
 										cont=false;
-									}
+									}*/
 					    		} else {
-					    			br.reset();
+					    			//br.reset();
 									cont=false;
 					    		}
 							}
@@ -170,16 +171,15 @@ public class UpdateMei {
 									line =  line.replace("barLine form=\"dashed\"", "barLine form=\"dbl\"");
 								}
 							}
-							
+					/*		
 							if (line.contains("<syl") && line.contains("wordpos=\"i\"") && !line.contains("con=\"d\"")) {
 								if (findnextsyl != null && findnextsyl.contains("<syl") && !findnextsyl.contains("wordpos=\"i\"")) {
 								line=addCon(line);
 							}
-							}
+							}*/
 							writer.println(line);
 							}
-						}
-				    	
+						}	
 		    		}
 		    writer.close();
 

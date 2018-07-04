@@ -20,9 +20,10 @@
 				 <respStmt> 
 					<persName role="project director" auth="VIAF" auth.uri="http://viaf.org/viaf/" codedval="316001213">Karen Desmond</persName>
 					<persName role="encoder" isodate="2016-7-25" xml:id="KD">Karen Desmond</persName> 
-					<persName role="proofreader" isodate="" xml:id="EH">Emily Hopkins</persName> 
-					<persName role="proofreader" isodate="" xml:id="SH">Sam Howes</persName> 
-					<persName role="proofreader" isodate="" xml:id="KD">Karen Desmond</persName> 
+					<persName role="proofreader" isodate="2018-6-4" xml:id="EH">Emily Hopkins</persName> 
+					<persName role="proofreader" isodate="2018-6-4" xml:id="SH">Sam Howes</persName> 
+					<persName role="proofreader" isodate="2018-6-4" xml:id="KD">Karen Desmond</persName> 
+					<persName role="proofreader" isodate="2018-6-4" xml:id="DS">Daniel Shapiro</persName> 
 				</respStmt>
 			</titleStmt>
 			<pubStmt>
@@ -53,8 +54,8 @@
 						</titleStmt>
 						<notesStmt>
 							<annot>Primary manuscript source for this encoding.</annot>
-							<annot label="original_clefs">Original clefs for this source: </annot>
-							<annot label="commentary"></annot>
+							<annot label="original_clefs">Original clefs for this source: c1 c3 c5 f3</annot>
+							<annot label="commentary">The copy text for this transcription is the version found in Fribourg. Tr 8.6 minim in Fribourg / Tr 14.1-4 e d c b in PMFC /14.4 semibreve in Fribourg / 18.7 a’ in Fribourg /30.2-5 f e f d (SMSM) in PMFC / 40.1 c in Fribourg / 50.3-4 f d in PMFC / 51.2 e in Fribourg / 52.3 c in Fribourg / 55.4 c in PMFC / 56.3 e in Fribourg / 60.2 long in Fribourg / Mot 4.1-4 c b c d in PMFC / 23.5-6 c b in Fribourg / 24.7 semibreve in Fribourg / 24.7 semibreve Fribourg / 44.3 d in PMFC / 49.1 b’ Fribourg / 50.3-4 a e (S S) in PMFC / Fr 52.1 d in PMFC / 52.2 g in PMFC / 57.5 g Fribourg / 60.2 long in Fribourg / Ten 59.1 breve in Fribourg /</annot>
 						</notesStmt>
 						<itemList>
 							<item targettype="DIAMM_source_record" target="https://www.diamm.ac.uk/sources/15/"></item>
@@ -82,7 +83,7 @@
 			</appInfo>
 			<editorialDecl>
 				<p>
-					Original MusicXML file from Cuthbert (which was transcribed from PMFC). Rhythmic durations augmented following our project’s transcription conventions. Pitches, rhythms and mensural notation features checked and corrected against manuscript source. Initial proofreading complete. Final proofreading needed. Coding of editorial accidentals needs to be fixed. Text follows PMFC edition.</p>
+					Original MusicXML file from Cuthbert (which was transcribed from the PMFC editon). Rhythmic durations augmented following our project’s transcription conventions. Pitches, rhythms and mensural notation features checked and corrected against manuscript source, Fribourg (NB there are many pitch differences in Fribourg, although some readings from PMFC were retained. See the variants list below). Text follows PMFC edition.</p>
 				</editorialDecl>
 				<projectDesc>
 					<p>"Measuring Polyphony" presents digitised versions of polyphonic compositions written during the thirteenth and fourteenth centuries, offering new possibilities for mediating the scholarly and public experience of this richly evocative music within its original manuscript context. The project began at the Schulich School of Music at McGill University, and now continues at Brandeis University. It leverages the potential of the rich digital image repositories of music manuscripts and the community-based standards for encoding music notation of the Music Encoding Initiative (MEI).</p>
