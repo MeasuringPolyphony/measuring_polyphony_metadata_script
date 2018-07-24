@@ -100,8 +100,8 @@ public class UpdateMei {
 							if (line.contains("<scoreDef xml") && !line.contains("midi.bpm")) {
 								line =  line.substring(0, 28) + " midi.bpm=\"" + alldata[j][31] + "\"" + line.substring(28, line.length());
 							}
-							if (line.contains("<staffDef xml") && !line.contains("notationtype") && file.getPath().contains("MENSURAL.mei")) {
-								line =  line.substring(0, 30) + " notationtype=\"mensural.black\"" + line.substring(30, line.length());
+							if (line.contains("<staffDef xml") && line.contains("notationtype") && file.getPath().contains("MENSURAL.mei")) {
+								line = replaceType(line,"notationtype", "mensural.black");
 							}
 							if (line.contains("&amp;apos;")) {
 								line =  line.replace("&amp;apos;", "'");
