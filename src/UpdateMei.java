@@ -44,7 +44,7 @@ public class UpdateMei {
 	     //String folder = four.next();
 		mainLoop("oldfiles/Fauv/"); 
 		mainLoop("oldfiles/IvTrem/");
-	     mainLoop("oldfiles/Montpellier/");
+	     mainLoop("oldoldfiles/Montpellier/");
 	}
 	
 	public static void mainLoop(String folder) throws IOException {
@@ -157,12 +157,12 @@ public class UpdateMei {
 					    				nextline=findnextsyl;	
 					    				br.reset();
 					    			}
-							if ( findnextsyl.contains("<syl") || counter==8) {
+							/*		if ( findnextsyl.contains("<syl") || counter==8) {
 										
 										cont=false;
-									}
+									}*/
 					    		} else {
-					    			br.reset();
+					    			//br.reset();
 									cont=false;
 					    		}
 							}
