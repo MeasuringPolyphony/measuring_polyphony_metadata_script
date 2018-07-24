@@ -29,13 +29,10 @@ public class UpdateMei {
 		     for (int i=0; i<temp.length; i++) {
 		    	 alldata[counter][i]=temp[i];
 		     }
-		     
 		    counter++;
-		    
 		}
 		allelements=counter;
 		input.close();
-		
 	}
 	
 	public static void takeInputs() throws IOException {
