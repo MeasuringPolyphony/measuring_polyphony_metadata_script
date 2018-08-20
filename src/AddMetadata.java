@@ -93,6 +93,9 @@ public class AddMetadata {
 						} else if (alreadyFound && line.contains("</meiHead>")) {
 							alreadyFound=false;
 						} else if (!alreadyFound) {
+							if (line.contains("<scoreDef xml") && !line.contains("midi.bpm")) {
+								line =  line.replace("/>"," midi.bpm=\"" + alldata[j][31] + "\" />");
+							}
 							writer.println(line);
 							}
 						}
